@@ -61,6 +61,13 @@ let pulsingDot = {
             this.width,
             this.height
         ).data;
+        
+        // update debug text
+        let debugPane = document.getElementById('debugPane');
+        if (debugPane)
+        debugPane.textContent = 'Debug info: ' +
+                                '\nzoom = ' + map.getZoom().toFixed(2) +
+                                ';\ncentre = ' + map.getCenter().toString()
 
         // continuously repaint the map, resulting in the smooth animation of the dot
         map.triggerRepaint();
@@ -76,6 +83,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjY
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
+    pitch: 10,                   // starting tilt
     center: [0, 30],            // starting position
     zoom: 1.5                   // starting zoom
 });
@@ -99,6 +107,7 @@ map.on('load', function() {
             ]
         }
     });
+    
     map.addLayer({
         'id': 'points',
         'type': 'symbol',
@@ -107,6 +116,55 @@ map.on('load', function() {
             'icon-image': 'pulsing-dot'
         }
     });
+    
+    // Insert the layer beneath any symbol layer.
+    const layers = map.getStyle().layers;
+
+    let labelLayerId;
+    for (let i = 0; i < layers.length; i++) {
+        if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+            labelLayerId = layers[i].id;
+            break;
+        }
+    }
+
+    map.addLayer(
+        {
+            'id': '3d-buildings',
+            'source': 'composite',
+            'source-layer': 'building',
+            'filter': ['==', 'extrude', 'true'],
+            'type': 'fill-extrusion',
+            'minzoom': 13,
+            'paint': {
+                'fill-extrusion-color': '#aaa',
+
+                // use an 'interpolate' expression to add a smooth transition effect to the
+                // buildings as the user zooms in
+                'fill-extrusion-height': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    13,
+                    0,
+                    15.05,
+                    ['get', 'height']
+                ],
+                'fill-extrusion-base': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    13,
+                    0,
+                    15.05,
+                    ['get', 'min_height']
+                ],
+                'fill-extrusion-opacity': 0.6
+            }
+        },
+        labelLayerId
+    );
+
 });
 
 // Change the map style depending on the state of the radio buttons

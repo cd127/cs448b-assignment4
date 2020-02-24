@@ -24,4 +24,12 @@
         font-family: 'Open Sans', sans-serif;
     }
 
+    #debug {
+        position: absolute;
+        background: #fff;
+        padding: 10px;
+        top: 40px; 
+        font-family: 'Open Sans', sans-serif;
+    }
+
 </style>
