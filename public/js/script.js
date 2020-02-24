@@ -1,23 +1,17 @@
 'use strict';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjYmxjbSJ9.AWi1_d1Z8YULzs-kaoizQg';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-});
-
-var size = 200;
+let dotSize = 100;
 
 // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
 // see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
-var pulsingDot = {
-    width: size,
-    height: size,
-    data: new Uint8Array(size * size * 4),
+let pulsingDot = {
+    width: dotSize,
+    height: dotSize,
+    data: new Uint8Array(dotSize * dotSize * 4),
 
     // get rendering context for the map canvas when layer is added to the map
     onAdd: function() {
-        var canvas = document.createElement('canvas');
+        let canvas = document.createElement('canvas');
         canvas.width = this.width;
         canvas.height = this.height;
         this.context = canvas.getContext('2d');
@@ -25,12 +19,12 @@ var pulsingDot = {
 
     // called once before every frame where the icon will be used
     render: function() {
-        var duration = 1000;
-        var t = (performance.now() % duration) / duration;
+        let duration = 1500;
+        let t = (performance.now() % duration) / duration;
 
-        var radius = (size / 2) * 0.3;
-        var outerRadius = (size / 2) * 0.7 * t + radius;
-        var context = this.context;
+        let radius = (dotSize / 2) * 0.3;
+        let outerRadius = (dotSize / 2) * 0.7 * t + radius;
+        let context = this.context;
 
         // draw outer circle
         context.clearRect(0, 0, this.width, this.height);
@@ -56,7 +50,7 @@ var pulsingDot = {
         );
         context.fillStyle = 'rgba(255, 100, 100, 1)';
         context.strokeStyle = 'white';
-        context.lineWidth = 2 + 4 * (1 - t);
+        context.lineWidth = 2 + 4 * Math.max(0, 1 - 5*t);
         context.fill();
         context.stroke();
 
@@ -74,10 +68,21 @@ var pulsingDot = {
         // return `true` to let the map know that the image was updated
         return true;
     }
-};
+}
 
+
+// Create the mapbox object
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjYmxjbSJ9.AWi1_d1Z8YULzs-kaoizQg';
+let map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v10',
+    center: [0, 30],            // starting position
+    zoom: 1.5                   // starting zoom
+});
+
+// Add a layer with the pulsing dot
 map.on('load', function() {
-    map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
+    map.addImage('pulsing-dot', pulsingDot);
 
     map.addSource('points', {
         'type': 'geojson',
@@ -103,3 +108,18 @@ map.on('load', function() {
         }
     });
 });
+
+// Change the map style depending on the state of the radio buttons
+{     
+    function switchMapLayer(layer) {
+        let layerId = layer.target.id;
+        map.setStyle('mapbox://styles/mapbox/' + layerId);
+        // TODO: the pulsing dot disappears
+    }
+
+    let layerList = document.getElementById('menu');
+    let inputs = layerList.getElementsByTagName('input');    
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].onclick = switchMapLayer;
+    }
+}
