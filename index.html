@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS448B Assignment 4</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="public/css/main.css">
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+    <!-- Map from mapbox -->
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css" rel="stylesheet" />
+    
+    <style>
+        body { margin: 0; padding: 0; }
+        #vis { position: absolute; top: 0; bottom: 0; width: 100%; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+
+</head>
+
+<body>
+
+  <div id='vis'>
+    <g id="map" display="inline"></g>
+  </div>
+
+    <script src="public/js/script.js"></script>
+
+</body>
+
+</html>
