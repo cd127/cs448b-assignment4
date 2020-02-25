@@ -1,0 +1,3089 @@
+[
+  {
+    "dateStart": "2019-12-01 02:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.775839663",
+    "longitude": "-87.76164002",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-01 03:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.778512133",
+    "longitude": "-87.693375564",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 03:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.782330993",
+    "longitude": "-87.620462133",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 08:43:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.775107546",
+    "longitude": "-87.687195376",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 11:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.739623474",
+    "longitude": "-87.619458052",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.876108306",
+    "longitude": "-87.684860827",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 16:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.90690686",
+    "longitude": "-87.746049479",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 16:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.84920524",
+    "longitude": "-87.718587628",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-01 16:58:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.840885439",
+    "longitude": "-87.659534989",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 18:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.000966186",
+    "longitude": "-87.793270397",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-01 20:18:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.768099092",
+    "longitude": "-87.616932031",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-01 20:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.758461712",
+    "longitude": "-87.612201241",
+    "description": "AGGRAVATED PO: OTHER DANG WEAP"
+  },
+  {
+    "dateStart": "2019-12-01 22:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.881123108",
+    "longitude": "-87.768156998",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 00:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.005832909",
+    "longitude": "-87.669964736",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-02 01:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.970760711",
+    "longitude": "-87.719542018",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-02 05:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.861751313",
+    "longitude": "-87.712847101",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-02 06:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.796322168",
+    "longitude": "-87.69973722",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 09:01:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.762184391",
+    "longitude": "-87.586223523",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 10:47:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751821289",
+    "longitude": "-87.559590955",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-02 11:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.881011636",
+    "longitude": "-87.730584551",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 13:19:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.916416544",
+    "longitude": "-87.738760912",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-02 13:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.946542477",
+    "longitude": "-87.736084376",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-02 14:52:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.800681436",
+    "longitude": "-87.668413714",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.753400931",
+    "longitude": "-87.577987855",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-02 16:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.780902195",
+    "longitude": "-87.623722741",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 17:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.789969105",
+    "longitude": "-87.662041276",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 21:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.778580051",
+    "longitude": "-87.729234931",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-02 21:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.773536673",
+    "longitude": "-87.62999581",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 21:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.766102387",
+    "longitude": "-87.573539169",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-02 21:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.785566228",
+    "longitude": "-87.688692719",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 02:17:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.850858131",
+    "longitude": "-87.699059846",
+    "description": "AGGRAVATED PO: OTHER DANG WEAP"
+  },
+  {
+    "dateStart": "2019-12-03 02:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.762390218",
+    "longitude": "-87.645552416",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 08:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877427291",
+    "longitude": "-87.696946533",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-03 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.76509676",
+    "longitude": "-87.592685034",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-03 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.76509676",
+    "longitude": "-87.592685034",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 12:59:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.773536673",
+    "longitude": "-87.62999581",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 13:57:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.750133415",
+    "longitude": "-87.628224777",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 15:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.721530182",
+    "longitude": "-87.595984111",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 15:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.86390688",
+    "longitude": "-87.708031716",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-03 15:57:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.73625535",
+    "longitude": "-87.62820806",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 17:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.905573245",
+    "longitude": "-87.638419281",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-03 17:12:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.744546935",
+    "longitude": "-87.559707616",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-03 18:22:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.700502156",
+    "longitude": "-87.642634662",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 19:58:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.909478937",
+    "longitude": "-87.757572596",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 20:13:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.713753878",
+    "longitude": "-87.642987258",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 21:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.745891451",
+    "longitude": "-87.690086485",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 23:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.69260241",
+    "longitude": "-87.621688086",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-03 23:49:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.909844236",
+    "longitude": "-87.729321459",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-03 23:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.738091377",
+    "longitude": "-87.579380062",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-04 05:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.791582722",
+    "longitude": "-87.668170388",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-04 10:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.87046297",
+    "longitude": "-87.720260149",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-04 15:37:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.783295917",
+    "longitude": "-87.608450806",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-04 16:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.803056534",
+    "longitude": "-87.586453094",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-04 18:01:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.90321817",
+    "longitude": "-87.675605077",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-04 19:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.721895856",
+    "longitude": "-87.613841024",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-04 20:37:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.878888916",
+    "longitude": "-87.724075637",
+    "description": "AGGRAVATED PO: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 00:53:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.767628788",
+    "longitude": "-87.66267745",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-05 03:44:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.765342108",
+    "longitude": "-87.57935434",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 08:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.834237147",
+    "longitude": "-87.620609318",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 11:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.776748173",
+    "longitude": "-87.699427651",
+    "description": "AGG PRO.EMP: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 12:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.854964624",
+    "longitude": "-87.658792585",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 12:52:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.76680404",
+    "longitude": "-87.605619683",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-05 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.794088699",
+    "longitude": "-87.631799109",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-05 13:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.771477927",
+    "longitude": "-87.71583675",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 15:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.755365424",
+    "longitude": "-87.565914426",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-05 16:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.829651528",
+    "longitude": "-87.614451899",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-05 16:53:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.895003278",
+    "longitude": "-87.62152816",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-05 17:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.781311691",
+    "longitude": "-87.725275189",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-05 18:16:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.748792531",
+    "longitude": "-87.606380156",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 18:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.840545388",
+    "longitude": "-87.726006517",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 19:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.769916749",
+    "longitude": "-87.663954978",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 19:54:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.022534793",
+    "longitude": "-87.673434623",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-05 20:14:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.682334926",
+    "longitude": "-87.620651734",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-05 21:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.88190883",
+    "longitude": "-87.704452102",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 21:32:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.784554979",
+    "longitude": "-87.654628826",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-05 21:46:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.903544686",
+    "longitude": "-87.667501804",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-05 22:14:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.772877757",
+    "longitude": "-87.580164253",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-05 22:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751702738",
+    "longitude": "-87.663469929",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-06 10:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.90690686",
+    "longitude": "-87.746049479",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-06 14:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.739727015",
+    "longitude": "-87.604910522",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-06 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.855869895",
+    "longitude": "-87.729752505",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-06 17:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.883748638",
+    "longitude": "-87.73919976",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-06 17:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.747471737",
+    "longitude": "-87.642732418",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-06 18:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.879466753",
+    "longitude": "-87.748118467",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-06 18:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.895288507",
+    "longitude": "-87.730310756",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-06 18:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.942341068",
+    "longitude": "-87.757571099",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-06 19:24:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.880991939",
+    "longitude": "-87.704394994",
+    "description": "AGG PRO.EMP:KNIFE/CUTTING INST"
+  },
+  {
+    "dateStart": "2019-12-06 19:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.75089655",
+    "longitude": "-87.627813307",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-06 19:58:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.88060406",
+    "longitude": "-87.736089224",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-06 20:17:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.80957999",
+    "longitude": "-87.602285668",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-06 22:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.781625079",
+    "longitude": "-87.607215695",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-06 22:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.870926154",
+    "longitude": "-87.708943619",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-07 00:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.80462016",
+    "longitude": "-87.684368169",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-07 00:52:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.916994219",
+    "longitude": "-87.756244795",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-07 02:47:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.786031386",
+    "longitude": "-87.716943804",
+    "description": "AGGRAVATED PO: OTHER DANG WEAP"
+  },
+  {
+    "dateStart": "2019-12-07 04:21:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.723933234",
+    "longitude": "-87.666333664",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-07 09:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.768056779",
+    "longitude": "-87.568644414",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-07 12:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.881088655",
+    "longitude": "-87.720764494",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-07 15:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.833487313",
+    "longitude": "-87.64617149",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-07 16:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.671721454",
+    "longitude": "-87.628480897",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-07 21:47:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.937688778",
+    "longitude": "-87.642492215",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-07 21:56:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.968167905",
+    "longitude": "-87.734702055",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-07 22:56:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.862951657",
+    "longitude": "-87.7064808",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 01:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.785195069",
+    "longitude": "-87.618982074",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 11:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.775267487",
+    "longitude": "-87.64710126",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 16:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.763640149",
+    "longitude": "-87.689333766",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-08 18:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877561755",
+    "longitude": "-87.685169265",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 19:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.747167184",
+    "longitude": "-87.600220148",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 19:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.008078037",
+    "longitude": "-87.68394905",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 20:02:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.762995347",
+    "longitude": "-87.609155847",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 20:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.862944405",
+    "longitude": "-87.707163698",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-08 21:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.898458275",
+    "longitude": "-87.619318967",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-08 21:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.779975054",
+    "longitude": "-87.630937377",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 21:58:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.764551704",
+    "longitude": "-87.623279803",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 22:19:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.846440182",
+    "longitude": "-87.696141661",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-08 23:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.902860016",
+    "longitude": "-87.728773832",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 01:01:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.687514249",
+    "longitude": "-87.658044114",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 01:57:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.754581944",
+    "longitude": "-87.576049926",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-09 02:19:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.880487595",
+    "longitude": "-87.745964635",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 10:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.841388915",
+    "longitude": "-87.732989664",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-09 11:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.898247169",
+    "longitude": "-87.618028379",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 13:11:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.732138314",
+    "longitude": "-87.63621053",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-09 14:39:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.815329073",
+    "longitude": "-87.642154319",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-09 15:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.769622263",
+    "longitude": "-87.688273178",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 15:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.764632089",
+    "longitude": "-87.628311641",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-09 16:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.859825426",
+    "longitude": "-87.720108473",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 16:41:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.747945371",
+    "longitude": "-87.657308575",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-09 16:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.875942225",
+    "longitude": "-87.743648924",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-09 20:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.722490414",
+    "longitude": "-87.573613605",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-09 21:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.676249496",
+    "longitude": "-87.619126568",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-09 22:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.722421445",
+    "longitude": "-87.604486948",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 00:28:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.74845393",
+    "longitude": "-87.631816116",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 00:51:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.802291065",
+    "longitude": "-87.60356051",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 01:44:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.959540647",
+    "longitude": "-87.713090558",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 02:12:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.793035887",
+    "longitude": "-87.692563697",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-10 06:44:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.892628411",
+    "longitude": "-87.63115524",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 07:56:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.894880861",
+    "longitude": "-87.761674181",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 13:54:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.943208753",
+    "longitude": "-87.679270588",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 14:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.758493846",
+    "longitude": "-87.570022427",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 18:06:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.869527301",
+    "longitude": "-87.639268759",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-10 19:17:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.898664525",
+    "longitude": "-87.746852292",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 20:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.727106713",
+    "longitude": "-87.587915914",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 20:39:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.710331245",
+    "longitude": "-87.635640463",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-10 21:57:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.781643811",
+    "longitude": "-87.725286717",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-11 00:09:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.769014078",
+    "longitude": "-87.572709347",
+    "description": "AGGRAVATED PO: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-11 00:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.965860757",
+    "longitude": "-87.701053221",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-11 09:52:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.844023772",
+    "longitude": "-87.626923253",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-11 14:28:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.755289122",
+    "longitude": "-87.556195869",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-11 15:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.684818598",
+    "longitude": "-87.622875816",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-11 16:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.777415172",
+    "longitude": "-87.685188784",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-11 17:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.84908512",
+    "longitude": "-87.710047944",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-11 18:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.943578827",
+    "longitude": "-87.733472858",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-11 18:32:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.801864216",
+    "longitude": "-87.593461078",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-11 20:23:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.820292764",
+    "longitude": "-87.613008408",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-11 21:03:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.878521203",
+    "longitude": "-87.751057355",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-11 21:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877616294",
+    "longitude": "-87.751194088",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-12 00:25:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.766562596",
+    "longitude": "-87.722456329",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-12 00:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.769756045",
+    "longitude": "-87.646951053",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-12 01:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.734899916",
+    "longitude": "-87.555525763",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-12 08:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751613643",
+    "longitude": "-87.575373855",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-12 10:59:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.748416811",
+    "longitude": "-87.616465629",
+    "description": "AGG PRO.EMP: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-12 14:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.966053999",
+    "longitude": "-87.657890403",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-12 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.69522655",
+    "longitude": "-87.642467755",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-12 15:19:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.879955866",
+    "longitude": "-87.680040875",
+    "description": "AGG PRO.EMP:KNIFE/CUTTING INST"
+  },
+  {
+    "dateStart": "2019-12-12 20:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.905697232",
+    "longitude": "-87.693267817",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-12 20:52:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.76948433",
+    "longitude": "-87.656660917",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-13 09:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.917970185",
+    "longitude": "-87.761534297",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 10:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.862409706",
+    "longitude": "-87.732939912",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-13 11:03:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.802062624",
+    "longitude": "-87.618732403",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-13 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.69522655",
+    "longitude": "-87.642467755",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-13 12:26:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.772256878",
+    "longitude": "-87.613010882",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 12:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.844263151",
+    "longitude": "-87.723798692",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-13 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.819179575",
+    "longitude": "-87.627757664",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 14:25:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.882457198",
+    "longitude": "-87.627847776",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-13 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.778665283",
+    "longitude": "-87.662965763",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 17:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.876868041",
+    "longitude": "-87.743309941",
+    "description": "AGGRAVATED PO: OTHER DANG WEAP"
+  },
+  {
+    "dateStart": "2019-12-13 17:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.957720382",
+    "longitude": "-87.730968879",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-13 18:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.996465865",
+    "longitude": "-87.706886562",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-13 18:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.869828105",
+    "longitude": "-87.723691731",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-13 19:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.766102387",
+    "longitude": "-87.573539169",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 20:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.974215315",
+    "longitude": "-87.735597899",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 22:12:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.925326448",
+    "longitude": "-87.739703429",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-13 23:06:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.868034106",
+    "longitude": "-87.639215155",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-14 03:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.896752124",
+    "longitude": "-87.700398375",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 04:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.906503211",
+    "longitude": "-87.639272492",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 04:26:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.80032743",
+    "longitude": "-87.704979016",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 08:17:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.903892302",
+    "longitude": "-87.631858359",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-14 11:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.926298238",
+    "longitude": "-87.769720766",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-14 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.729470173",
+    "longitude": "-87.596519777",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.963343664",
+    "longitude": "-87.718105695",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 15:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877545896",
+    "longitude": "-87.686737346",
+    "description": "AGGRAVATED PO: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 15:54:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.887905097",
+    "longitude": "-87.746462265",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 18:41:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.774279999",
+    "longitude": "-87.711791881",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 19:12:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.88171118",
+    "longitude": "-87.753455712",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-14 20:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.888744285",
+    "longitude": "-87.718557585",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-14 20:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.886370445",
+    "longitude": "-87.70989132",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-14 21:57:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.651431329",
+    "longitude": "-87.527258234",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-15 04:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.711604906",
+    "longitude": "-87.639314808",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-15 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.654711652",
+    "longitude": "-87.605093469",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-15 13:19:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.990615196",
+    "longitude": "-87.683188577",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-15 22:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877616294",
+    "longitude": "-87.751194088",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-15 22:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.85089936",
+    "longitude": "-87.71010007",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-16 00:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.77780449",
+    "longitude": "-87.607130477",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-16 00:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.879783007",
+    "longitude": "-87.773012281",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-16 02:03:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.892989435",
+    "longitude": "-87.634104238",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-16 04:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.753123114",
+    "longitude": "-87.563830192",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-16 05:21:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.808324588",
+    "longitude": "-87.66374603",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-16 07:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.932755165",
+    "longitude": "-87.647150367",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-16 08:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.897524786",
+    "longitude": "-87.704673571",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-16 11:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.927679738",
+    "longitude": "-87.726860154",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-16 11:36:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751717281",
+    "longitude": "-87.567002336",
+    "description": "AGGRAVATED PO:KNIFE/CUT INSTR"
+  },
+  {
+    "dateStart": "2019-12-16 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.774485665",
+    "longitude": "-87.72509404",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-16 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.749998751",
+    "longitude": "-87.716951479",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-16 16:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.765784983",
+    "longitude": "-87.683271465",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-16 16:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.797364657",
+    "longitude": "-87.587259993",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-16 18:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.760684812",
+    "longitude": "-87.673423036",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-16 18:56:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.74239748",
+    "longitude": "-87.584459605",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-16 21:25:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.769028278",
+    "longitude": "-87.72373428",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-17 05:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.714916256",
+    "longitude": "-87.55234949",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-17 06:58:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.821456725",
+    "longitude": "-87.610885841",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-17 07:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.910007135",
+    "longitude": "-87.715579879",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-17 08:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.814835819",
+    "longitude": "-87.615864844",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-17 13:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.745266022",
+    "longitude": "-87.605067779",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-17 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.883673944",
+    "longitude": "-87.626233272",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-17 16:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.86694152",
+    "longitude": "-87.71299884",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-17 19:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866404039",
+    "longitude": "-87.639218102",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-17 21:08:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.810668881",
+    "longitude": "-87.603920271",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-17 21:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.874650697",
+    "longitude": "-87.68868687",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-17 21:43:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.893817529",
+    "longitude": "-87.77366461",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-18 06:24:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.720243663",
+    "longitude": "-87.657672256",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-18 16:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.887640628",
+    "longitude": "-87.619340283",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-18 16:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866229446",
+    "longitude": "-87.720935733",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-18 16:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.900357815",
+    "longitude": "-87.761562887",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-18 17:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.659553601",
+    "longitude": "-87.597053833",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-18 19:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866937617",
+    "longitude": "-87.624141504",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-18 20:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.724632437",
+    "longitude": "-87.642086889",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-18 23:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.767957587",
+    "longitude": "-87.637215836",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-19 00:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.742590029",
+    "longitude": "-87.741129435",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 02:47:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866361183",
+    "longitude": "-87.70971863",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 04:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.779295906",
+    "longitude": "-87.644774188",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 05:17:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877633028",
+    "longitude": "-87.633713529",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-19 05:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.897967942",
+    "longitude": "-87.7655071",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-19 08:19:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.873732481",
+    "longitude": "-87.702226415",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-19 08:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.77945628",
+    "longitude": "-87.613190628",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-19 08:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.657525882",
+    "longitude": "-87.613573559",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.735396556",
+    "longitude": "-87.647276711",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-19 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.878561173",
+    "longitude": "-87.748123058",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-19 15:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.941595948",
+    "longitude": "-87.727948605",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 17:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.857809348",
+    "longitude": "-87.70907857",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 18:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.867599564",
+    "longitude": "-87.700818188",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-19 22:47:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.017232506",
+    "longitude": "-87.677651491",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 01:13:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.833508064",
+    "longitude": "-87.651033255",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-20 09:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.897131806",
+    "longitude": "-87.767905678",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 10:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.809220836",
+    "longitude": "-87.626902264",
+    "description": "AGG PRO.EMP: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.756002773",
+    "longitude": "-87.683003688",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 12:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.897967942",
+    "longitude": "-87.7655071",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-20 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.982569563",
+    "longitude": "-87.712499306",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.774222021",
+    "longitude": "-87.608248705",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-20 15:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.802264466",
+    "longitude": "-87.605856752",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 18:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.736922044",
+    "longitude": "-87.551419766",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-20 20:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.892505345",
+    "longitude": "-87.626304822",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-20 22:58:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.853538819",
+    "longitude": "-87.693042986",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-20 23:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.753273789",
+    "longitude": "-87.650175839",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 00:08:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866147762",
+    "longitude": "-87.68602617",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-21 01:29:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.876804723",
+    "longitude": "-87.678945695",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 02:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.789791217",
+    "longitude": "-87.6523331",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-21 03:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.85487409",
+    "longitude": "-87.679679519",
+    "description": "AGGRAVATED PO: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 11:29:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.818372134",
+    "longitude": "-87.620987033",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 11:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.853582531",
+    "longitude": "-87.724807719",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-21 16:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.797504979",
+    "longitude": "-87.763669942",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 16:23:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.909762505",
+    "longitude": "-87.735729329",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 19:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.739469514",
+    "longitude": "-87.603685971",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-21 19:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.758565773",
+    "longitude": "-87.563937436",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-21 19:39:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.990615196",
+    "longitude": "-87.683188577",
+    "description": "AGG PRO.EMP:KNIFE/CUTTING INST"
+  },
+  {
+    "dateStart": "2019-12-21 20:38:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.701911976",
+    "longitude": "-87.565125859",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-21 21:29:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.938658546",
+    "longitude": "-87.80798004",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-21 21:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.886816169",
+    "longitude": "-87.74871979",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-22 02:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.830890037",
+    "longitude": "-87.635503335",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 02:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.929606217",
+    "longitude": "-87.755058053",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 04:27:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.800863342",
+    "longitude": "-87.664766276",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 08:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.9035926",
+    "longitude": "-87.725111847",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 10:18:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751704315",
+    "longitude": "-87.664682949",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 10:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.720220956",
+    "longitude": "-87.569900451",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 11:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.88301997",
+    "longitude": "-87.766605275",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 11:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.946108367",
+    "longitude": "-87.748240895",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 11:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.803775013",
+    "longitude": "-87.662410667",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-22 11:57:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.738693288",
+    "longitude": "-87.653415499",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.827977853",
+    "longitude": "-87.643595993",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-22 13:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.843404667",
+    "longitude": "-87.717200848",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-22 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866578077",
+    "longitude": "-87.624134464",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 15:24:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.826130389",
+    "longitude": "-87.650851097",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 19:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.877620069",
+    "longitude": "-87.750856234",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 19:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.653969894",
+    "longitude": "-87.615878202",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-22 20:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.909002365",
+    "longitude": "-87.725277248",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 22:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.867024769",
+    "longitude": "-87.654921053",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-22 23:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.739897121",
+    "longitude": "-87.735687345",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 00:13:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.793973114",
+    "longitude": "-87.669139477",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-23 00:22:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.72302213",
+    "longitude": "-87.620623561",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 01:07:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.857627429",
+    "longitude": "-87.648277118",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 01:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.720054955",
+    "longitude": "-87.568873126",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 02:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.681702629",
+    "longitude": "-87.642037691",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 05:54:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.74634568",
+    "longitude": "-87.653627921",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 06:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.782772831",
+    "longitude": "-87.692669556",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 07:28:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.945760069",
+    "longitude": "-87.777559092",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 08:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.760610721",
+    "longitude": "-87.673423796",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-23 10:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.767481708",
+    "longitude": "-87.617825989",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-23 10:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.778650981",
+    "longitude": "-87.723441509",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 10:36:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.764165476",
+    "longitude": "-87.595092958",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-23 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.77171246",
+    "longitude": "-87.654294989",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-23 12:08:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.661187536",
+    "longitude": "-87.637755818",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 17:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.900742538",
+    "longitude": "-87.771679343",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 17:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.865175251",
+    "longitude": "-87.727587068",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 18:55:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.738393182",
+    "longitude": "-87.558740903",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-23 19:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.892753031",
+    "longitude": "-87.624193896",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-23 19:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.695803715",
+    "longitude": "-87.657378877",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-23 20:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.830697249",
+    "longitude": "-87.614476891",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-23 21:01:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.747455904",
+    "longitude": "-87.556455251",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 01:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.765342108",
+    "longitude": "-87.57935434",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 10:21:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.783036069",
+    "longitude": "-87.646098128",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.871052912",
+    "longitude": "-87.697039137",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-24 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.768358622",
+    "longitude": "-87.623373455",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-24 14:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.771110008",
+    "longitude": "-87.617880981",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 14:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.874030718",
+    "longitude": "-87.748182746",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 14:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.711065292",
+    "longitude": "-87.569393505",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-24 16:06:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.769245023",
+    "longitude": "-87.568227069",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 16:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.771580054",
+    "longitude": "-87.708837572",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 16:44:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.926261042",
+    "longitude": "-87.766068398",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-24 17:13:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.739320771",
+    "longitude": "-87.604896792",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 19:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.891077948",
+    "longitude": "-87.637019186",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 21:03:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.7893196",
+    "longitude": "-87.690015539",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-24 22:08:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.747109534",
+    "longitude": "-87.600217139",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-24 23:12:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.876663435",
+    "longitude": "-87.64767362",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-24 23:17:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.923976215",
+    "longitude": "-87.766294416",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-25 00:25:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.908351299",
+    "longitude": "-87.735073875",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 00:59:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.779963706",
+    "longitude": "-87.698292404",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-25 01:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.904624755",
+    "longitude": "-87.710327235",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 03:04:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.8804407",
+    "longitude": "-87.749684919",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 04:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.700236915",
+    "longitude": "-87.530449982",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-25 09:06:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.863797393",
+    "longitude": "-87.727541335",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-25 10:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.785332016",
+    "longitude": "-87.586574512",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 11:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751717281",
+    "longitude": "-87.567002336",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-25 13:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.88301997",
+    "longitude": "-87.766605275",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.702813218",
+    "longitude": "-87.609252944",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-25 14:16:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.689040355",
+    "longitude": "-87.531669271",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-25 15:13:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.795145644",
+    "longitude": "-87.670689613",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-25 15:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.766507236",
+    "longitude": "-87.641989466",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 16:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.675745187",
+    "longitude": "-87.624996177",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-25 17:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.931430784",
+    "longitude": "-87.786926231",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 17:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.865662843",
+    "longitude": "-87.692532873",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 19:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.817058907",
+    "longitude": "-87.684664481",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-25 21:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.959574119",
+    "longitude": "-87.784332806",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-26 00:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.775630712",
+    "longitude": "-87.74097956",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 01:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.880487595",
+    "longitude": "-87.745964635",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 01:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.880384097",
+    "longitude": "-87.754224166",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 01:51:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.890703831",
+    "longitude": "-87.70640419",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 07:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.861559271",
+    "longitude": "-87.65976218",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-26 10:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.865615666",
+    "longitude": "-87.706862288",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 14:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.712222382",
+    "longitude": "-87.6356896",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 14:12:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.80942385",
+    "longitude": "-87.673498934",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-26 17:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.792861243",
+    "longitude": "-87.676701528",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-26 20:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.890074025",
+    "longitude": "-87.765209749",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-26 22:16:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.754368245",
+    "longitude": "-87.584478057",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-27 00:21:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.807065993",
+    "longitude": "-87.723560879",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-27 10:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.869427945",
+    "longitude": "-87.643730679",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-27 11:28:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.910456772",
+    "longitude": "-87.722684413",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-27 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.786305333",
+    "longitude": "-87.633955671",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-27 16:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.744104653",
+    "longitude": "-87.55882616",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-27 17:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.887836081",
+    "longitude": "-87.753403997",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-27 18:41:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.779605366",
+    "longitude": "-87.654813009",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-27 22:42:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.772018704",
+    "longitude": "-87.74088082",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-27 23:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.738676493",
+    "longitude": "-87.640042004",
+    "description": "AGGRAVATED PO: OTHER DANG WEAP"
+  },
+  {
+    "dateStart": "2019-12-27 23:26:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.953591941",
+    "longitude": "-87.73284591",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-27 23:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.953527155",
+    "longitude": "-87.757154271",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-27 23:41:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.996861415",
+    "longitude": "-87.670786319",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-27 23:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.878284802",
+    "longitude": "-87.714255129",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 00:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.931961083",
+    "longitude": "-87.713056469",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 00:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.787285459",
+    "longitude": "-87.629530209",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 02:02:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.762582555",
+    "longitude": "-87.641478126",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 02:03:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.012602121",
+    "longitude": "-87.676525225",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 03:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.96161731",
+    "longitude": "-87.718059797",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 03:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.875314335",
+    "longitude": "-87.721715561",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 06:01:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "42.009269306",
+    "longitude": "-87.675326876",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 06:03:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.95059974",
+    "longitude": "-87.75292734",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 08:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.763932967",
+    "longitude": "-87.612499194",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 10:05:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.985904895",
+    "longitude": "-87.671918787",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 13:26:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.764433097",
+    "longitude": "-87.637081657",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 14:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.854574579",
+    "longitude": "-87.701181459",
+    "description": "AGGRAVATED: OTHER FIREARM"
+  },
+  {
+    "dateStart": "2019-12-28 14:22:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.866604054",
+    "longitude": "-87.686645691",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-28 14:46:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.677661758",
+    "longitude": "-87.652872258",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-28 15:25:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.761611204",
+    "longitude": "-87.589664576",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 15:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.890807109",
+    "longitude": "-87.632196198",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 16:07:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.647923751",
+    "longitude": "-87.61626361",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 16:31:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.802494694",
+    "longitude": "-87.651439398",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 16:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.867428687",
+    "longitude": "-87.626342565",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-28 17:06:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.757531214",
+    "longitude": "-87.607813551",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 18:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.751402348",
+    "longitude": "-87.719235849",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 18:09:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.659126778",
+    "longitude": "-87.643717373",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 18:11:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.771892247",
+    "longitude": "-87.649443094",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 19:04:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.933207572",
+    "longitude": "-87.644793433",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 20:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.705677782",
+    "longitude": "-87.600944364",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 21:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.872484426",
+    "longitude": "-87.640892683",
+    "description": "AGG PRO.EMP: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-28 22:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.749831023",
+    "longitude": "-87.61004042",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-28 22:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.904595155",
+    "longitude": "-87.769379028",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 23:21:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.872027703",
+    "longitude": "-87.73650686",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-28 23:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.853930752",
+    "longitude": "-87.623841071",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-28 23:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.8926701",
+    "longitude": "-87.628106353",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-29 12:11:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.76500206",
+    "longitude": "-87.657452117",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-29 12:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.701250956",
+    "longitude": "-87.607395583",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-29 12:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.857629782",
+    "longitude": "-87.67879616",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-29 15:20:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.771019071",
+    "longitude": "-87.622684265",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-29 16:10:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.73134786",
+    "longitude": "-87.656856155",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-29 17:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.878286794",
+    "longitude": "-87.714115574",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-29 19:52:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.693111",
+    "longitude": "-87.655426235",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-29 21:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.876196319",
+    "longitude": "-87.723983712",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-29 23:40:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.908279842",
+    "longitude": "-87.760893386",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 01:35:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.86339496",
+    "longitude": "-87.732427749",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 01:53:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.888165132",
+    "longitude": "-87.622937212",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 05:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.961744346",
+    "longitude": "-87.707042946",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 08:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.765558758",
+    "longitude": "-87.580587091",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 09:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.705933188",
+    "longitude": "-87.650904288",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 10:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.771126721",
+    "longitude": "-87.670060732",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 11:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.920543756",
+    "longitude": "-87.648592978",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 12:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.778680696",
+    "longitude": "-87.664197479",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 12:27:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.792888946",
+    "longitude": "-87.623231167",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 12:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.880830829",
+    "longitude": "-87.623995243",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 13:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.920543756",
+    "longitude": "-87.648592978",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 15:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.692289426",
+    "longitude": "-87.647852131",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 16:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.660392338",
+    "longitude": "-87.58879926",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 18:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.777236649",
+    "longitude": "-87.69250102",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-30 18:45:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.734687148",
+    "longitude": "-87.613848497",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-30 21:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.880991939",
+    "longitude": "-87.704394994",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-30 22:23:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.764771519",
+    "longitude": "-87.635868382",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-30 23:15:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.693960671",
+    "longitude": "-87.621658468",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-30 23:34:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.873407726",
+    "longitude": "-87.728574138",
+    "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
+  },
+  {
+    "dateStart": "2019-12-30 23:37:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.733815961",
+    "longitude": "-87.611026149",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-31 00:50:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.749127341",
+    "longitude": "-87.692604756",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-31 13:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.808595503",
+    "longitude": "-87.626069163",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-31 15:00:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.808588241",
+    "longitude": "-87.666611662",
+    "description": "AGGRAVATED: OTHER DANG WEAPON"
+  },
+  {
+    "dateStart": "2019-12-31 17:59:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.787658582",
+    "longitude": "-87.652278668",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-31 20:11:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.699135002",
+    "longitude": "-87.542910023",
+    "description": "AGGRAVATED: HANDGUN"
+  },
+  {
+    "dateStart": "2019-12-31 23:30:00 UTC",
+    "title": "ASSAULT",
+    "latitude": "41.970682839",
+    "longitude": "-87.712206567",
+    "description": "AGGRAVATED: HANDGUN"
+  }
+]
