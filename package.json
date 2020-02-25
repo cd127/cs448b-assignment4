@@ -1,0 +1,24 @@
+{
+  "name": "cs448b-assignment4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoodev/cs448b-assignment-4.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esoodev/cs448b-assignment-4/issues"
+  },
+  "homepage": "https://github.com/esoodev/cs448b-assignment-4#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mapbox": "^1.0.0-beta10",
+    "nodemon": "^2.0.2"
+  }
+}
