@@ -1,8 +1,8 @@
 'use strict';
 
-let dotSize = 100;
+let dotSize = 20;
 let panningSpeed = 0.7;
-let allClicks = [];
+let allData = [];
 
 // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
 // see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
@@ -24,8 +24,8 @@ let pulsingDot = {
         let duration = 1500;
         let t = (performance.now() % duration) / duration;
 
-        let radius = (dotSize / 2) * 0.3;
-        let outerRadius = (dotSize / 2) * 0.7 * t + radius;
+        let radius = (dotSize / 2) * 0.5;
+        let outerRadius = ((dotSize / 2) - radius) * t + radius;
         let context = this.context;
 
         // draw outer circle
@@ -79,14 +79,14 @@ let pulsingDot = {
     }
 }
 
-function MoveTo(coordinates)
+function MoveTo(dataset)
 {
     // Handle any number of points
     function getLon(coord){
-        return coord.map(d => Array.isArray(d)? d[0] : d.lon);
+        return coord.map(d => Array.isArray(d)? d[0] : ('longitude' in d) ? d.longitude : d.lon);
     }
     function getLat(coord){
-        return coord.map(d => Array.isArray(d)? d[1] : d.lat);
+        return coord.map(d => Array.isArray(d)? d[1] : ('latitude' in d) ? d.latitude : d.lat);
     }
     function getMinY(){
         return Math.min(...getYs());
@@ -94,41 +94,27 @@ function MoveTo(coordinates)
     function getMaxY(){
         return Math.max(...getYs());
     }
-    const minLon = Math.min(...getLon(coordinates));
-    const maxLon = Math.max(...getLon(coordinates));
-    const minLat = Math.min(...getLat(coordinates));
-    const maxLat = Math.max(...getLat(coordinates));
+    const minLon = Math.min(...getLon(dataset));
+    const maxLon = Math.max(...getLon(dataset));
+    const minLat = Math.min(...getLat(dataset));
+    const maxLat = Math.max(...getLat(dataset));
     const averageLonLat = [
         (minLon + maxLon)/2,
         (minLat + maxLat)/2
     ];
 
-    // Fixed zoom if there is only one point
-    if (coordinates.length === 1)
-    {
-        const zoomLevel = 5;
-        map.flyTo({
-            center: averageLonLat,
-            zoom: zoomLevel,
-            speed: panningSpeed,
-            curve: 0.7,
-            easing(t) {return Math.sin(t * Math.PI / 2);},
-            essential: true
-        });
-    }
-    else
-    {
-        map.fitBounds(
-            [[minLon, minLat],
-            [maxLon, maxLat]],
-            {padding: 50,
-            speed: panningSpeed,
-            curve: 0.7,
-            easing(t) {return Math.sin(t * Math.PI / 2);},
-            essential: true
-            }
-        );
-    }
+    map.fitBounds(
+        [[minLon, minLat],
+        [maxLon, maxLat]],
+        {padding: 50,
+        speed: panningSpeed,
+        curve: 0.7,
+        maxZoom: (dataset.length === 1)? 5 : 100,
+        linear: false,
+        easing(t) {return Math.sin(t * Math.PI / 2);},
+        essential: true
+        }
+    );
 }
 
 
@@ -137,7 +123,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjY
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
-    pitch: 10,                   // starting tilt
+    pitch: 10,                  // starting tilt
     center: [0, 30],            // starting position
     zoom: 1.5                   // starting zoom
 });
@@ -146,16 +132,23 @@ let map = new mapboxgl.Map({
 map.on('load', function() {
     map.addImage('pulsing-dot', pulsingDot);
 
+    // Debug - REMOVEME
+    function pointOnCircle(angle) {
+        const radius = 15;
+        return [Math.cos(angle) * radius, Math.sin(angle) * radius];
+    }
+
     map.addSource('points', {
-        'type': 'geojson',
-        'data': {
+        type: 'geojson',
+        cluster: false,
+        data: {
             'type': 'FeatureCollection',
             'features': [
                 {
                     'type': 'Feature',
                     'geometry': {
-                        'type': 'Point',
-                        'coordinates': [0, 0]
+                        'type': 'MultiPoint',
+                        'coordinates': [pointOnCircle(0), pointOnCircle(10)] // Debug - REMOVEME
                     }
                 }
             ]
@@ -220,14 +213,91 @@ map.on('load', function() {
     );
 });
 
-map.on('click', e => { allClicks.push({lon : e.lngLat.lng, lat : e.lngLat.lat}); MoveTo(allClicks); } );
+function concat(array)
+{
+    let allValues = [];
+    array.forEach(d => allValues.push(...d));
+    return allValues;
+}
+
+function strToMs(dateStr)
+{
+    const date = new Date(dateStr);
+    return date.getTime();    // FIXME: would fail if < 1970
+}
+
+// Start the animation on click
+map.on('click', e => {
+    var geojsonData = map.getSource('points')._data;
+
+    // Start by panning/zooming to the location of the first point
+    // TODO: find the first point among all datasets
+    MoveTo([[allData[0].data[0].longitude, allData[0].data[0].latitude]])
+
+    // Compute update frequency from date spread in all datasets
+    const earliestDateMs = Math.min(...allData.map(d => d.dateRangeMs[0]));
+    const latestDateMs = Math.max(...allData.map(d => d.dateRangeMs[1]));
+    const dateRangeMs = latestDateMs - earliestDateMs;
+
+    const totalDesiredRuntimeMs = 3 * 60 * 1000; // 3 min
+    const totalNumberSteps = 1000;
+    const refreshInterval = Math.ceil(totalDesiredRuntimeMs / totalNumberSteps)
+    var timeInterval = Math.ceil(dateRangeMs / totalNumberSteps)
+
+    // on a regular basis, add more coordinates from the saved list and update the map
+    var eventIndices = [];
+    var virtualTime = earliestDateMs;
+    var timer = window.setInterval(function() {
+        // Clear the array before starting
+        if (eventIndices.length === 0) geojsonData.features[0].geometry.coordinates = [];
+
+        let allDataProcessed = true;
+        for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+        {
+            if (typeof eventIndices[dataSetIdx] === 'undefined') eventIndices.push(0);
+
+            const dataset = allData[dataSetIdx].data;
+            let i = eventIndices[dataSetIdx];
+
+            if (i < dataset.length)
+            {
+                allDataProcessed = false;
+
+                // Since the date array is sorted, we only need to check
+                // the elements at and after 'i' in each array
+                for (; (i < dataset.length) && (strToMs(dataset[i].dateStart) <= virtualTime); ++i)
+                {
+                    geojsonData.features[0].geometry.coordinates.push(
+                        [dataset[i].longitude, dataset[i].latitude]
+                    );
+                }
+
+                // Move the pointer forward for each array
+                eventIndices[dataSetIdx] = i;
+            }
+        }
+        // Refresh set of points on map
+        map.getSource('points').setData(geojsonData);
+
+        // Pan-and-zoom to include all points currently displayed
+        MoveTo(geojsonData.features[0].geometry.coordinates);
+
+        // Advance time
+        virtualTime += timeInterval;
+
+        if (allDataProcessed)
+        {
+            window.clearInterval(timer);
+        }
+    }, refreshInterval);
+});
 
 // Change the map style depending on the state of the radio buttons
 {
     function switchMapLayer(layer) {
         let layerId = layer.target.id;
         map.setStyle('mapbox://styles/mapbox/' + layerId);
-        // TODO: the pulsing dot disappears
+        // TODO: the pulsing dots disappear
     }
 
     let layerList = document.getElementById('menu');
@@ -235,4 +305,30 @@ map.on('click', e => { allClicks.push({lon : e.lngLat.lng, lat : e.lngLat.lat});
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].onclick = switchMapLayer;
     }
+}
+
+// Load data and sort by dateStart
+{
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let newData = JSON.parse(this.responseText);
+        newData.sort((a,b) =>
+            (a.dateStart === b.dateStart) ? 0 :
+                (new Date(a.dateStart) < new Date(b.dateStart)) ? -1 : 1);
+
+        const numPoints = newData.length;
+        const dateRangeMs = [strToMs(newData[0].dateStart), strToMs(newData[numPoints-1].dateStart)];
+
+        let obj = {
+            title : "chicago-assault-aggravated",
+            numPoints : numPoints,
+            dateRangeMs : dateRangeMs,
+            data : newData
+        };
+        allData.push(obj);
+      }
+    };
+    xmlhttp.open("GET", "public/data/chicago-assault-aggravated.json", true);
+    xmlhttp.send();
 }
