@@ -1,35 +1,73 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#vis {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
 
-<style>
-    body { 
-        margin: 0; 
-        padding: 0; 
-    }
-    #vis { 
-        position: absolute; 
-        top: 0; 
-        bottom: 0; 
-        width: 100%; 
-    }
-    #map { 
-        position: absolute; 
-        top: 0; 
-        bottom: 0; 
-        width: 100%; 
-    }
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    #menu {
-        position: absolute;
-        background: #fff;
-        padding: 10px;
-        font-family: 'Open Sans', sans-serif;
-    }
+#debug {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    #debug {
-        position: absolute;
-        background: #fff;
-        padding: 10px;
-        top: 40px; 
-        font-family: 'Open Sans', sans-serif;
-    }
+#data-load {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
 
-</style>
+.data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+}
+
+.form-control-file {
+    width: auto;
+}
+
+.data-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+}
+
+.data-container-control {
+    display: flex;
+}
+
+.headers-required-label {
+    width: 100px;
+}
+
+.headers-required {
+    display: flex;
+    flex-direction: column;
+}

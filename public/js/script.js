@@ -332,3 +332,10 @@ map.on('click', e => {
     xmlhttp.open("GET", "public/data/chicago-assault-aggravated.json", true);
     xmlhttp.send();
 }
+
+// @Nathan once data is loaded, retrieve then using this function.
+function getDataSets(){ 
+    if(isDataSetsAvailable)
+        return dataReader.getJsonResults();
+    else throw ("Data sets are not yet available.")
+}

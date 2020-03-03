@@ -9,6 +9,8 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
         "d3": true,
+        "Vue": true,
+        "csv": true,
         "$": true
     },
     "parserOptions": {
