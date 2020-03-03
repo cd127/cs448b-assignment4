@@ -39,24 +39,25 @@
     <div id='data-load'>
         <div class="data-container-wrapper">
             <div v-for="(num, index) in numDataFields" class="form-group data-container">
-                <input class="form-control-file csv-file-input" type="file" :id="'input'+num">
+                <input class="form-control-file csv-file-input" type="file" :id="'input-'+index">
                 <button v-if="headers[index].length == 0" type="button" class="btn btn-outline-secondary"
-                        v-on:click="loadData" :name="'input'+num">Load
+                        v-on:click="loadData" :name="'input-'+index">Load
                     Data</button>
                 <div class="headers-required">
                     <div v-if="headers[index] && headers[index].length > 0" v-for="req in requiredHeaders">
                         <label class="headers-required-label">
                             {{ req }}
                         </label>
-                        <select @change="checkMapping" class="headers-required-select" :id="'dataDropDown'+num+'-'+req"
-                                class="btn btn-secondary dropdown-toggle" v-model="headerMappings[index][req]">
+                        <select @change="handleSelect" class="headers-required-select" :id="'dataDropDown'+num+'-'+req"
+                                class="btn btn-secondary dropdown-toggle" v-model="headerMappings[index][req]"
+                                :name="'select-'+index">
                             <div class="dropdown-menu" :aria-labelledby="'dataDropDown'+num+'-'+req">
                                 <option class="dropdown-item" disabled value="">
                                     <template>
                                         Please select
                                     </template>
                                 </option>
-                                <option class="dropdown-item" v-for="header in headers[index]" :key="header">
+                                <option class="dropdown-item" v-for="header in getFilteredHeaders(index)" :key="header">
                                     {{ header }}
                                 </option>
                             </div>

@@ -12,34 +12,20 @@ var app = new Vue({
         mappingsComplete: false
     },
     methods: {
+        getFilteredHeaders: function(index) {
+            return this.headers[index];
+        },
         loadData: function(event) {
             let id = event.target.name;
+            let index = parseInt(event.target.name.match(/-(.*)/g)[0].slice(1));
+
             dataReader.readFileAsString(id).then(
                 fileContent => {
-                    // console.log(res);
-                    // this.headers.push(dataReader.getHeaders(fileContent));
                     console.log('Headers : ' + dataReader.getHeaders(id));
-                    switch (id) {
-                        case 'input1':
-                            this.headers[0].length = 0;
-                            dataReader.getHeaders(id).forEach(header => {
-                                this.headers[0].push(header);
-                            });
-                            break;
-                        case 'input2':
-                            this.headers[1].length = 0;
-                            dataReader.getHeaders(id).forEach(header => {
-                                this.headers[1].push(header);
-                            });
-                            break;
-                        case 'input3':
-                            this.headers[2].length = 0;
-                            dataReader.getHeaders(id).forEach(header => {
-                                this.headers[2].push(header);
-                            });
-                            break;
-                        default: // Do nothing.
-                    }
+                    this.headers[index].length = 0;
+                    dataReader.getHeaders(id).forEach(header => {
+                        this.headers[index].push(header);
+                    });
                 },
                 err => {
                     console.log(err);
@@ -48,6 +34,9 @@ var app = new Vue({
         },
         handleAddDataSet: function() {
             this.numDataFields++;
+            this.checkMapping();
+        },
+        handleSelect: function(event) {
             this.checkMapping();
         },
         checkMapping: function() {
@@ -75,7 +64,7 @@ var app = new Vue({
             for (let i = 0; i < this.numDataFields; i++) {
                 let headers = this.headers[i];
                 let headerMapping = this.headerMappings[i];
-                let id = `input${i + 1}`;
+                let id = `input-${i}`;
                 for (var newHeader in headerMapping) {
                     let oldHeader = headerMapping[newHeader];
 
@@ -90,6 +79,9 @@ var app = new Vue({
 
             Promise.all(promises).then(jsonResults => {
                 // Data has been fully parsed. Do something.
+                // console.log(jsonResults[0][0]);
+                // console.log(jsonResults[1][0]);
+                console.log(dataReader.getJsonResults());
                 isDataSetsAvailable = true;
             });
         }
