@@ -81,6 +81,8 @@ let pulsingDot = {
 
 function MoveTo(dataset)
 {
+    if (dataset.length === 0) return;
+    
     // Handle any number of points
     function getLon(coord){
         return coord.map(d => Array.isArray(d)? d[0] : ('longitude' in d) ? d.longitude : d.lon);
@@ -278,7 +280,7 @@ function getDataSets(){
 }
 
 // Start the animation
-function startAnimation(allData)
+function startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/)
 {
     var geojsonData = map.getSource('points')._data;
 
@@ -291,17 +293,37 @@ function startAnimation(allData)
     const latestDateMs = Math.max(...allData.map(d => d.dateRangeMs[1]));
     const dateRangeMs = latestDateMs - earliestDateMs;
 
-    const totalDesiredRuntimeMs = 3 * 60 * 1000; // 3 min
     const totalNumberSteps = 1000;
-    const refreshInterval = Math.ceil(totalDesiredRuntimeMs / totalNumberSteps)
-    var timeInterval = Math.ceil(dateRangeMs / totalNumberSteps)
+    const refreshIntervalMs = Math.ceil(totalDesiredRuntimeMs / totalNumberSteps)
+    var timeIntervalMs = Math.ceil(dateRangeMs / totalNumberSteps)
+    var defaultDurationMs = (2000 / refreshIntervalMs) * timeIntervalMs;  // 2 sec converted to how long that is in virtual time
 
     // on a regular basis, add more coordinates from the saved list and update the map
+    var displayedEventIndices = [];
     var eventIndices = [];
     var virtualTime = earliestDateMs;
     var timer = window.setInterval(function() {
-        // Clear the array before starting
+        
+        // Clear the array on first timer tick
         if (eventIndices.length === 0) geojsonData.features[0].geometry.coordinates = [];
+        
+        // Remove old features
+        for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+        {
+            if (typeof displayedEventIndices[dataSetIdx] === 'undefined') displayedEventIndices.push(new Array);
+            const currentEventIndices = displayedEventIndices[dataSetIdx];
+            const dataset = allData[dataSetIdx].data;
+            
+            for (let i = currentEventIndices.length - 1; i >= 0; --i)
+            {
+                const eventIdx = currentEventIndices[i];
+                if (strToMs(dataset[eventIdx].dateStart) + dataset[eventIdx].duration <= virtualTime)
+                {
+                    geojsonData.features[0].geometry.coordinates.splice(i, 1);
+                    currentEventIndices.splice(i, 1);
+                }
+            }
+        }
 
         let allDataProcessed = true;
         for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
@@ -322,6 +344,13 @@ function startAnimation(allData)
                     geojsonData.features[0].geometry.coordinates.push(
                         [dataset[i].longitude, dataset[i].latitude]
                     );
+                    displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
+                    
+                    // Make sure there is a duration. If not, assign default
+                    if (typeof dataset[i].duration === 'undefined')
+                    {
+                        dataset[i].duration = defaultDurationMs;
+                    }
                 }
 
                 // Move the pointer forward for each array
@@ -335,11 +364,11 @@ function startAnimation(allData)
         MoveTo(geojsonData.features[0].geometry.coordinates);
 
         // Advance time
-        virtualTime += timeInterval;
+        virtualTime += timeIntervalMs;
 
         if (allDataProcessed)
         {
             window.clearInterval(timer);
         }
-    }, refreshInterval);
+    }, refreshIntervalMs);
 }
