@@ -42,8 +42,8 @@ class DataReader {
     readFileAsString(id) {
         return new Promise((resolve, reject) => {
             let file = document.getElementById(id).files[0];
-            if (file.type !== 'text/csv')
-                throw `Cannot read file type ${file.type}. Can only read text/csv files.`;
+            if (file.type !== 'text/csv' || file.type !== 'application/vnd.ms-excel')
+                throw `Cannot read file type ${file.type}. Can only read text/csv or application/vnd.ms-excel files.`;
             var reader = new FileReader();
             reader.onload = event => {
                 this.fileContents.set(id, event.target.result);
