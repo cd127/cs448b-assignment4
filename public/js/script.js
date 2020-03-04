@@ -228,6 +228,58 @@ function strToMs(dateStr)
 
 // Start the animation on click
 map.on('click', e => {
+    startAnimation(allData);
+});
+
+// Change the map style depending on the state of the radio buttons
+{
+    function switchMapLayer(layer) {
+        let layerId = layer.target.id;
+        map.setStyle('mapbox://styles/mapbox/' + layerId);
+        // TODO: the pulsing dots disappear
+    }
+
+    let layerList = document.getElementById('menu');
+    let inputs = layerList.getElementsByTagName('input');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].onclick = switchMapLayer;
+    }
+}
+
+// Load data and sort by dateStart
+{
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let newData = JSON.parse(this.responseText);
+        newData.sort((a,b) =>
+            (a.dateStart === b.dateStart) ? 0 :
+                (new Date(a.dateStart) < new Date(b.dateStart)) ? -1 : 1);
+        const numPoints = newData.length;
+        const dateRangeMs = [strToMs(newData[0].dateStart), strToMs(newData[numPoints-1].dateStart)];
+        let obj = {
+            title : "chicago-assault-aggravated",
+            numPoints : numPoints,
+            dateRangeMs : dateRangeMs,
+            data : newData
+        };
+        allData.push(obj);
+      }
+    };
+    xmlhttp.open("GET", "public/data/chicago-assault-aggravated.json", true);
+    xmlhttp.send();
+}
+
+// @Nathan once data is loaded, retrieve then using this function.
+function getDataSets(){ 
+    if(isDataSetsAvailable)
+        return dataReader.getJsonResults();
+    else throw ("Data sets are not yet available.")
+}
+
+// Start the animation
+function startAnimation(allData)
+{
     var geojsonData = map.getSource('points')._data;
 
     // Start by panning/zooming to the location of the first point
@@ -290,52 +342,4 @@ map.on('click', e => {
             window.clearInterval(timer);
         }
     }, refreshInterval);
-});
-
-// Change the map style depending on the state of the radio buttons
-{
-    function switchMapLayer(layer) {
-        let layerId = layer.target.id;
-        map.setStyle('mapbox://styles/mapbox/' + layerId);
-        // TODO: the pulsing dots disappear
-    }
-
-    let layerList = document.getElementById('menu');
-    let inputs = layerList.getElementsByTagName('input');
-    for (let i = 0; i < inputs.length; i++) {
-        inputs[i].onclick = switchMapLayer;
-    }
-}
-
-// Load data and sort by dateStart
-{
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        let newData = JSON.parse(this.responseText);
-        newData.sort((a,b) =>
-            (a.dateStart === b.dateStart) ? 0 :
-                (new Date(a.dateStart) < new Date(b.dateStart)) ? -1 : 1);
-
-        const numPoints = newData.length;
-        const dateRangeMs = [strToMs(newData[0].dateStart), strToMs(newData[numPoints-1].dateStart)];
-
-        let obj = {
-            title : "chicago-assault-aggravated",
-            numPoints : numPoints,
-            dateRangeMs : dateRangeMs,
-            data : newData
-        };
-        allData.push(obj);
-      }
-    };
-    xmlhttp.open("GET", "public/data/chicago-assault-aggravated.json", true);
-    xmlhttp.send();
-}
-
-// @Nathan once data is loaded, retrieve then using this function.
-function getDataSets(){ 
-    if(isDataSetsAvailable)
-        return dataReader.getJsonResults();
-    else throw ("Data sets are not yet available.")
 }
