@@ -343,6 +343,7 @@ function startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/
 
     // on a regular basis, add more coordinates from the saved list and update the map
     var displayedEventIndices = [];
+    var displayedPopups = [];
     var eventIndices = [];
     var virtualTime = earliestDateMs;
     var timer = window.setInterval(function() {
@@ -364,6 +365,8 @@ function startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/
                 {
                     geojsonData.features[0].geometry.coordinates.splice(i, 1);
                     currentEventIndices.splice(i, 1);
+                    displayedPopups[i].remove();
+                    displayedPopups.splice(i, 1);
                 }
             }
         }
@@ -388,10 +391,16 @@ function startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/
                 // the elements at and after 'i' in each array
                 for (; (i < dataset.length) && (strToMs(dataset[i].dateStart) <= virtualTime); ++i)
                 {
-                    geojsonData.features[0].geometry.coordinates.push(
-                        [dataset[i].longitude, dataset[i].latitude]
-                    );
+                    const coords = [dataset[i].longitude, dataset[i].latitude];
+                    const textToShow = dataset[i].description;
+                    geojsonData.features[0].geometry.coordinates.push(coords);
                     displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
+                    // Keep track of the popups
+                    displayedPopups.push(new mapboxgl.Popup({ closeOnClick: true, closeButton: false })
+                        .setLngLat(coords)
+                        .setHTML('<p>' + textToShow + '</p>')
+                        .addTo(map)
+                    );
 
                     // Make sure there is a duration. If not, assign default
                     if (typeof dataset[i].duration === 'undefined')
