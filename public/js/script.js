@@ -1,5 +1,6 @@
 'use strict';
 
+let removeOldEvents = true;   // Set to false to see all events stack up over time
 let panningSpeed = 0.7;
 let allData = [];
 
@@ -225,6 +226,16 @@ map.on('click', e => {
     }
 }
 
+// Toggle clear/stack behaviour for additional features
+{
+    let clearEventsToggle = document.getElementById('clearToggle');
+    let inputs = clearEventsToggle.getElementsByTagName('input');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].onclick = 
+        (d => removeOldEvents = inputs[i].attributes.value.value);
+    }
+}
+
 // Load data and sort by dateStart (remove once there is another way to load datasets)
 {
     let xmlhttp = new XMLHttpRequest();
@@ -313,7 +324,8 @@ function startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/
             'type': 'symbol',
             'source': name,
             'layout': {
-                'icon-image': name
+                'icon-image': name,
+                'icon-allow-overlap': true
             }
         });
     }
@@ -344,6 +356,7 @@ function startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/
             const currentEventIndices = displayedEventIndices[dataSetIdx];
             const dataset = allData[dataSetIdx].data;
 
+            if (removeOldEvents == true)
             for (let i = currentEventIndices.length - 1; i >= 0; --i)
             {
                 const eventIdx = currentEventIndices[i];
