@@ -1,5 +1,5 @@
-""country"",""colonizer"",""col"",""colstart_max"",""colend_max""
-"""Guyana""","""netherlands""","1","1580","1815"
-"""Indonesia""","""netherlands""","1","1623","1962"
-"""South Africa""","""netherlands""","1","1652","1806"
-"""Suriname""","""netherlands""","1","1667","1974"
+country,colonizer,col,colstart_max,colend_max
+Guyana,netherlands,1,1580,1815
+Indonesia,netherlands,1,1623,1962
+South Africa,netherlands,1,1652,1806
+Suriname,netherlands,1,1667,1974
