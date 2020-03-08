@@ -1,23 +1,24 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-#vis {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-#map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+
+#map-view {
+    flex: 1 1;
+    order: 2;
+    display: flex;
 }
 
-#menu {
+#map {
+    position: absolute;
+    left: 33.3333%;
+    width: 66.6666%;
+    top: 0;
+    bottom: 0;
+}
+
+/* #menu {
     position: absolute;
     background: #fff;
     padding: 10px;
@@ -30,22 +31,26 @@ body {
     padding: 10px;
     top: 40px;
     font-family: 'Open Sans', sans-serif;
-}
+}*/
 
 #debug {
     position: absolute;
     background: #fff;
-    padding: 10px;
-    top: 70px;
+    /* padding: 10px; */
+    /* top: 0px; */
     font-family: 'Open Sans', sans-serif;
 }
 
-#data-load {
+.sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
+    width: 33.3333%;
     height: 100%;
+    overflow: hidden;
+    border-right: 1px solid #e0e0e0
 }
 
 .data-container {
@@ -69,6 +74,12 @@ body {
 
 .data-container-control {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.data-control-button {
+    margin: 1em 0;
 }
 
 .headers-required-label {
