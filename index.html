@@ -118,13 +118,21 @@
         </div>
         <div class="sidebar-content" v-if="isVisualize">
             {{'Current time : '+new Date(sharedState.virtualTime).toString()}}
-            <br>
-            {{sharedState.displayedEvent0}}
-            <br>
-            {{sharedState.displayedEvent1}}
-            <br>
-            {{sharedState.displayedEvent2}}
-
+            <div class="event-display-container">
+                <event-display v-for="event in sharedState.displayedEvent0" v-bind:key="event.startDate"
+                    v-bind:event="event">
+                </event-display>
+            </div>
+            <div class="event-display-container">
+                <event-display v-for="event in sharedState.displayedEvent1" v-bind:key="event.startDate"
+                    v-bind:event="event">
+                </event-display>
+            </div>
+            <div class="event-display-container">
+                <event-display v-for="event in sharedState.displayedEvent2" v-bind:key="event.startDate"
+                    v-bind:event="event">
+                </event-display>
+            </div>
         </div>
     </div>
 
@@ -326,6 +334,31 @@
             }
         }
     });
+
+    Vue.component('event-display', {
+        props: ['event'],
+        template:
+            `<div>
+            <div v-if='event.dateEnd'>
+                <h3>
+                    {{event.dateStart}} - {{event.dateEnd}}
+                </h3>
+            </div>
+            <div v-else>
+                <h3>{{event.dateStart}}</h3>
+            </div>
+
+            <h4>
+                {{event.title}}
+            </h4>
+
+            <div v-if='event.description'>
+                <p>
+                    {{event.description}}
+                </p>
+            </div>
+        </div>`
+    })
 </script>
 
 </html>
