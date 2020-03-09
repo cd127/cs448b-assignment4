@@ -366,8 +366,7 @@ class Visualizer {
         var displayedPopups = [];
         var eventIndices = [];
         var virtualTime = earliestDateMs;
-
-        this.store.set('virualTime', earliestDateMs);
+        this.store.set('virualTime', virtualTime);
 
         
         var timer = window.setInterval(() => {
@@ -455,7 +454,7 @@ class Visualizer {
 
             // Advance time
             virtualTime += timeIntervalMs;
-            this.store.set('virtualTime', this.store.get('virtualTime') + timeIntervalMs);
+            this.store.set('virtualTime', virtualTime);
 
             if (allDataProcessed) {
                 window.clearInterval(timer);
