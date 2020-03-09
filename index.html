@@ -72,7 +72,8 @@
                                     </option>
                                 </div>
                             </select>
-                            <input v-else type="text" v-model="headerMappings[index]['title']" id="" name="lname" class="headers-select"
+                            <input v-else type="text" v-model="headerMappings[index]['title']" id="" name="lname"
+                                class="headers-select"
                                 style="width: 142px; height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
                         </div>
                     </div>
@@ -116,6 +117,14 @@
             </div>
         </div>
         <div class="sidebar-content" v-if="isVisualize">
+            {{'Current time : '+new Date(sharedState.virtualTime).toString()}}
+            <br>
+            {{sharedState.displayedEvent0}}
+            <br>
+            {{sharedState.displayedEvent1}}
+            <br>
+            {{sharedState.displayedEvent2}}
+
         </div>
     </div>
 
@@ -167,8 +176,26 @@
 </body>
 
 <script>
+
+    var store = {
+        debug: false,
+        state: {
+            virtualTime: null,
+            displayedEvent0: [],
+            displayedEvent1: [],
+            displayedEvent2: []
+        },
+        set(newKey, newValue) {
+            if (this.debug) console.log('set triggered with', newValue)
+            this.state[newKey] = newValue
+        },
+        get(key) {
+            return this.state[key];
+        }
+    }
+
     var dataReader = new DataReader();
-    var visualizer = new Visualizer();
+    var visualizer = new Visualizer(store);
     var isDataSetsAvailable = false;
     visualizer.init();
 
@@ -182,7 +209,8 @@
             headerMappings: [{}, {}, {}],
             headerMappingsOpt: [{}, {}, {}],    // Optional header mappings
             mappingsComplete: false,
-            isVisualize: false
+            isVisualize: false,
+            sharedState: store.state
         },
         methods: {
             clearDataAtLastIndex: function (index) {
@@ -267,6 +295,7 @@
                     promises.push(dataReader.getJSONFromFile(id, ['title', 'dateStart', 'latitude', 'longitude']));
                 }
 
+                let self = this;
                 Promise.all(promises).then(async jsonResults => {
                     // Data has been fully parsed. Do something.
                     console.log(dataReader.getJsonResults());
@@ -278,6 +307,9 @@
                         return date.getTime();    // FIXME: would fail if < 1970
                     };
 
+                    console.log(self.state);
+
+
                     visualizer.startAnimation(jsonResults.map(result => {
                         return {
                             title: result[0].title,
@@ -288,7 +320,7 @@
                             ],
                             data: result
                         }
-                    }));
+                    }), self.state);
                     isDataSetsAvailable = true;
                 });
             }

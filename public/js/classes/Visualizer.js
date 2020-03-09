@@ -2,11 +2,14 @@
 
 // eslint-disable-next-line
 class Visualizer {
-    constructor(globalState) {
+    constructor(store) {
         this.removeOldEvents = true;   // Set to false to see all events stack up over time
         this.panningSpeed = 0.7;
         this.allData = [];
         this.isLoadTestData = true;
+        this.store = store;
+        console.log(this.store);
+        
     }
 
     // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
@@ -283,6 +286,8 @@ class Visualizer {
 
     // Start the animation
     startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/) {
+        console.log(this.store);
+        
         // Start by jumping to the view that fits all the points of all datasets
         let minLon, maxLon, minLat, maxLat;
 
@@ -361,6 +366,10 @@ class Visualizer {
         var displayedPopups = [];
         var eventIndices = [];
         var virtualTime = earliestDateMs;
+
+        this.store.set('virualTime', earliestDateMs);
+
+        
         var timer = window.setInterval(() => {
 
             // Remove old features
@@ -369,7 +378,11 @@ class Visualizer {
                 let geojsonData = this.map.getSource(layerName)._data;
                 if (typeof displayedEventIndices[dataSetIdx] === 'undefined') displayedEventIndices.push(new Array);
                 const currentEventIndices = displayedEventIndices[dataSetIdx];
+                
                 const dataset = allData[dataSetIdx].data;
+                this.store.set(`displayedEvent${dataSetIdx}`, currentEventIndices.map((index) => {
+                    return (allData[dataSetIdx].data)[index];
+                }));
 
                 if (this.removeOldEvents == true)
                     for (let i = currentEventIndices.length - 1; i >= 0; --i) {
@@ -404,6 +417,9 @@ class Visualizer {
                     // Since the date array is sorted, we only need to check
                     // the elements at and after 'i' in each array
                     for (; (i < dataset.length) && (this._strToMs(dataset[i].dateStart) <= virtualTime); ++i) {
+
+                        console.log('add plot');
+                        
                         const coords = [dataset[i].longitude, dataset[i].latitude];
 
                         geojsonData.features[0].geometry.coordinates.push(coords);
@@ -439,6 +455,7 @@ class Visualizer {
 
             // Advance time
             virtualTime += timeIntervalMs;
+            this.store.set('virtualTime', this.store.get('virtualTime') + timeIntervalMs);
 
             if (allDataProcessed) {
                 window.clearInterval(timer);
