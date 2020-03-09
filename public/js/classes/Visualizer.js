@@ -425,7 +425,7 @@ class Visualizer {
                         if (dataset[i].description !== undefined && dataset[i].description !== "") {
                             const textToShow = dataset[i].description;
                             // Keep track of the popups
-                            displayedPopups.push(new mapboxgl.Popup({ closeOnClick: true, closeButton: false })
+                            displayedPopups.push(new mapboxgl.Popup({ closeOnClick: false, closeButton: false })
                                 .setLngLat(coords)
                                 .setHTML('<p>' + textToShow + '</p>')
                                 .addTo(this.map)
