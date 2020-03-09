@@ -9,7 +9,7 @@ class Visualizer {
         this.isLoadTestData = true;
         this.store = store;
         console.log(this.store);
-        
+
     }
 
     // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
@@ -249,22 +249,21 @@ class Visualizer {
         return date.getTime();    // FIXME: would fail if < 1970
     }
 
+    _switchMapLayer(layerId = 'dark-v10') {
+        this.map.setStyle('mapbox://styles/mapbox/' + layerId);
+    }
 
+    mapShowSatellite() {
+        this._switchMapLayer("satellite-v9");
+    }
 
-    // Change the map style depending on the state of the radio buttons
-    // {
-    //     function switchMapLayer(layer) {
-    //         let layerId = layer.target.id;
-    //         this.map.setStyle('mapbox://styles/mapbox/' + layerId);
-    //         // TODO: the pulsing dots disappear
-    //     }
+    mapShowLight() {
+        this._switchMapLayer("light-v10");
+    }
 
-    //     let layerList = document.getElementById('menu');
-    //     let inputs = layerList.getElementsByTagName('input');
-    //     for (let i = 0; i < inputs.length; i++) {
-    //         inputs[i].onclick = switchMapLayer;
-    //     }
-    // }
+    mapShowDark() {
+        this._switchMapLayer("dark-v10");
+    }
 
     // Toggle clear/stack behaviour for additional features
     // {
@@ -287,7 +286,7 @@ class Visualizer {
     // Start the animation
     startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/) {
         console.log(this.store);
-        
+
         // Start by jumping to the view that fits all the points of all datasets
         let minLon, maxLon, minLat, maxLat;
 
@@ -368,7 +367,7 @@ class Visualizer {
         var virtualTime = earliestDateMs;
         this.store.set('virualTime', virtualTime);
 
-        
+
         var timer = window.setInterval(() => {
 
             // Remove old features
@@ -377,7 +376,7 @@ class Visualizer {
                 let geojsonData = this.map.getSource(layerName)._data;
                 if (typeof displayedEventIndices[dataSetIdx] === 'undefined') displayedEventIndices.push(new Array);
                 const currentEventIndices = displayedEventIndices[dataSetIdx];
-                
+
                 const dataset = allData[dataSetIdx].data;
                 this.store.set(`displayedEvent${dataSetIdx}`, currentEventIndices.map((index) => {
                     return (allData[dataSetIdx].data)[index];
@@ -392,7 +391,7 @@ class Visualizer {
                             try {
                                 displayedPopups[i].remove();
                                 displayedPopups.splice(i, 1);
-                            } catch (err) { 
+                            } catch (err) {
                                 // Do nothing.
                             }
                         }
@@ -418,7 +417,7 @@ class Visualizer {
                     for (; (i < dataset.length) && (this._strToMs(dataset[i].dateStart) <= virtualTime); ++i) {
 
                         console.log('add plot');
-                        
+
                         const coords = [dataset[i].longitude, dataset[i].latitude];
 
                         geojsonData.features[0].geometry.coordinates.push(coords);
