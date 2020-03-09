@@ -128,13 +128,13 @@
                         v-bind:style="{ 'width': sharedState.progress }"></div>
                 </div>
                 <div>
-                    {{'Start time : '+new Date(sharedState.startTime).toString()}}
+                    {{'Start time : ' + new Date(sharedState.startTime).toDateString() + ' ' + new Date(sharedState.startTime).toLocaleTimeString()}}
                 </div>
                 <div>
-                    {{'Current time : '+new Date(sharedState.virtualTime).toString()}}
+                    {{'Current time : ' + new Date(sharedState.virtualTime).toDateString() + ' ' + new Date(sharedState.virtualTime).toLocaleTimeString()}}
                 </div>
                 <div>
-                    {{'End time : '+new Date(sharedState.endTime).toString()}}
+                    {{'End time : ' + new Date(sharedState.endTime).toDateString() + ' ' + new Date(sharedState.endTime).toLocaleTimeString()}}
                 </div>
 
                 <div class="sidebar-controls-buttons" style="display: flex;">
