@@ -175,9 +175,8 @@ class Visualizer {
                 this.map = new mapboxgl.Map({
                     container: container,
                     style: 'mapbox://styles/mapbox/light-v10',
-                    pitch: 10,                  // starting tilt
                     center: [0, 30],            // starting position
-                    zoom: 2                   // starting zoom
+                    zoom: 1                   // starting zoom
                 });
 
                 let self = this;
