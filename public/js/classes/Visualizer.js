@@ -232,11 +232,6 @@ class Visualizer {
 
                     resolve(self.map);
                 });
-
-                // Start the animation on click
-                this.map.on('click', e => {
-                    startAnimation(allData);
-                });
             } catch (err) {
                 reject(err);
             }

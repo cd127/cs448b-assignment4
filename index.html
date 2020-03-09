@@ -321,7 +321,7 @@
                 let startAnimation = function (jsonDataArray) {
                     let strToMs = function (dateStr) {
                         const date = new Date(dateStr);
-                        return date.getTime();    // FIXME: would fail if < 1970
+                        return date.getTime();
                     };
                     visualizer.startAnimation(jsonDataArray.map(data => {
                         return {
@@ -337,7 +337,7 @@
                     isDataSetsAvailable = true;
                 }
 
-                if (this.isDebug) {
+                if (!this.mappingsComplete && this.isDebug) {
                     Promise.all([
                         dataReader.getJSONFromURL('/public/data/chicago-battery-aggravated.csv'),
                         dataReader.getJSONFromURL('/public/data/chicago-assault-aggravated.csv'),
