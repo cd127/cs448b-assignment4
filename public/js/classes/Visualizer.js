@@ -368,6 +368,9 @@ class Visualizer {
 
         var timer = window.setInterval(() => {
 
+            let speed = this.store.get('speed');
+            if (speed === 0) return;
+
             // Remove old features
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
                 const layerName = 'points_' + dataSetIdx;
@@ -448,9 +451,6 @@ class Visualizer {
             this._moveTo(activeCoordinates);
 
             // Advance time
-            let speed = this.store.get('speed');
-            console.log(speed);
-            
             virtualTime += timeIntervalMs * speed;
             this.store.set('virtualTime', virtualTime);
             this.store.set('progress', `${(virtualTime - earliestDateMs) / dateRangeMs * 100}%`);
