@@ -234,7 +234,7 @@
         el: '#app',
         data: {
             requiredHeaders: ['title', 'dateStart', 'latitude', 'longitude'],
-            optionalHeaders: ['dateEnd', 'description'],
+            optionalHeaders: ['dateEnd', 'description', 'location'],
             numDataFields: 1,
             headers: [[], [], []],
             headerMappings: [{}, {}, {}],
@@ -287,7 +287,10 @@
                     for (let i = 0; i < this.numDataFields; i++) {
                         this.requiredHeaders.forEach(req => {
                             if (this.headerMappings[i][req] === undefined) {
-                                throw 'Mappings incomplete.';
+                                if (!( ((req === "longitude") || (req === "latitude")) // It's ok if 'location' has been filled out
+                                        && (this.headerMappingsOpt[i]['location'] != undefined))) {
+                                    throw 'Mappings incomplete.';
+                                }
                             }
                         });
                     }
