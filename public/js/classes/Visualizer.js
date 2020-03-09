@@ -364,7 +364,11 @@ class Visualizer {
         var displayedPopups = [];
         var eventIndices = [];
         var virtualTime = earliestDateMs;
+        this.store.set('startTime', earliestDateMs);
+        this.store.set('endTime', latestDateMs);
         this.store.set('virualTime', virtualTime);
+        this.store.set('progress', `0%`);
+
 
 
         var timer = window.setInterval(() => {
@@ -415,8 +419,6 @@ class Visualizer {
                     // the elements at and after 'i' in each array
                     for (; (i < dataset.length) && (this._strToMs(dataset[i].dateStart) <= virtualTime); ++i) {
 
-                        console.log('add plot');
-
                         const coords = [dataset[i].longitude, dataset[i].latitude];
 
                         geojsonData.features[0].geometry.coordinates.push(coords);
@@ -451,8 +453,12 @@ class Visualizer {
             this._moveTo(activeCoordinates);
 
             // Advance time
-            virtualTime += timeIntervalMs;
+            let speed = this.store.get('speed');
+            console.log(speed);
+            
+            virtualTime += timeIntervalMs * speed;
             this.store.set('virtualTime', virtualTime);
+            this.store.set('progress', `${(virtualTime - earliestDateMs) / dateRangeMs * 100}%`);
 
             if (allDataProcessed) {
                 window.clearInterval(timer);

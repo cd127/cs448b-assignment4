@@ -1,3 +1,3 @@
 # cs448b-assignment4
 
-browserify modules.js -o modules-bundled.js
+npx webpack --config webpack.config.js

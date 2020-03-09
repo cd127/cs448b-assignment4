@@ -34,6 +34,24 @@ class DataReader {
         });
     }
 
+    getJSONFromURL(url = '/public/data/chicago-battery-aggravated.csv') {
+        return new Promise((resolve, reject) => {
+            axios.get(url)
+                .then(function (response) {
+                    // handle success
+                    csv()
+                        .fromString(response.data)
+                        .then(function (result) {
+                            resolve(result);
+                        })
+                })
+                .catch(function (error) {
+                    // handle error
+                    reject(error);
+                })
+        });
+    }
+
     unsetFileContentByKey(key) {
         this.fileContents.delete(key);
     }

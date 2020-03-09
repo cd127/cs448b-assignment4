@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/esoodev/cs448b-assignment-4#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "csvtojson": "^2.0.10",
     "express": "^4.17.1",
     "mapbox": "^1.0.0-beta10",
