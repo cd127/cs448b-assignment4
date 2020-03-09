@@ -2,7 +2,7 @@
 
 // eslint-disable-next-line
 class Visualizer {
-    constructor() {
+    constructor(globalState) {
         this.removeOldEvents = true;   // Set to false to see all events stack up over time
         this.panningSpeed = 0.7;
         this.allData = [];
@@ -38,7 +38,7 @@ class Visualizer {
                 let context = this.context;
                 let color = this.color;
 
-                // draw outer circle
+                // draw outer circlef
                 context.clearRect(0, 0, this.width, this.height);
                 context.beginPath();
                 context.arc(
@@ -227,7 +227,7 @@ class Visualizer {
                         },
                         labelLayerId
                     );
-                    
+
                     resolve(self.map);
                 });
 
@@ -377,8 +377,12 @@ class Visualizer {
                         if (this._strToMs(dataset[eventIdx].dateStart) + dataset[eventIdx].duration <= virtualTime) {
                             geojsonData.features[0].geometry.coordinates.splice(i, 1);
                             currentEventIndices.splice(i, 1);
-                            displayedPopups[i].remove();
-                            displayedPopups.splice(i, 1);
+                            try {
+                                displayedPopups[i].remove();
+                                displayedPopups.splice(i, 1);
+                            } catch (err) { 
+                                // Do nothing.
+                            }
                         }
                     }
             }
@@ -401,15 +405,19 @@ class Visualizer {
                     // the elements at and after 'i' in each array
                     for (; (i < dataset.length) && (this._strToMs(dataset[i].dateStart) <= virtualTime); ++i) {
                         const coords = [dataset[i].longitude, dataset[i].latitude];
-                        const textToShow = dataset[i].description;
+
                         geojsonData.features[0].geometry.coordinates.push(coords);
                         displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
-                        // Keep track of the popups
-                        displayedPopups.push(new mapboxgl.Popup({ closeOnClick: true, closeButton: false })
-                            .setLngLat(coords)
-                            .setHTML('<p>' + textToShow + '</p>')
-                            .addTo(this.map)
-                        );
+
+                        if (dataset[i].description !== undefined && dataset[i].description !== "") {
+                            const textToShow = dataset[i].description;
+                            // Keep track of the popups
+                            displayedPopups.push(new mapboxgl.Popup({ closeOnClick: true, closeButton: false })
+                                .setLngLat(coords)
+                                .setHTML('<p>' + textToShow + '</p>')
+                                .addTo(this.map)
+                            );
+                        }
 
                         // Make sure there is a duration. If not, assign default
                         if (typeof dataset[i].duration === 'undefined') {

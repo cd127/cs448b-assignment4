@@ -7,7 +7,7 @@ class DataReader {
         this.jsonResults = new Map();
     }
 
-    async getJSONFromFile(id) {
+    async getJSONFromFile(id, selectHeaders = []) {
         return new Promise((resolve, reject) => {
             csv()
                 .on('error', err => {
@@ -15,10 +15,27 @@ class DataReader {
                 })
                 .fromString(this.fileContents.get(id))
                 .then(jsonObj => {
-                    this.jsonResults.set(id, jsonObj);
-                    resolve(jsonObj);
+                    if (selectHeaders.length > 0) {
+                        let temp = jsonObj.map(row => {
+                            let formatted = {};
+                            selectHeaders.forEach((header) => {
+                                formatted[header] = row[header];
+                            })
+                            return formatted
+                        })
+                        this.jsonResults.set(id, temp);
+                        resolve(temp);
+                    }
+                    else {
+                        this.jsonResults.set(id, jsonObj);
+                        resolve(jsonObj);
+                    }
                 });
         });
+    }
+
+    unsetFileContentByKey(key) {
+        this.fileContents.delete(key);
     }
 
     getHeaders(id) {
@@ -43,7 +60,7 @@ class DataReader {
         return new Promise((resolve, reject) => {
             let file = document.getElementById(id).files[0];
             console.log(file);
-            
+
             if (file.type !== 'text/csv' && file.type !== 'application/vnd.ms-excel')
                 throw `Cannot read file type ${file.type}. Can only read text/csv or application/vnd.ms-excel files.`;
             var reader = new FileReader();
@@ -53,8 +70,8 @@ class DataReader {
 
                 resolve(event.target.result);
             };
-            reader.onerror = () => {
-                reject();
+            reader.onerror = (err) => {
+                reject(err);
             };
 
             reader.readAsText(document.getElementById(id).files[0]);
