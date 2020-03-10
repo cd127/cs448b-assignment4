@@ -144,7 +144,7 @@
                     <button v-on:click="setSpeed(1)">
                         <i class="fa fa-play fa-2x" aria-hidden="true"></i>
                     </button>
-    
+
                     <button v-on:click="setSpeed(0)">
                         <i class="fa fa-pause fa-2x" aria-hidden="true"></i>
                     </button>
@@ -268,7 +268,18 @@
                             this.headers[index].push(header);
                             console.log('pushing ' + header + ' to index ' + index);
 
+                            <!-- Automatically match fields which are named as we expect -->
+                            if (this.requiredHeaders.find(d => d === header))
+                            {
+                                this.headerMappings[index][header] = header;
+                            }
+                            if (this.optionalHeaders.find(d => d === header))
+                            {
+                                this.headerMappingsOpt[index][header] = header;
+                            }
                         });
+                        this.headerMappings[index]['title'] = document.getElementById(id).files[0].name;
+                        this.checkMapping();
                     },
                     err => {
                         console.log(err);
