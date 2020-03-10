@@ -118,10 +118,27 @@ class Visualizer {
     }
 
     _moveTo(dataset) {
+        function _areBoundsTooWide(map, minLon, maxLon, minLat, maxLat) {
+            const lonDiff = maxLon - minLon;
+            const latDiff = maxLat - minLat;
+            const currBounds = map.getBounds();
+            const curLonDiff = currBounds._ne.lng - currBounds._sw.lng;
+            const curLatDiff = currBounds._ne.lat - currBounds._sw.lat;
+            return (latDiff < curLatDiff/2) && (lonDiff < curLonDiff/2);
+        }
+
         if (dataset.length === 0) return;
 
         let minLon, maxLon, minLat, maxLat;
         [minLon, maxLon, minLat, maxLat] = this._minMaxCoord(dataset);
+
+        // Determine most zoomed-in level
+        const zoom =
+            (dataset.length === 1) ?
+            5 :
+            _areBoundsTooWide(this.map, minLon, maxLon, minLat, maxLat) ?
+            100 :
+            this.map.getZoom();
 
         this.map.fitBounds(
             [[minLon, minLat],
@@ -130,7 +147,7 @@ class Visualizer {
                 padding: 50,
                 speed: this.panningSpeed,
                 curve: 0.7,
-                maxZoom: (dataset.length === 1) ? 5 : 100,
+                maxZoom: zoom,
                 linear: false,
                 easing(t) { return Math.sin(t * Math.PI / 2); },
                 essential: true
