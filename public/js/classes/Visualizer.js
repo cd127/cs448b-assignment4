@@ -434,7 +434,14 @@ class Visualizer {
 
                         // Make sure there is a duration. If not, assign default
                         if (typeof dataset[i].duration === 'undefined') {
-                            dataset[i].duration = defaultDurationMs;
+                            if (typeof dataset[i].dateEnd === 'undefined')
+                            {
+                                dataset[i].duration = defaultDurationMs;
+                            }
+                            else
+                            {
+                                dataset[i].duration = new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart);
+                            }
                         }
                     }
                     activeCoordinates.push(...geojsonData.features[0].geometry.coordinates);
