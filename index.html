@@ -262,9 +262,10 @@
 
                 dataReader.readFileAsString(id).then(
                     fileContent => {
-                        console.log('Headers : ' + dataReader.getHeaders(id));
+                        const headers = dataReader.getHeaders(id);
+                        console.log('Headers : ' + headers);
                         this.headers[index].length = 0;
-                        dataReader.getHeaders(id).forEach(header => {
+                        headers.forEach(header => {
                             this.headers[index].push(header);
                             console.log('pushing ' + header + ' to index ' + index);
 
@@ -331,7 +332,6 @@
                 let self = this;
                 let promises = [];
 
-
                 let startAnimation = function (jsonDataArray) {
                     let strToMs = function (dateStr) {
                         const date = new Date(dateStr);
@@ -364,35 +364,12 @@
                 }
 
                 for (let i = 0; i < this.numDataFields; i++) {
-                    let headers = this.headers[i];
-                    let headerMapping = this.headerMappings[i];
-                    let headerMappingOpt = this.headerMappingsOpt[i];
                     let id = `input-${i}`;
-                    for (var newHeader in headerMapping) {
-                        let oldHeader = headerMapping[newHeader];
-
-                        headers = headers.map(header => {
-                            if (header === oldHeader) return newHeader;
-                            return header;
-                        });
-                    }
-
-                    for (var newHeader in headerMappingOpt) {
-                        let oldHeader = headerMappingOpt[newHeader];
-
-                        headers = headers.map(header => {
-                            if (header === oldHeader) return newHeader;
-                            return header;
-                        });
-                    }
-
-                    dataReader.setHeaders(headers, id);
-                    promises.push(dataReader.getJSONFromFile(id, ['title', 'dateStart', 'latitude', 'longitude']));
+                    promises.push(dataReader.getJSONFromFile(id, {...this.headerMappings[i], ...this.headerMappingsOpt[i]}));
                 }
 
                 Promise.all(promises).then(async jsonResults => {
                     // Data has been fully parsed. Do something.
-                    console.log(dataReader.getJsonResults());
                     await visualizer.init();
                     let tempTitle = 0
 

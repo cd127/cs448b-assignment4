@@ -4,37 +4,43 @@
 class DataReader {
     constructor() {
         this.fileContents = new Map();
-        this.jsonResults = new Map();
+        this.fileType = new Map();
     }
 
-    async getJSONFromFile(id, selectHeaders = []) {
-        return new Promise((resolve, reject) => {
-            csv()
-                .on('error', err => {
-                    reject(err);
+    async getJSONFromFile(id, mappings) {
+
+        function mapFields(objArray, mappings) {
+            let newObjArray = [];
+            objArray.forEach(obj => {
+                let newObj = {};
+                const keys = Object.keys(mappings);
+                keys.forEach(key => {
+                    let mappedField = mappings[key];
+                    newObj[key] = obj[mappedField];
                 })
-                .fromString(this.fileContents.get(id))
-                .then(jsonObj => {
-                    if (selectHeaders.length > 0) {
-                        let temp = jsonObj.map(row => {
-                            let formatted = {};
-                            selectHeaders.forEach((header) => {
-                                formatted[header] = row[header];
-                            })
-                            return formatted
-                        })
-                        this.jsonResults.set(id, temp);
-                        resolve(temp);
-                    }
-                    else {
-                        this.jsonResults.set(id, jsonObj);
-                        resolve(jsonObj);
-                    }
-                });
+                newObjArray.push(newObj);
+            })
+            return newObjArray;
+        }
+
+        return new Promise((resolve, reject) => {
+            if (this.fileType.get(id) === 'csv') {
+                csv()
+                    .on('error', err => {
+                        reject(err);
+                    })
+                    .fromString(this.fileContents.get(id))
+                    .then(jsonObj => {
+                            resolve(mapFields(jsonObj, mappings));
+                    });
+            }
+            else if (this.fileType.get(id) === 'json') {
+                resolve(mapFields(JSON.parse(this.fileContents.get(id)), mappings));
+            }
         });
     }
 
-    getJSONFromURL(url = '/public/data/chicago-battery-aggravated.csv') {
+    getJSONFromURL(url) {
         return new Promise((resolve, reject) => {
             axios.get(url)
                 .then(function (response) {
@@ -54,33 +60,35 @@ class DataReader {
 
     unsetFileContentByKey(key) {
         this.fileContents.delete(key);
+        this.fileType.delete(key);
     }
 
     getHeaders(id) {
-        let firstLine = this.fileContents.get(id).split('\n')[0];
-        return firstLine.split(',');
-    }
-
-    setHeaders(newHeadersArray, id) {
-        console.log(`Setting headers under id ${id}.`);
-
-        let fileContent = this.fileContents.get(id);
-        fileContent = fileContent.substring(fileContent.indexOf('\n') + 1); // Remove first line.
-        let headersLength = this.getHeaders(id).length;
-
-        if (newHeadersArray.length !== headersLength)
-            throw `Received ${newHeadersArray.length} headers. Need ${headersLength} headers.`;
-
-        this.fileContents.set(id, newHeadersArray.join(',').concat('\n' + fileContent));
+        if (this.fileType.get(id) === 'csv') {
+            let firstLine = this.fileContents.get(id).split('\n')[0];
+            return firstLine.split(',');
+        }
+        else if (this.fileType.get(id) === 'json') {
+            let fields = [];
+            for (var a in JSON.parse(this.fileContents.get(id))[0]) fields.push(a.toString());
+            return fields;
+        }
+        return '';
     }
 
     readFileAsString(id) {
         return new Promise((resolve, reject) => {
             let file = document.getElementById(id).files[0];
-            console.log(file);
+            let type = file.type;
+            console.log('File: ' + file + '; type: ' + type);
 
-            if (file.type !== 'text/csv' && file.type !== 'application/vnd.ms-excel')
-                throw `Cannot read file type ${file.type}. Can only read text/csv or application/vnd.ms-excel files.`;
+            if ((type === 'text/csv') || (type === 'application/vnd.ms-excel'))
+                type = 'csv';
+            else if (type === 'application/json')
+                type = 'json';
+            else
+                throw `Cannot read file type ${file.type}. Can only read text/csv, application/json or application/vnd.ms-excel files.`;
+
             var reader = new FileReader();
             reader.onload = event => {
                 this.fileContents.set(id, event.target.result);
@@ -92,11 +100,8 @@ class DataReader {
                 reject(err);
             };
 
+            this.fileType.set(id, type);
             reader.readAsText(document.getElementById(id).files[0]);
         });
-    }
-
-    getJsonResults() {
-        return Array.from(this.jsonResults.values());
     }
 }
