@@ -346,11 +346,19 @@ class Visualizer {
         var displayedPopups = [];
         var eventIndices = [];
         var virtualTime = earliestDateMs;
-        this.store.set('startTime', earliestDateMs);
-        this.store.set('endTime', latestDateMs);
-        this.store.set('virualTime', virtualTime);
-        this.store.set('progress', `0%`);
 
+        {
+            const startDate = new Date(earliestDateMs);
+            const endDate = new Date(latestDateMs);
+            const isYear = ((startDate.getUTCMonth() === 0) && (startDate.getUTCDate() === 1) &&
+                            (endDate.getUTCMonth() === 0) && (endDate.getUTCDate() === 1));
+
+            this.store.set('startTime', earliestDateMs);
+            this.store.set('endTime', latestDateMs);
+            this.store.set('virualTime', virtualTime);
+            this.store.set('progress', `0%`);
+            this.store.set('isYearOnly', isYear);
+        }
 
 
         var timer = window.setInterval(() => {

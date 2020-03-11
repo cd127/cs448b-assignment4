@@ -128,13 +128,13 @@
                         v-bind:style="{ 'width': sharedState.progress }"></div>
                 </div>
                 <div>
-                    {{'Start time : ' + new Date(sharedState.startTime).toDateString() + ' ' + new Date(sharedState.startTime).toLocaleTimeString()}}
+                    {{'Start time : ' + getStartDate()}}
                 </div>
                 <div>
-                    {{'Current time : ' + new Date(sharedState.virtualTime).toDateString() + ' ' + new Date(sharedState.virtualTime).toLocaleTimeString()}}
+                    {{'Current time : ' + getCurrentDate()}}
                 </div>
                 <div>
-                    {{'End time : ' + new Date(sharedState.endTime).toDateString() + ' ' + new Date(sharedState.endTime).toLocaleTimeString()}}
+                    {{'End time : ' + getEndDate()}}
                 </div>
 
                 <div class="sidebar-controls-buttons" style="display: flex;">
@@ -237,6 +237,21 @@
             sharedState: store.state
         },
         methods: {
+            getStartDate: function() {
+                if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
+                if (this.sharedState.isYearOnly) return new Date(this.sharedState.startTime).toUTCFullYear();
+                return new Date(this.sharedState.startTime).toUTCString();
+            },
+            getCurrentDate: function() {
+                if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
+                if (this.sharedState.isYearOnly) return new Date(this.sharedState.virtualTime).getUTCFullYear();
+                return new Date(this.sharedState.virtualTime).toUTCString();
+            },
+            getEndDate: function() {
+                if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
+                if (this.sharedState.isYearOnly) return new Date(this.sharedState.endTime).getUTCFullYear();
+                return new Date(this.sharedState.endTime).toUTCString();
+            },
             clearDataAtLastIndex: function (index) {
                 this.headers[this.numDataFields - 1] = [];
                 this.headerMappings[this.numDataFields - 1] = {};
