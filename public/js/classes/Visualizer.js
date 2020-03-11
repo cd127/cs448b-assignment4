@@ -367,6 +367,7 @@ class Visualizer {
             if (speed === 0) return;
 
             // Remove old features
+            let allEventsRemoved = true;
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
                 const layerName = 'points_' + dataSetIdx;
                 let geojsonData = this.map.getSource(layerName)._data;
@@ -379,19 +380,23 @@ class Visualizer {
                 }));
 
                 if (this.removeOldEvents == true)
-                    for (let i = currentEventIndices.length - 1; i >= 0; --i) {
+                {
+                    for (let i = currentEventIndices.length - 1; i >= 0; --i)
+                    {
                         const eventIdx = currentEventIndices[i];
-                        if (this._strToMs(dataset[eventIdx].dateStart) + dataset[eventIdx].duration <= virtualTime) {
+                        if (this._strToMs(dataset[eventIdx].dateStart) + dataset[eventIdx].duration <= virtualTime)
+                        {
                             geojsonData.features[0].geometry.coordinates.splice(i, 1);
                             currentEventIndices.splice(i, 1);
-                            try {
-                                displayedPopups[i].remove();
-                                displayedPopups.splice(i, 1);
-                            } catch (err) {
-                                // Do nothing.
-                            }
+                            displayedPopups[i].remove();
+                            displayedPopups.splice(i, 1);
+                        }
+                        else
+                        {
+                            allEventsRemoved = false;
                         }
                     }
+                }
             }
 
             let activeCoordinates = [];
@@ -450,7 +455,7 @@ class Visualizer {
             this.store.set('virtualTime', virtualTime);
             this.store.set('progress', `${(virtualTime - earliestDateMs) / dateRangeMs * 100}%`);
 
-            if (allDataProcessed) {
+            if (allDataProcessed && allEventsRemoved) {
                 window.clearInterval(timer);
             }
         }, refreshIntervalMs);
