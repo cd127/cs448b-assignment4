@@ -348,7 +348,7 @@
                             numPoints: data.length,
                             dateRangeMs: [
                                 strToMs(data[0].dateStart),
-                                strToMs(Math.max(...data.map(d => d.dateEnd)))
+                                data[0].hasOwnProperty('dateEnd')? strToMs(Math.max(...data.map(d => d.dateEnd))) : strToMs(data[data.length - 1].dateStart)
                             ],
                             data: data
                         }
