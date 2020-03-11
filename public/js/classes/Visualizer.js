@@ -6,7 +6,6 @@ class Visualizer {
         this.removeOldEvents = true;   // Set to false to see all events stack up over time
         this.panningSpeed = 0.7;
         this.allData = [];
-        this.isLoadTestData = true;
         this.store = store;
         console.log(this.store);
 
@@ -153,35 +152,6 @@ class Visualizer {
                 essential: true
             }
         );
-    }
-
-    loadTestData() {
-        let xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                // dataset 1
-                let newData = JSON.parse(this.responseText);
-                newData.sort((a, b) =>
-                    (a.dateStart === b.dateStart) ? 0 :
-                        (new Date(a.dateStart) < new Date(b.dateStart)) ? -1 : 1);
-                const numPoints = newData.length;
-                const dateRangeMs = [this._strToMs(newData[0].dateStart), this._strToMs(newData[numPoints - 1].dateStart)];
-                let obj = {
-                    title: this.responseURL,
-                    numPoints: numPoints,
-                    dateRangeMs: dateRangeMs,
-                    data: newData
-                };
-                this.allData.push(obj);
-
-                if (this.allData.length === 1) {
-                    xmlhttp.open("GET", "public/data/chicago-battery-aggravated.json", true);
-                    xmlhttp.send();
-                }
-            }
-        };
-        xmlhttp.open("GET", "public/data/chicago-assault-aggravated.json", true);
-        xmlhttp.send();
     }
 
     init(container = 'map') {
