@@ -176,15 +176,6 @@
 
     <!-- Data loading View End -->
 
-    <!-- Radio buttons to toggle clearing functionality (temporary) -->
-    <!-- <div id="clearToggle">
-                <input id="removeOldEvents" type="radio" name="rtoggle" value="true" checked="checked" />
-                <label for="removeOldEvents">clear</label>
-                <input id="dontRemoveOldEvents" type="radio" name="rtoggle" value="false" />
-                <label for="dontRemoveOldEvents">stack</label>
-            </div> -->
-    <!-- Visualization view end-->
-
     <div id="map"></div>
 
     <div class="btn-group-vertical map-type-group" aria-label="...">
@@ -233,7 +224,7 @@
     var app = new Vue({
         el: '#app',
         data: {
-            requiredHeaders: ['title', 'dateStart', 'latitude', 'longitude'],
+            requiredHeaders: ['title', 'event', 'dateStart', 'latitude', 'longitude'],
             optionalHeaders: ['dateEnd', 'description', 'location'],
             numDataFields: 1,
             headers: [[], [], []],

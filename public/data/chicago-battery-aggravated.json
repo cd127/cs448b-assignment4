@@ -1,4214 +1,4214 @@
 [
   {
     "dateStart": "2019-12-01 00:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.803803248",
     "longitude": "-87.623723176",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-01 01:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.949390691",
     "longitude": "-87.658275881",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 01:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.883151383",
     "longitude": "-87.646847771",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 01:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.7510326",
     "longitude": "-87.550519266",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 02:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.742770434",
     "longitude": "-87.685559301",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 02:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.786161249",
     "longitude": "-87.647381107",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-01 03:27:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.702948121",
     "longitude": "-87.618527246",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-01 04:04:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.777330511",
     "longitude": "-87.64836611",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-01 04:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.88046703",
     "longitude": "-87.725661689",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 11:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.830954079",
     "longitude": "-87.630703226",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 12:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.870026489",
     "longitude": "-87.744889197",
     "description": "AGG PRO.EMP: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 12:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751842721",
     "longitude": "-87.651345416",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-01 12:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.882701856",
     "longitude": "-87.745360469",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 13:34:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.831871321",
     "longitude": "-87.620565847",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-01 13:58:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.759331691",
     "longitude": "-87.630810679",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-01 14:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.811703317",
     "longitude": "-87.66383556",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 15:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.799501989",
     "longitude": "-87.746602085",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-01 15:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.725636068",
     "longitude": "-87.643325309",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-01 15:23:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.788312511",
     "longitude": "-87.660797164",
     "description": "AGGRAVATED PO: OTHER DANG WEAP"
   },
   {
     "dateStart": "2019-12-01 16:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.885456468",
     "longitude": "-87.712397438",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 19:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.671747909",
     "longitude": "-87.640504432",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-01 20:32:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.808177007",
     "longitude": "-87.660094259",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-01 21:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.844227884",
     "longitude": "-87.726467148",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-01 21:34:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.855716085",
     "longitude": "-87.726083251",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-01 21:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.940513757",
     "longitude": "-87.757638995",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 00:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.946367964",
     "longitude": "-87.727914488",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 01:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.892843977",
     "longitude": "-87.634102151",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 04:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.870571484",
     "longitude": "-87.727782117",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-02 06:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.746870548",
     "longitude": "-87.652819862",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-02 07:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.893649131",
     "longitude": "-87.714125144",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 10:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.73678777",
     "longitude": "-87.545822951",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 11:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.761026834",
     "longitude": "-87.684811266",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-02 11:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.89613877",
     "longitude": "-87.616575359",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 14:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.763509356",
     "longitude": "-87.565333552",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-02 18:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.815042863",
     "longitude": "-87.667571867",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-02 18:48:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.99010923",
     "longitude": "-87.65502816",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-02 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.868103022",
     "longitude": "-87.716181735",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-02 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.860338817",
     "longitude": "-87.707934324",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-02 23:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.988198299",
     "longitude": "-87.655327998",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-03 07:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.905790347",
     "longitude": "-87.688329616",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-03 08:09:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779960201",
     "longitude": "-87.632099778",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-03 13:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.777234866",
     "longitude": "-87.69267335",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-03 15:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.754386686",
     "longitude": "-87.578489384",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-03 16:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.771664677",
     "longitude": "-87.670073519",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-03 16:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.854574579",
     "longitude": "-87.701181459",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-03 17:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.754386686",
     "longitude": "-87.578489384",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-03 18:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.735752519",
     "longitude": "-87.625429032",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-03 19:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.723269943",
     "longitude": "-87.609342009",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-03 19:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.762595746",
     "longitude": "-87.667395894",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-03 19:41:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.721272646",
     "longitude": "-87.658115693",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-03 20:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.790313083",
     "longitude": "-87.629192734",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-03 21:29:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.910822615",
     "longitude": "-87.749224538",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-03 22:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.8761036",
     "longitude": "-87.731379732",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-04 00:02:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.7477322",
     "longitude": "-87.596310995",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-04 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.729599799",
     "longitude": "-87.676258104",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-04 02:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "42.001032737",
     "longitude": "-87.665603433",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-04 04:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.772025189",
     "longitude": "-87.588723133",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-04 09:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.772804763",
     "longitude": "-87.571590438",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-04 10:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.702268109",
     "longitude": "-87.532867229",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-04 15:39:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.866182559",
     "longitude": "-87.724504682",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-04 15:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.680834251",
     "longitude": "-87.646879157",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-04 18:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.87725848",
     "longitude": "-87.712227112",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-04 18:37:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.955957011",
     "longitude": "-87.65029121",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-04 19:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.938650912",
     "longitude": "-87.7604785",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-04 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.755594018",
     "longitude": "-87.634421133",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDGUN"
   },
   {
     "dateStart": "2019-12-04 22:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.882332595",
     "longitude": "-87.758062408",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-04 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "42.020771125",
     "longitude": "-87.67072217",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 00:01:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.959335936",
     "longitude": "-87.711772629",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 05:56:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.872818055",
     "longitude": "-87.726038895",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-05 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.860094531",
     "longitude": "-87.707925692",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 10:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877045361",
     "longitude": "-87.728859301",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-05 11:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.953396801",
     "longitude": "-87.6614761",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-05 13:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.976290414",
     "longitude": "-87.905227221",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 15:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.784801626",
     "longitude": "-87.615737796",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-05 16:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749460005",
     "longitude": "-87.72089612",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 17:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.870826006",
     "longitude": "-87.716820096",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 18:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.717503762",
     "longitude": "-87.569852029",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-05 19:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.910045826",
     "longitude": "-87.773993124",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 20:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.905356829",
     "longitude": "-87.727648214",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-05 21:14:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877298067",
     "longitude": "-87.708899957",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-05 23:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.73994663",
     "longitude": "-87.557546064",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-05 23:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.69189982",
     "longitude": "-87.642367883",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-06 00:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.713205653",
     "longitude": "-87.630866349",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-06 02:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.735979638",
     "longitude": "-87.650256557",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-06 02:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.780850996",
     "longitude": "-87.649674221",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-06 04:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.839804007",
     "longitude": "-87.627964177",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-06 06:09:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.925398449",
     "longitude": "-87.652311296",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-06 07:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.882860137",
     "longitude": "-87.699786359",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-06 15:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749460005",
     "longitude": "-87.72089612",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-06 16:09:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.824933076",
     "longitude": "-87.623104662",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-06 17:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.725681875",
     "longitude": "-87.606248768",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-06 19:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.754531146",
     "longitude": "-87.563861017",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-06 20:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.893185487",
     "longitude": "-87.744408555",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-06 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.736906763",
     "longitude": "-87.55280491",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-06 21:58:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.732941739",
     "longitude": "-87.554091241",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-06 22:31:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.876745031",
     "longitude": "-87.748231424",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-06 22:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.852868298",
     "longitude": "-87.63091491",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-06 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.837981108",
     "longitude": "-87.651015101",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-07 00:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.737745197",
     "longitude": "-87.732457352",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-07 01:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.752637379",
     "longitude": "-87.583336432",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-07 01:43:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768284432",
     "longitude": "-87.686567364",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-07 02:43:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.700696478",
     "longitude": "-87.619643417",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-07 08:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.870869918",
     "longitude": "-87.71376126",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-07 12:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.94579058",
     "longitude": "-87.774798251",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-07 12:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.775595332",
     "longitude": "-87.685122786",
     "description": "AGGRAVATED OF A UNBORN CHILD"
   },
   {
     "dateStart": "2019-12-07 12:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.923571065",
     "longitude": "-87.798531515",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-07 12:41:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.904894462",
     "longitude": "-87.762198339",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-07 12:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.804951438",
     "longitude": "-87.666502657",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-07 19:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751138793",
     "longitude": "-87.627041062",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-07 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779992175",
     "longitude": "-87.602878472",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-07 20:48:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881441785",
     "longitude": "-87.667837814",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-07 22:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.765876047",
     "longitude": "-87.669916875",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-07 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.858954496",
     "longitude": "-87.716846036",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-07 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.839974557",
     "longitude": "-87.728081682",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-07 23:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.917442948",
     "longitude": "-87.752173372",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-07 23:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.714672162",
     "longitude": "-87.565812675",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-08 00:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.857973388",
     "longitude": "-87.655244319",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-08 00:44:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881942452",
     "longitude": "-87.734354498",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-08 01:11:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.78679197",
     "longitude": "-87.661231067",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-08 02:22:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.725998907",
     "longitude": "-87.659143219",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-08 02:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.798977312",
     "longitude": "-87.591770586",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-08 03:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749781665",
     "longitude": "-87.707758931",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-08 08:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.702631618",
     "longitude": "-87.624583988",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-08 09:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.885684568",
     "longitude": "-87.749607814",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-08 09:31:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.911958251",
     "longitude": "-87.772804446",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-08 10:02:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.78151751",
     "longitude": "-87.613233561",
     "description": "AGGRAVATED PO: OTHER DANG WEAP"
   },
   {
     "dateStart": "2019-12-08 11:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.858418256",
     "longitude": "-87.717662445",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-08 14:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.860190685",
     "longitude": "-87.714022211",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-08 19:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.898204762",
     "longitude": "-87.724942587",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-08 20:02:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.893327862",
     "longitude": "-87.602514088",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-08 21:04:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.87604254",
     "longitude": "-87.736506226",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-08 23:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.910760073",
     "longitude": "-87.71170038",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-08 23:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.908351299",
     "longitude": "-87.735073875",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-08 23:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.843793935",
     "longitude": "-87.713552786",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-09 02:09:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.79576307",
     "longitude": "-87.631857862",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-09 02:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.794421528",
     "longitude": "-87.730549411",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-09 04:33:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.874060099",
     "longitude": "-87.705924314",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-09 07:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.898013081",
     "longitude": "-87.718836006",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-09 09:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.722367069",
     "longitude": "-87.643239402",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-09 10:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.897762321",
     "longitude": "-87.71150689",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-09 10:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.700901247",
     "longitude": "-87.63420442",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-09 13:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.976851852",
     "longitude": "-87.654999693",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-09 16:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.793141605",
     "longitude": "-87.684021912",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-09 18:02:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.864960415",
     "longitude": "-87.692550901",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-09 18:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.781811321",
     "longitude": "-87.594674264",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-09 19:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779053457",
     "longitude": "-87.661766501",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-09 20:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.883150785",
     "longitude": "-87.743534907",
     "description": "AGG PO HANDS ETC SERIOUS INJ"
   },
   {
     "dateStart": "2019-12-09 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.902820105",
     "longitude": "-87.707997479",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-10 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.899946801",
     "longitude": "-87.745918577",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-10 01:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.959902424",
     "longitude": "-87.71555042",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-10 03:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.798450454",
     "longitude": "-87.616858141",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-10 04:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.800563202",
     "longitude": "-87.68420739",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-10 08:12:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.752612652",
     "longitude": "-87.554054927",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-10 08:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.756430631",
     "longitude": "-87.561470724",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-10 10:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.960869509",
     "longitude": "-87.734932149",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-10 10:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.765043168",
     "longitude": "-87.601882428",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-10 11:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.997806756",
     "longitude": "-87.685444093",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-10 13:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880362084",
     "longitude": "-87.755847438",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-10 14:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.879754157",
     "longitude": "-87.72630004",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-10 15:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.955472204",
     "longitude": "-87.728232736",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-10 17:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.876388206",
     "longitude": "-87.664758134",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-10 18:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877904298",
     "longitude": "-87.731469321",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-10 19:09:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.746579366",
     "longitude": "-87.613591142",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-10 19:37:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.748838927",
     "longitude": "-87.612437207",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-10 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.686200942",
     "longitude": "-87.653133746",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-10 20:01:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.77080457",
     "longitude": "-87.585012754",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-10 20:09:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.88537469",
     "longitude": "-87.743742141",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-10 21:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.656819066",
     "longitude": "-87.551983256",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-10 21:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.929572807",
     "longitude": "-87.757693282",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-10 22:13:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.836085835",
     "longitude": "-87.611668085",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-11 00:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.752660991",
     "longitude": "-87.584431935",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-11 00:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.780318644",
     "longitude": "-87.611109471",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-11 01:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.896442307",
     "longitude": "-87.655722728",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-11 02:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.80062644",
     "longitude": "-87.590467932",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-11 04:48:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.741271259",
     "longitude": "-87.617886196",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-11 05:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.875650904",
     "longitude": "-87.763127054",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-11 10:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.899141429",
     "longitude": "-87.769191932",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-11 16:06:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.73595005",
     "longitude": "-87.620978934",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-11 16:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.733644599",
     "longitude": "-87.604748435",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-11 16:36:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.862208339",
     "longitude": "-87.705544596",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-11 18:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.713016032",
     "longitude": "-87.605252472",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-11 20:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.931432125",
     "longitude": "-87.708625824",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-11 21:43:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779012821",
     "longitude": "-87.664208692",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-11 22:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.732771785",
     "longitude": "-87.604728989",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-11 23:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.774096904",
     "longitude": "-87.598491139",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 00:04:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.680871857",
     "longitude": "-87.629951505",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-12 00:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.767828409",
     "longitude": "-87.666326388",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 01:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.765286035",
     "longitude": "-87.577086035",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-12 08:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.706857405",
     "longitude": "-87.64941498",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-12 09:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.790423758",
     "longitude": "-87.619114707",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-12 09:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.782447056",
     "longitude": "-87.660642136",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-12 09:17:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.864960382",
     "longitude": "-87.7105032",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-12 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "42.006858983",
     "longitude": "-87.680933324",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-12 09:37:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.876223867",
     "longitude": "-87.721938217",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 12:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.784895894",
     "longitude": "-87.618974395",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 12:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.864688766",
     "longitude": "-87.652493383",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 16:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.754712406",
     "longitude": "-87.562653092",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-12 16:32:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.940986344",
     "longitude": "-87.651509576",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-12 17:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.878426981",
     "longitude": "-87.758501358",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 18:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.84643119",
     "longitude": "-87.737937626",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-12 18:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.756430631",
     "longitude": "-87.561470724",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 20:13:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.745266022",
     "longitude": "-87.605067779",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 21:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.783556652",
     "longitude": "-87.608455202",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 21:36:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751937895",
     "longitude": "-87.550874743",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-12 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.759912505",
     "longitude": "-87.633798834",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 00:26:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.889976288",
     "longitude": "-87.634559455",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-13 02:31:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.767737033",
     "longitude": "-87.655403625",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 02:46:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.743445022",
     "longitude": "-87.60137277",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-13 07:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.866491697",
     "longitude": "-87.771707554",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-13 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.691784434",
     "longitude": "-87.646008507",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.77676407",
     "longitude": "-87.606643613",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-13 13:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.759457709",
     "longitude": "-87.558227405",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-13 15:34:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.9646299",
     "longitude": "-87.656982534",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-13 15:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.851884217",
     "longitude": "-87.62706801",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-13 16:58:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.867234401",
     "longitude": "-87.641301791",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 17:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.94044868",
     "longitude": "-87.651081589",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 17:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.798550042",
     "longitude": "-87.645268593",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-13 17:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.879086132",
     "longitude": "-87.686376648",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-13 18:44:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.867428687",
     "longitude": "-87.626342565",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 20:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.698662743",
     "longitude": "-87.628058624",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-13 21:21:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.9062914",
     "longitude": "-87.769441245",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-13 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "42.019811963",
     "longitude": "-87.666209262",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-13 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.968341567",
     "longitude": "-87.718748913",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 22:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.850548794",
     "longitude": "-87.734474956",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 22:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.909087598",
     "longitude": "-87.728946521",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-13 23:13:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.773161684",
     "longitude": "-87.66039823",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 23:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768871204",
     "longitude": "-87.573928057",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-13 23:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.791782929",
     "longitude": "-87.659671776",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-13 23:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.807070559",
     "longitude": "-87.643816631",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-13 23:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.794437143",
     "longitude": "-87.61843206",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-14 00:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.887478081",
     "longitude": "-87.624553383",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-14 01:57:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880628274",
     "longitude": "-87.733889395",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-14 03:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.991404284",
     "longitude": "-87.656853651",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 03:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751798395",
     "longitude": "-87.561082787",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-14 03:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.788469528",
     "longitude": "-87.657158003",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 03:48:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.678592103",
     "longitude": "-87.671198456",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-14 03:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.848574951",
     "longitude": "-87.675647608",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-14 06:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.882004688",
     "longitude": "-87.728948432",
     "description": "AGG PRO.EMP: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 07:06:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.878582195",
     "longitude": "-87.746327253",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 10:13:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.750353574",
     "longitude": "-87.622978208",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-14 13:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.884826024",
     "longitude": "-87.763346613",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 16:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.892753031",
     "longitude": "-87.624193896",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 19:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768202542",
     "longitude": "-87.656626733",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 19:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751007325",
     "longitude": "-87.581665974",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 19:33:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.890819354",
     "longitude": "-87.712514447",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-14 19:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.883778241",
     "longitude": "-87.626235794",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-14 20:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.747633476",
     "longitude": "-87.662152692",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-14 20:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.769449202",
     "longitude": "-87.659088027",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 20:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.935388772",
     "longitude": "-87.731127611",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-14 20:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.745083371",
     "longitude": "-87.601372483",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-14 20:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.895387325",
     "longitude": "-87.724076795",
     "description": "AGG PO HANDS ETC SERIOUS INJ"
   },
   {
     "dateStart": "2019-12-14 20:58:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.885375737",
     "longitude": "-87.723966269",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-14 21:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.90984267",
     "longitude": "-87.729545576",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 21:57:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751332503",
     "longitude": "-87.60099732",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-14 22:17:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.887919288",
     "longitude": "-87.628019052",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-14 22:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.781313042",
     "longitude": "-87.705626659",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-14 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.819668766",
     "longitude": "-87.619875742",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-15 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.860252152",
     "longitude": "-87.715244047",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-15 01:27:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.781713193",
     "longitude": "-87.63877565",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-15 02:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.907176814",
     "longitude": "-87.675380762",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-15 04:58:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.793482429",
     "longitude": "-87.642704458",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-15 07:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.844023772",
     "longitude": "-87.626923253",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-15 07:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.78169509",
     "longitude": "-87.609612773",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-15 08:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.900211095",
     "longitude": "-87.695166576",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-15 11:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.773381572",
     "longitude": "-87.582086669",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-15 11:44:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.682950034",
     "longitude": "-87.639095654",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-15 12:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.865389918",
     "longitude": "-87.721490761",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-15 13:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.84660387",
     "longitude": "-87.729487272",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-15 14:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.868043561",
     "longitude": "-87.720966147",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-15 18:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.864098244",
     "longitude": "-87.713973489",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-15 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.771068348",
     "longitude": "-87.583799955",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-15 22:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.75092872",
     "longitude": "-87.575964601",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-15 23:02:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768210402",
     "longitude": "-87.690981615",
     "description": "AGG PRO EMP HANDS SERIOUS INJ"
   },
   {
     "dateStart": "2019-12-16 03:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.782192322",
     "longitude": "-87.673979853",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-16 08:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.873668176",
     "longitude": "-87.686233016",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-16 08:52:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.711588863",
     "longitude": "-87.627221473",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-16 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881736378",
     "longitude": "-87.751384368",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-16 11:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.789957607",
     "longitude": "-87.65355243",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-16 12:32:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.939211601",
     "longitude": "-87.717698178",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-16 14:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.903892302",
     "longitude": "-87.631858359",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-16 16:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.902937339",
     "longitude": "-87.695385547",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-16 16:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.722730741",
     "longitude": "-87.5851459",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-16 18:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.972400231",
     "longitude": "-87.656304596",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-16 20:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.913372967",
     "longitude": "-87.786764312",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-16 21:13:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.780439401",
     "longitude": "-87.603727666",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-17 00:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.778864596",
     "longitude": "-87.6642029",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-17 01:43:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.87273456",
     "longitude": "-87.726337091",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-17 02:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.756355693",
     "longitude": "-87.626591708",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-17 04:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768931976",
     "longitude": "-87.569847378",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-17 05:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.69600103",
     "longitude": "-87.623203137",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-17 07:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.755367287",
     "longitude": "-87.565782465",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-17 08:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.868699038",
     "longitude": "-87.625858624",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-17 08:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.762059382",
     "longitude": "-87.567652678",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-17 10:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.775780991",
     "longitude": "-87.608282472",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-17 17:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779798546",
     "longitude": "-87.641648739",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-17 17:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.786540884",
     "longitude": "-87.617397769",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-17 18:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881948328",
     "longitude": "-87.733902763",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-17 19:11:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.775315572",
     "longitude": "-87.635493861",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-17 19:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881859969",
     "longitude": "-87.723893182",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-17 22:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.878507287",
     "longitude": "-87.7255958",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-17 23:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.776644021",
     "longitude": "-87.675052219",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 00:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.753676598",
     "longitude": "-87.556361916",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.961184538",
     "longitude": "-87.708555894",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-18 01:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.828762287",
     "longitude": "-87.614436164",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-18 02:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.671772549",
     "longitude": "-87.64414609",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-18 04:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.939300539",
     "longitude": "-87.711794487",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 07:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.794086439",
     "longitude": "-87.637292559",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 07:26:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.683408048",
     "longitude": "-87.630469356",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 08:19:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.758328049",
     "longitude": "-87.556342462",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 08:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.792184007",
     "longitude": "-87.62239919",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 09:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.86556594",
     "longitude": "-87.719506601",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.871025414",
     "longitude": "-87.699510379",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 14:34:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.74974473",
     "longitude": "-87.652507329",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 14:56:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.968477696",
     "longitude": "-87.650102313",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 15:02:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.879777056",
     "longitude": "-87.724405032",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 16:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.910592489",
     "longitude": "-87.731235825",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 19:14:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.78043924",
     "longitude": "-87.791102744",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 20:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.781803054",
     "longitude": "-87.693467503",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-18 21:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.698182157",
     "longitude": "-87.614277507",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-18 21:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.79753089",
     "longitude": "-87.642811354",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-18 23:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880910746",
     "longitude": "-87.711659284",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-19 07:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.781338476",
     "longitude": "-87.661130362",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-19 08:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.885487535",
     "longitude": "-87.726422045",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-19 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.933979242",
     "longitude": "-87.7736297",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-19 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.792143401",
     "longitude": "-87.792210582",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-19 10:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768594743",
     "longitude": "-87.614125907",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-19 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.747514446",
     "longitude": "-87.575909455",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-19 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.921233676",
     "longitude": "-87.711999248",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.744186314",
     "longitude": "-87.58649817",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-19 16:12:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.89145979",
     "longitude": "-87.667153542",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 16:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.752427329",
     "longitude": "-87.603993674",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 16:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880419254",
     "longitude": "-87.751407336",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 17:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.806289611",
     "longitude": "-87.664907928",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 19:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880985865",
     "longitude": "-87.768150863",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 19:32:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.690547081",
     "longitude": "-87.623047109",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 20:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.745762194",
     "longitude": "-87.562496304",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-19 20:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.783699643",
     "longitude": "-87.693518311",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-19 21:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.888662774",
     "longitude": "-87.748666228",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-19 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.746032297",
     "longitude": "-87.657259021",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-19 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.785969044",
     "longitude": "-87.674080493",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-19 22:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.767867999",
     "longitude": "-87.713580315",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-19 23:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.713193051",
     "longitude": "-87.633748929",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-20 00:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.860911204",
     "longitude": "-87.695744714",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-20 00:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.753974914",
     "longitude": "-87.550179329",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-20 00:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.786788667",
     "longitude": "-87.629069964",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-20 12:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.794061805",
     "longitude": "-87.662676999",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-20 13:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.86694623",
     "longitude": "-87.659760705",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-20 15:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.839107557",
     "longitude": "-87.643880161",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-20 15:23:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.904577301",
     "longitude": "-87.773019624",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-20 16:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.954324992",
     "longitude": "-87.666293397",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-20 16:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.868541914",
     "longitude": "-87.639235361",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-20 17:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.714462956",
     "longitude": "-87.604924818",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-20 19:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.693761256",
     "longitude": "-87.618270148",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-20 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.761992504",
     "longitude": "-87.681843606",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-20 21:59:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.765356327",
     "longitude": "-87.673547448",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-20 23:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.884807085",
     "longitude": "-87.745436648",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 00:01:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.924464212",
     "longitude": "-87.728555219",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-21 00:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.861884977",
     "longitude": "-87.721392018",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-21 00:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.865936425",
     "longitude": "-87.686020959",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.799176734",
     "longitude": "-87.589083706",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 02:17:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.886530422",
     "longitude": "-87.744355834",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 02:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.808833439",
     "longitude": "-87.622824022",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-21 03:39:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.70894041",
     "longitude": "-87.627638663",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 03:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.946464013",
     "longitude": "-87.720672053",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 03:42:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.918669066",
     "longitude": "-87.648528511",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 04:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877503273",
     "longitude": "-87.690387687",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 04:22:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.863471659",
     "longitude": "-87.651794095",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 06:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.991287074",
     "longitude": "-87.688460353",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 10:14:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.858832381",
     "longitude": "-87.705449136",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-21 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.771970728",
     "longitude": "-87.62347293",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-21 11:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.757221911",
     "longitude": "-87.645420683",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-21 11:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.965249692",
     "longitude": "-87.668187079",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 12:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751500337",
     "longitude": "-87.585302977",
     "description": "AGG PRO.EMP: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 13:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881183664",
     "longitude": "-87.685081252",
     "description": "AGG PRO EMP HANDS SERIOUS INJ"
   },
   {
     "dateStart": "2019-12-21 15:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.85982778",
     "longitude": "-87.716448529",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-21 15:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.778086056",
     "longitude": "-87.700679337",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 18:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.80269215",
     "longitude": "-87.616264407",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.772027099",
     "longitude": "-87.591138947",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-21 20:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.918669066",
     "longitude": "-87.648528511",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-21 21:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.780873262",
     "longitude": "-87.661824508",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 21:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.755001913",
     "longitude": "-87.651429251",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-21 22:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.77661147",
     "longitude": "-87.615106869",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-21 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.891678767",
     "longitude": "-87.627551654",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-22 00:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "42.019439266",
     "longitude": "-87.679652874",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 00:34:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.789864285",
     "longitude": "-87.653549749",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 01:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.903931469",
     "longitude": "-87.629290187",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 01:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.903804161",
     "longitude": "-87.728797986",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 03:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.81641591",
     "longitude": "-87.601844755",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-22 04:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.763473561",
     "longitude": "-87.565315651",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-22 04:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.915720756",
     "longitude": "-87.685720202",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 05:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.923674171",
     "longitude": "-87.786051721",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 06:08:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.885058858",
     "longitude": "-87.725794453",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 06:59:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.731190387",
     "longitude": "-87.603757691",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-22 07:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.810729022",
     "longitude": "-87.601726053",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-22 09:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877182016",
     "longitude": "-87.764751125",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-22 10:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.750464158",
     "longitude": "-87.599097888",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.973390057",
     "longitude": "-87.689063829",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-22 12:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.968368626",
     "longitude": "-87.716630608",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 14:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.939216164",
     "longitude": "-87.746877814",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 15:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.927201572",
     "longitude": "-87.719504068",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-22 17:58:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.736530018",
     "longitude": "-87.54866195",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 18:51:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.785980841",
     "longitude": "-87.64980306",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 19:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749339329",
     "longitude": "-87.612149433",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-22 21:01:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.766103943",
     "longitude": "-87.573359538",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 21:41:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.868718247",
     "longitude": "-87.625858412",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-22 21:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.752467457",
     "longitude": "-87.582110703",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-22 23:11:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.90136194",
     "longitude": "-87.627797666",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 00:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880238942",
     "longitude": "-87.76527117",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-23 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.861335178",
     "longitude": "-87.625690175",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-23 01:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.748869437",
     "longitude": "-87.552843245",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-23 01:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.727200013",
     "longitude": "-87.587914835",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-23 05:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.999031539",
     "longitude": "-87.807457997",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-23 07:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.718982555",
     "longitude": "-87.632231969",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 07:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.74799231",
     "longitude": "-87.665806177",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 09:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.767471614",
     "longitude": "-87.571440924",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 09:52:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.762889759",
     "longitude": "-87.645565408",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 10:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.777139254",
     "longitude": "-87.762501038",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-23 11:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.696314236",
     "longitude": "-87.617509547",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-23 11:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749584853",
     "longitude": "-87.670692969",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 11:46:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768326322",
     "longitude": "-87.683777338",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 12:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.776780252",
     "longitude": "-87.693334123",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 12:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.882144043",
     "longitude": "-87.682152139",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-23 12:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.914233208",
     "longitude": "-87.715061501",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 12:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.771681971",
     "longitude": "-87.571119825",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-23 12:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.900505589",
     "longitude": "-87.699285044",
     "description": "AGG PRO EMP HANDS SERIOUS INJ"
   },
   {
     "dateStart": "2019-12-23 17:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.726591198",
     "longitude": "-87.606399702",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 18:39:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.774641969",
     "longitude": "-87.69571633",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 19:29:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.932875476",
     "longitude": "-87.782588278",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 19:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.907363434",
     "longitude": "-87.708294792",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-23 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.784436581",
     "longitude": "-87.648550811",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-23 20:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.817483716",
     "longitude": "-87.686512793",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-23 23:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.90895353",
     "longitude": "-87.692085406",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-24 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.77676407",
     "longitude": "-87.606643613",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 01:22:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.684232396",
     "longitude": "-87.646070582",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 04:48:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.722697263",
     "longitude": "-87.62222793",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-24 08:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.923561044",
     "longitude": "-87.799916919",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 08:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.896101223",
     "longitude": "-87.665423071",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 09:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.794424835",
     "longitude": "-87.582519409",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 13:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.860645621",
     "longitude": "-87.728323635",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-24 16:12:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.778785401",
     "longitude": "-87.684848686",
     "description": "AGGRAVATED PO: OTHER DANG WEAP"
   },
   {
     "dateStart": "2019-12-24 17:56:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.881183104",
     "longitude": "-87.68498211",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 18:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.891598468",
     "longitude": "-87.760517149",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-24 18:19:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.691875818",
     "longitude": "-87.611671292",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-24 18:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.662574446",
     "longitude": "-87.643845274",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-24 18:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.878882787",
     "longitude": "-87.724472274",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-24 18:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.976931659",
     "longitude": "-87.680117187",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-24 19:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.870493737",
     "longitude": "-87.730217085",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.863330777",
     "longitude": "-87.727523713",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-24 21:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.73868471",
     "longitude": "-87.674077009",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-24 21:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.894159014",
     "longitude": "-87.708956122",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-24 21:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.947232161",
     "longitude": "-87.705391149",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-24 22:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.696579759",
     "longitude": "-87.540081588",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-24 22:33:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.787452268",
     "longitude": "-87.620090056",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 22:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.744274934",
     "longitude": "-87.645071545",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-24 22:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.904627359",
     "longitude": "-87.710301495",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-24 23:17:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.702712085",
     "longitude": "-87.623392962",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-24 23:22:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.907379245",
     "longitude": "-87.69569767",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-24 23:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.870833492",
     "longitude": "-87.716170158",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-24 23:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.871648038",
     "longitude": "-87.723784586",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-24 23:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779319624",
     "longitude": "-87.673602318",
     "description": "AGG PRO.EMP: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 01:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.813293011",
     "longitude": "-87.666324435",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-25 01:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.837812441",
     "longitude": "-87.721933329",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 01:37:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.828960051",
     "longitude": "-87.692348667",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-25 01:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.884916598",
     "longitude": "-87.76334948",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-25 01:57:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.84162652",
     "longitude": "-87.720818073",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-25 02:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.83149316",
     "longitude": "-87.680196318",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-25 03:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.730276993",
     "longitude": "-87.603830307",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 03:14:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.880487595",
     "longitude": "-87.745964635",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-25 03:42:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.847368095",
     "longitude": "-87.702669116",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-25 08:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.696343478",
     "longitude": "-87.615597861",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 09:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.773972137",
     "longitude": "-87.667142585",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 10:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.744997768",
     "longitude": "-87.602582699",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-25 11:19:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.852731587",
     "longitude": "-87.701390474",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 11:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.74587795",
     "longitude": "-87.685242239",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-25 12:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.89499875",
     "longitude": "-87.746419366",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 13:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.867029173",
     "longitude": "-87.65473744",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-25 13:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.784278913",
     "longitude": "-87.683777679",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 14:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.83689598",
     "longitude": "-87.723505312",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 17:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.856688363",
     "longitude": "-87.694366079",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 18:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.86187256",
     "longitude": "-87.716505967",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-25 19:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.849546197",
     "longitude": "-87.701517256",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-25 21:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.931390046",
     "longitude": "-87.757257989",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-25 21:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.883728726",
     "longitude": "-87.726989536",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-25 23:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877353099",
     "longitude": "-87.702899477",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 00:26:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.865192653",
     "longitude": "-87.659760756",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.865192352",
     "longitude": "-87.659709362",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 02:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.76312381",
     "longitude": "-87.661467128",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-26 02:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.695447959",
     "longitude": "-87.530040867",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-26 07:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.852004263",
     "longitude": "-87.688536253",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 08:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.721394792",
     "longitude": "-87.648612493",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 11:42:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.904442908",
     "longitude": "-87.661993264",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 13:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.941494269",
     "longitude": "-87.724806915",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-26 14:29:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.734863386",
     "longitude": "-87.561095172",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-26 15:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.65002461",
     "longitude": "-87.545629218",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 17:04:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.780760731",
     "longitude": "-87.661822015",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-26 17:44:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.876720197",
     "longitude": "-87.701088107",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-26 18:57:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.76501006",
     "longitude": "-87.656946192",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-26 20:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.75672972",
     "longitude": "-87.562691263",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-26 20:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749904766",
     "longitude": "-87.624514982",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-26 20:52:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.78424334",
     "longitude": "-87.667971257",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-26 21:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.733248943",
     "longitude": "-87.587141468",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-26 22:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.893534589",
     "longitude": "-87.628115208",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-26 23:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.772303877",
     "longitude": "-87.621874577",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-27 00:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.883578698",
     "longitude": "-87.709734846",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-27 00:32:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.774934868",
     "longitude": "-87.703041938",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-27 00:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.72802938",
     "longitude": "-87.662840357",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-27 02:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.981909781",
     "longitude": "-87.806708844",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-27 02:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.693138663",
     "longitude": "-87.653141209",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-27 04:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.679106927",
     "longitude": "-87.62632107",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-27 11:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.954024244",
     "longitude": "-87.68760823",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-27 12:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.931096211",
     "longitude": "-87.778957962",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-27 14:39:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768105576",
     "longitude": "-87.620179762",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-27 15:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.872738311",
     "longitude": "-87.7096236",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-27 17:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.770551418",
     "longitude": "-87.56989416",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-27 17:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.878232554",
     "longitude": "-87.686355881",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-27 18:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.75944789",
     "longitude": "-87.586156305",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-27 21:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.87528403",
     "longitude": "-87.724275108",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-27 21:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.745693859",
     "longitude": "-87.555208608",
     "description": "AGGRAVATED PO: OTHER DANG WEAP"
   },
   {
     "dateStart": "2019-12-27 21:13:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.904786279",
     "longitude": "-87.69329161",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-27 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.846421297",
     "longitude": "-87.633040727",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-27 23:21:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.752694639",
     "longitude": "-87.601579201",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-27 23:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.876163244",
     "longitude": "-87.715737008",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 04:03:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.876705244",
     "longitude": "-87.751202356",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 04:53:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.705302598",
     "longitude": "-87.626488255",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 08:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.771684277",
     "longitude": "-87.571053811",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-28 10:16:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.874060099",
     "longitude": "-87.705924314",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-28 15:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877235445",
     "longitude": "-87.714059628",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-28 15:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.873761911",
     "longitude": "-87.699597167",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 16:43:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.871727721",
     "longitude": "-87.718654582",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-28 17:23:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.850830503",
     "longitude": "-87.729575987",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 19:06:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.753479344",
     "longitude": "-87.668373369",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 19:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.647923751",
     "longitude": "-87.61626361",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-28 19:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.763647371",
     "longitude": "-87.586265199",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-28 19:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.985421498",
     "longitude": "-87.829756604",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-28 20:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.736819983",
     "longitude": "-87.565175308",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-28 20:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.707095328",
     "longitude": "-87.628834415",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-28 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.721672662",
     "longitude": "-87.627858348",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-28 22:14:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.879277478",
     "longitude": "-87.762859804",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 00:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.758697737",
     "longitude": "-87.59364192",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 01:07:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.952044367",
     "longitude": "-87.646252386",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 01:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.896163599",
     "longitude": "-87.748285612",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-29 02:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.669692141",
     "longitude": "-87.63682977",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 02:26:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768020578",
     "longitude": "-87.572284866",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-29 02:28:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.903708614",
     "longitude": "-87.631437924",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-29 03:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.765316099",
     "longitude": "-87.611625977",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-29 04:37:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.846464599",
     "longitude": "-87.694115485",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-29 04:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.892915345",
     "longitude": "-87.634105046",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-29 05:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.892628411",
     "longitude": "-87.63115524",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-29 09:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.888119752",
     "longitude": "-87.765135251",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 15:43:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.889497462",
     "longitude": "-87.618294943",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-29 16:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.749818843",
     "longitude": "-87.65251021",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 17:36:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.906876843",
     "longitude": "-87.720352713",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 17:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.734790661",
     "longitude": "-87.559667164",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-29 17:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.933785955",
     "longitude": "-87.653897951",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-29 18:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.908430535",
     "longitude": "-87.638509526",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 18:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.751317167",
     "longitude": "-87.563800456",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 18:04:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.798539069",
     "longitude": "-87.685383058",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 18:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.805040255",
     "longitude": "-87.659151464",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-29 19:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.875508384",
     "longitude": "-87.656975687",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.774210511",
     "longitude": "-87.590552872",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-29 20:05:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.754210106",
     "longitude": "-87.607733678",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 20:50:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.780855651",
     "longitude": "-87.663038277",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-29 21:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.891988337",
     "longitude": "-87.756716013",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-29 23:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877104077",
     "longitude": "-87.724390016",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-29 23:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.7690002",
     "longitude": "-87.573930201",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-30 01:35:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.895015707",
     "longitude": "-87.675615785",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-30 04:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.837732058",
     "longitude": "-87.71460943",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-30 09:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.657585695",
     "longitude": "-87.595736902",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-30 13:22:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.891844275",
     "longitude": "-87.754263898",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-30 14:24:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.942257928",
     "longitude": "-87.669951491",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-30 17:15:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.745998473",
     "longitude": "-87.550360557",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-30 17:57:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.937718335",
     "longitude": "-87.64056599",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-30 17:59:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.896975411",
     "longitude": "-87.760711524",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-30 19:29:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.768965054",
     "longitude": "-87.568219399",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-30 20:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.75350644",
     "longitude": "-87.665946948",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-30 20:49:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877258758",
     "longitude": "-87.712278516",
     "description": "AGGRAVATED DOMESTIC BATTERY: KNIFE/CUTTING INST"
   },
   {
     "dateStart": "2019-12-30 21:37:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.750066278",
     "longitude": "-87.554913938",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-30 21:55:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.874751986",
     "longitude": "-87.762815598",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-30 22:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.888309133",
     "longitude": "-87.765140918",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-30 22:40:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.898175559",
     "longitude": "-87.620192647",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-31 00:38:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.86982616",
     "longitude": "-87.723842281",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 01:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877111878",
     "longitude": "-87.723791419",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 01:04:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.680423484",
     "longitude": "-87.645649862",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-31 02:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.782971547",
     "longitude": "-87.614478581",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-31 09:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.909145183",
     "longitude": "-87.785264745",
     "description": "AGGRAVATED OF A SENIOR CITIZEN"
   },
   {
     "dateStart": "2019-12-31 09:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.818335171",
     "longitude": "-87.684695624",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 09:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.831122218",
     "longitude": "-87.62590563",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 09:47:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.686367139",
     "longitude": "-87.633732093",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 12:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.877809197",
     "longitude": "-87.761734553",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-31 14:01:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.726590874",
     "longitude": "-87.606348419",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-31 14:36:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.810676762",
     "longitude": "-87.675199089",
     "description": "AGGRAVATED OF A CHILD"
   },
   {
     "dateStart": "2019-12-31 15:20:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.735655324",
     "longitude": "-87.673657336",
     "description": "AGG PRO.EMP: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 15:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.662452952",
     "longitude": "-87.637800755",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-31 15:45:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.745340136",
     "longitude": "-87.605070606",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-31 16:25:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.722059653",
     "longitude": "-87.662697289",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-31 17:14:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.924779505",
     "longitude": "-87.739010315",
     "description": "AGGRAVATED DOMESTIC BATTERY: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 17:30:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.908560535",
     "longitude": "-87.677409143",
     "description": "AGGRAVATED: OTHER DANG WEAPON"
   },
   {
     "dateStart": "2019-12-31 20:10:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.772540956",
     "longitude": "-87.574024077",
     "description": "AGGRAVATED DOMESTIC BATTERY: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-31 21:18:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.878317645",
     "longitude": "-87.74934071",
     "description": "AGGRAVATED: HANDGUN"
   },
   {
     "dateStart": "2019-12-31 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.931135348",
     "longitude": "-87.77627118",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"
   },
   {
     "dateStart": "2019-12-31 23:00:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.702738531",
     "longitude": "-87.536190123",
     "description": "AGG: HANDS/FIST/FEET SERIOUS INJURY"
   },
   {
     "dateStart": "2019-12-31 23:54:00 UTC",
-    "title": "BATTERY",
+    "event": "BATTERY",
     "latitude": "41.779173667",
     "longitude": "-87.653277703",
     "description": "AGGRAVATED:KNIFE/CUTTING INSTR"

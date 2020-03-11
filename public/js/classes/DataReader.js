@@ -15,8 +15,10 @@ class DataReader {
                 let newObj = {};
                 const keys = Object.keys(mappings);
                 keys.forEach(key => {
-                    let mappedField = mappings[key];
-                    newObj[key] = obj[mappedField];
+                    if (key !== 'title') {
+                        let mappedField = mappings[key];
+                        newObj[key] = obj[mappedField];
+                    }
                 })
                 newObjArray.push(newObj);
             })
