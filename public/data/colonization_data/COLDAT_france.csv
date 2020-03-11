@@ -1,4 +1,4 @@
-country,colonizer,col,colstart_max,colend_max
+location,colonizer,col,dateStart,dateEnd
 Canada,france,1,1608,1763
 Dominica,france,1,1632,1763
 Grenada,france,1,1650,1762

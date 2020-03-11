@@ -1,4 +1,4 @@
-country,colonizer,col,colstart_max,colend_max
+location,colonizer,col,dateStart,dateEnd
 Dominican Republic,spain,1,1495,1865
 Jamaica,spain,1,1509,1655
 Cuba,spain,1,1511,1899

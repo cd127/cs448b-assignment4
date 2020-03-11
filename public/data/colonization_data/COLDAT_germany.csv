@@ -1,4 +1,4 @@
-country,colonizer,col,colstart_max,colend_max
+location,colonizer,col,dateStart,dateEnd
 Cameroon,germany,1,1884,1916
 Ghana,germany,1,1884,1916
 Marshall Islands,germany,1,1885,1914

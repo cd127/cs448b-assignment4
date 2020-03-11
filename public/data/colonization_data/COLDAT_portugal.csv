@@ -1,4 +1,4 @@
-country,colonizer,col,colstart_max,colend_max
+location,colonizer,col,dateStart,dateEnd
 Cape Verde,portugal,1,1462,1975
 Ghana,portugal,1,1482,1823
 Malaysia,portugal,1,1511,1641

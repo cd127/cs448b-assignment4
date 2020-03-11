@@ -5,9 +5,36 @@ class DataReader {
     constructor() {
         this.fileContents = new Map();
         this.fileType = new Map();
+        this.countryLocations = new Map();
     }
 
     async getJSONFromFile(id, mappings) {
+        var countryLocations = this.countryLocations;
+
+        // TODO: could be expanded to handle more than just country
+        function countryToLongLat(country)
+        {
+            // Avoid issuing a GET command if we already know it
+            if (!countryLocations.has(country))
+            {
+                let geoRequest = new XMLHttpRequest();
+                const theUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + country + '.json?types=country&access_token=pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjYmxjbSJ9.AWi1_d1Z8YULzs-kaoizQg'
+                geoRequest.open( "GET", theUrl, false ); // false for synchronous request
+                geoRequest.send( null );
+                const geo = JSON.parse(geoRequest.responseText);
+                if (geo.features.length === 0 || !geo.features[0].hasOwnProperty('center'))
+                {
+                    console.log('Failed on: ');
+                    console.log(geo);
+                    countryLocations.set(country, []);
+                }
+                else
+                {
+                    countryLocations.set(country, geo.features[0].center);
+                }
+            }
+            return countryLocations.get(country);
+        }
 
         function mapFields(objArray, mappings) {
             let newObjArray = [];
@@ -15,8 +42,17 @@ class DataReader {
                 let newObj = {};
                 const keys = Object.keys(mappings);
                 keys.forEach(key => {
-                    if (key !== 'title') {
-                        let mappedField = mappings[key];
+                    if (key === 'location') {
+                        const mappedField = mappings[key];
+                        const longlat = countryToLongLat(obj[mappedField]);
+                        if (longlat != [])
+                        {
+                            newObj['longitude'] = longlat[0];
+                            newObj['latitude'] = longlat[1];
+                        }
+                    }
+                    else if (key !== 'title') {
+                        const mappedField = mappings[key];
                         newObj[key] = obj[mappedField];
                     }
                 })

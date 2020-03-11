@@ -1,4 +1,4 @@
-country,colonizer,col,colstart_max,colend_max
+location,colonizer,col,dateStart,dateEnd
 United States,britain,1,1607,1783
 St. Kitts & Nevis,britain,1,1623,1983
 Barbados,britain,1,1627,1966

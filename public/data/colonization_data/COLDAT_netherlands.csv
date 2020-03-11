@@ -1,4 +1,4 @@
-country,colonizer,col,colstart_max,colend_max
+location,colonizer,col,dateStart,dateEnd
 Guyana,netherlands,1,1580,1815
 Indonesia,netherlands,1,1623,1962
 South Africa,netherlands,1,1652,1806
