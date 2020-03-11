@@ -341,12 +341,7 @@ class Visualizer {
         var timeIntervalMs = Math.ceil(dateRangeMs / totalNumberSteps)
         var defaultDurationMs = (2000 / refreshIntervalMs) * timeIntervalMs;  // 2 sec converted to how long that is in virtual time
 
-        // on a regular basis, add more coordinates from the saved list and update the map
-        var displayedEventIndices = [];
-        var displayedPopups = [];
-        var eventIndices = [];
-        var virtualTime = earliestDateMs;
-
+        // Share some variables
         {
             const startDate = new Date(earliestDateMs);
             const endDate = new Date(latestDateMs);
@@ -360,7 +355,11 @@ class Visualizer {
             this.store.set('isYearOnly', isYear);
         }
 
-
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var displayedEventIndices = [];
+        var displayedPopups = [];
+        var eventIndices = [];
+        var virtualTime = earliestDateMs;
         var timer = window.setInterval(() => {
 
             let speed = this.store.get('speed');
@@ -464,6 +463,8 @@ class Visualizer {
 
             if (allDataProcessed && allEventsRemoved) {
                 window.clearInterval(timer);
+                virtualTime = latestDateMs;
+                this.store.set('virtualTime', virtualTime);
             }
         }, refreshIntervalMs);
     }
