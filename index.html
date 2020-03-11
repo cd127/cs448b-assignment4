@@ -337,14 +337,14 @@
                 let self = this;
                 let promises = [];
 
-                let startAnimation = function (jsonDataArray) {
+                let startAnimation = function (jsonDataArray, datasetNames) {
                     let strToMs = function (dateStr) {
                         const date = new Date(dateStr);
                         return date.getTime();
                     };
-                    visualizer.startAnimation(jsonDataArray.map(data => {
+                    visualizer.startAnimation(jsonDataArray.map((data, idx) => {
                         return {
-                            title: data[0].title,
+                            title: datasetNames[idx],
                             numPoints: data.length,
                             dateRangeMs: [
                                 strToMs(data[0].dateStart),
@@ -362,25 +362,28 @@
                         dataReader.getJSONFromURL('/public/data/chicago-assault-aggravated.csv'),
                         dataReader.getJSONFromURL('/public/data/chicago-assault-nonaggravated.csv')
                     ]).then((resultsArray) => {
-                        // console.log(resultsArray)
-                        startAnimation(resultsArray);
+                        const datasetNames = ['chicago-battery-aggravated',
+                                              'chicago-assault-aggravated',
+                                              'chicago-assault-nonaggravated'];
+                        startAnimation(resultsArray, datasetNames);
                     })
                     return;
                 }
 
+                let datasetNames = [];
                 for (let i = 0; i < this.numDataFields; i++) {
                     let id = `input-${i}`;
                     promises.push(dataReader.getJSONFromFile(id, {...this.headerMappings[i], ...this.headerMappingsOpt[i]}));
+                    let datasetName = this.headerMappings[i]['title'];
+                    if (!datasetName)
+                        datasetName = document.getElementById(id).files[0].name;
+                    datasetNames.push(datasetName);
                 }
 
                 Promise.all(promises).then(async jsonResults => {
                     // Data has been fully parsed. Do something.
                     await visualizer.init();
-                    let tempTitle = 0
-
-                    console.log(self.state);
-
-                    startAnimation(jsonResults);
+                    startAnimation(jsonResults, datasetNames);
                 });
             }
         }
