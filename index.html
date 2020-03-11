@@ -238,7 +238,7 @@
         methods: {
             getStartDate: function() {
                 if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
-                if (this.sharedState.isYearOnly) return new Date(this.sharedState.startTime).toUTCFullYear();
+                if (this.sharedState.isYearOnly) return new Date(this.sharedState.startTime).getUTCFullYear();
                 return new Date(this.sharedState.startTime).toUTCString();
             },
             getCurrentDate: function() {
