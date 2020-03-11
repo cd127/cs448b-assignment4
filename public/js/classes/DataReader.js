@@ -45,7 +45,7 @@ class DataReader {
                     if (key === 'location') {
                         const mappedField = mappings[key];
                         const longlat = countryToLongLat(obj[mappedField]);
-                        if (longlat != [])
+                        if (longlat.length != 0)
                         {
                             newObj['longitude'] = longlat[0];
                             newObj['latitude'] = longlat[1];
@@ -56,7 +56,8 @@ class DataReader {
                         newObj[key] = obj[mappedField];
                     }
                 })
-                newObjArray.push(newObj);
+                if (newObj.hasOwnProperty('latitude'))
+                    newObjArray.push(newObj);
             })
             return newObjArray;
         }
