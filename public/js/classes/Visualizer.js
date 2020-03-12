@@ -217,6 +217,9 @@ class Visualizer {
                         labelLayerId
                     );
 
+                    // Add zoom and rotation controls to the map.
+                    self.map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+
                     resolve(self.map);
                 });
             } catch (err) {
