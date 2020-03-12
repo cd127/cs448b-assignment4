@@ -398,6 +398,12 @@ class Visualizer {
                 }
             }
 
+            const popupClasses = [
+                'mapboxgl-popup-content-red',
+                'mapboxgl-popup-content-green',
+                'mapboxgl-popup-content-blue'
+            ]
+
             let activeCoordinates = [];
             let allDataProcessed = true;
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
@@ -424,10 +430,15 @@ class Visualizer {
                         if (dataset[i].description !== undefined && dataset[i].description !== "") {
                             const textToShow = dataset[i].description;
                             // Keep track of the popups
-                            displayedPopups.push(new mapboxgl.Popup({ closeOnClick: false, closeButton: false })
-                                .setLngLat(coords)
-                                .setHTML('<p>' + textToShow + '</p>')
-                                .addTo(this.map)
+                            displayedPopups.push(
+                                new mapboxgl.Popup({
+                                        className: popupClasses[dataSetIdx],
+                                        closeOnClick: false,
+                                        closeButton: false,
+                                        offset: [0, -4] })
+                                    .setLngLat(coords)
+                                    .setHTML('<p class="popupText">' + textToShow + '</p>')
+                                    .addTo(this.map)
                             );
                         }
 
