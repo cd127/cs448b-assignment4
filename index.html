@@ -349,7 +349,7 @@
                             dateRangeMs: [
                                 strToMs(data[0].dateStart),
                                 data[0].hasOwnProperty('dateEnd')? 
-                                    strToMs(Math.max(...data.map(d => d.dateEnd)).toString()) : 
+                                    strToMs(Math.max(...data.map(d => new Date(d.dateEnd).getTime()))) :
                                     strToMs(data[data.length - 1].dateStart)
                             ],
                             data: data

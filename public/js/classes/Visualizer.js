@@ -449,11 +449,12 @@ class Visualizer {
                         if (typeof dataset[i].duration === 'undefined') {
                             if (typeof dataset[i].dateEnd === 'undefined')
                             {
-                                dataset[i].duration = defaultDurationMs;
+                                dataset[i].duration = defaultDurationMs * speed;
                             }
                             else
                             {
-                                dataset[i].duration = new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart);
+                                dataset[i].duration = Math.max(defaultDurationMs * speed,
+                                                               new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart));
                             }
                         }
                     }
