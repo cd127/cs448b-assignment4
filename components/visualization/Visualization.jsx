@@ -66,13 +66,19 @@ class Visualization extends React.Component {
     return `dataset-${datasetsIndex}`;
   };
 
-  fitBounds = datasets => {
-    let minLon, maxLon, minLat, maxLat;
-
-    [minLon, maxLon, minLat, maxLat] = Helper.getMinMaxCoord(
-      Helper.mergeDatasets(datasets)
+  reposition = () => {
+    let coordinatesDisplayed = Helper.mergeDatasets(
+      this.state.featureSets.map((f, index) => {
+        return this.getGeojson(index).features.map(feature => {
+          return feature.geometry.coordinates;
+        });
+      })
     );
 
+    let minLon, maxLon, minLat, maxLat;
+    [minLon, maxLon, minLat, maxLat] = Helper.getMinMaxCoord(
+      coordinatesDisplayed
+    );
     this.state.map.fitBounds(
       [
         [minLon, minLat],
@@ -126,7 +132,27 @@ class Visualization extends React.Component {
     const { featureSets } = this.state;
 
     // Position the window.
-    this.fitBounds(datasets);
+    let fitBounds = datasets => {
+      let minLon, maxLon, minLat, maxLat;
+
+      [minLon, maxLon, minLat, maxLat] = Helper.getMinMaxCoord(
+        Helper.mergeDatasets(datasets)
+      );
+
+      this.state.map.fitBounds(
+        [
+          [minLon, minLat],
+          [maxLon, maxLat]
+        ],
+        {
+          padding: 50,
+          maxZoom: 100,
+          linear: true,
+          animate: false
+        }
+      );
+    };
+    fitBounds(datasets);
 
     let filteredFeatureSets = featureSets.map(featureSet => {
       return featureSet.filter(feature => {
@@ -195,6 +221,9 @@ class Visualization extends React.Component {
         geojsons[i] = geojson;
       }
     });
+
+    // Reposition map.
+    this.reposition();
 
     // Refresh map.
     geojsons.forEach((geojson, index) => {
