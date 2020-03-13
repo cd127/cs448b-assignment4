@@ -114,13 +114,21 @@ class App extends React.Component {
 
     if (!isPlayClicked)
       var timer = window.setInterval(() => {
+        // End playback.
         if (this.state.timeCurrent >= this.state.timeEnd) {
           window.clearInterval(timer);
-          this.setState({ timeCurrent: this.state.timeEnd });
+          this.controls.current.setPlayback("pause");
+          this.setState({
+            timeCurrent: this.state.timeEnd,
+            activePlayback: "pause",
+            isPlayClicked: false
+          });
           return;
         }
-        // this.visualization.current.clear();
+
+        // Update visualization - go to next step.
         this.visualization.current.update();
+
         this.setState({
           // Advance time.
           timeCurrent:

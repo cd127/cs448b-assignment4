@@ -61,6 +61,12 @@ class Controls extends React.Component {
     return `${date.toDateString()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
   };
 
+  setPlayback = playback => {
+    this.setState({
+      activePlayback: playback
+    });
+  };
+
   handleChangeTrack = (event, value) => {
     this.props.setTime(value);
   };
@@ -113,7 +119,6 @@ class Controls extends React.Component {
       handleFastRewind,
       handleFastForward
     } = this.props;
-    
 
     return (
       <div className={classes.root}>
