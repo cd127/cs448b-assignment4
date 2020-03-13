@@ -1,26 +1,28 @@
+'use strict';
+
+/*
+ * A simple Node.js program for exporting the current working directory via a webserver listing
+ * on a hard code (see portno below) port. To start the webserver run the command:
+ *    node webServer.js
+ *
+ * Note that anyone able to connect to localhost:3001 will be able to fetch any file accessible
+ * to the current user in the current directory or any of its children.
+ */
+
+/* jshint node: true */
+
 var express = require('express');
+
+var portno = 3000;   // Port number to use
+
 var app = express();
-var path = require('path');
-var MapboxClient = require('mapbox');
-var client = new MapboxClient(
-    'pk.eyJ1IjoibmF0aGFuc29vbWlubGVlIiwiYSI6ImNrNnkxeW95ZjBvbjczbnFvZW1lODJkM2cifQ.yrQDHliVfqo82qLTgSYiqw' // Nathan's access token
-);
 
-// viewed at http://localhost:8080
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
-app.use('/public', express.static('public'));
-app.listen(process.env.PORT || 8080, function() {
-    console.log('SERVER STARTED PORT: 8080');
-});
+// We have the express static module (http://expressjs.com/en/starter/static-files.html) do all
+// the work for us.
+app.use(express.static(__dirname));
+app.use("/public", express.static("public"));
 
-// Backend API calls
-app.get('/api/test', function(req, res) {
-    (async () => {
-        let geocode = await client.geocodeForward('Chester, NJ');
-        console.log(geocode);
-
-        res.json(geocode);
-    })();
+var server = app.listen(portno, function () {
+  var port = server.address().port;
+  console.log('Listening at http://localhost:' + port + ' exporting the directory ' + __dirname);
 });

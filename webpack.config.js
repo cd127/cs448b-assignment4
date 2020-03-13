@@ -1,9 +1,37 @@
-const path = require('path');
-
 module.exports = {
-    entry: './index.js',
-    output: {
-        filename: 'js/bundle.js',
-        path: path.resolve(__dirname, 'public')
-    }
+  entry: {
+    app: "./app.jsx"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      }
+    ]
+  },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"]
+  },
+  output: {
+    path: `${__dirname}/compiled`,
+    publicPath: "/",
+    filename: "[name].bundle.js"
+  }
 };
