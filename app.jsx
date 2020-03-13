@@ -35,6 +35,8 @@ const styles = theme => ({
   }
 });
 
+var speed = 1; // Hacky-way of managing speed.
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -59,7 +61,8 @@ class App extends React.Component {
         [100, 0, 0],
         [0, 100, 0],
         [0, 0, 100]
-      ]
+      ],
+      isPlayClicked: false
     };
 
     this.controls = React.createRef();
@@ -86,16 +89,22 @@ class App extends React.Component {
   // eslint-disable-next-line
   handleFastForward = event => {
     console.log("Handling fast forward.");
+    speed = speed === 0 ? 1 : speed * 1.25; // Hacky-way of managing speed.
   };
 
   // eslint-disable-next-line
   handleFastRewind = event => {
     console.log("Handling fast rewind.");
+    speed = speed === 0 ? 1 : speed / 1.25; // Hacky-way of managing speed.
   };
 
   // eslint-disable-next-line
   handlePlay = event => {
+    const { isPlayClicked } = this.state;
+
     console.log("Handling play.");
+
+    speed = 1; // Hacky-way of managing speed.
 
     this.setState({
       activePlayback: "play"
@@ -103,23 +112,29 @@ class App extends React.Component {
 
     this.visualization.current.init();
 
-    var timer = window.setInterval(() => {
-      if (this.state.timeCurrent >= this.state.timeEnd) {
-        window.clearInterval(timer);
-        this.setState({ timeCurrent: this.state.timeEnd });
-        return;
-      }
-      // this.visualization.current.clear();
-      this.visualization.current.update();
-      this.setState({
-        timeCurrent: this.state.timeCurrent + this.state.timeIntervalMs
-      });
-    }, this.state.refreshIntervalInMs);
+    if (!isPlayClicked)
+      var timer = window.setInterval(() => {
+        if (this.state.timeCurrent >= this.state.timeEnd) {
+          window.clearInterval(timer);
+          this.setState({ timeCurrent: this.state.timeEnd });
+          return;
+        }
+        // this.visualization.current.clear();
+        this.visualization.current.update();
+        this.setState({
+          // Advance time.
+          timeCurrent:
+            this.state.timeCurrent + this.state.timeIntervalMs * speed,
+          isPlayClicked: true
+        });
+      }, this.state.refreshIntervalInMs);
   };
 
   // eslint-disable-next-line
   handlePause = event => {
     console.log("Handling pause.");
+
+    speed = 0; // Hacky-way of managing speed.
 
     this.setState({
       activePlayback: "pause"
