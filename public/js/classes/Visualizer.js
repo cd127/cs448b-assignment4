@@ -399,6 +399,9 @@ class Visualizer {
                         }
                     }
                 }
+
+                // Refresh set of points on map for this dataset
+                this.map.getSource(layerName).setData(geojsonData);
             }
 
             const popupClasses = [
