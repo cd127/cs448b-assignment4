@@ -40,9 +40,13 @@ class DataReader {
             let newObjArray = [];
             objArray.forEach(obj => {
                 let newObj = {};
-                const keys = Object.keys(mappings);
-                keys.forEach(key => {
-                    if (key === 'location') {
+                // const keys = Object.keys(mappings);
+                // keys.forEach(key => {
+                let isComplete = true;
+                for (let key in mappings)
+                {
+                    if (key === 'location')
+                    {
                         const mappedField = mappings[key];
                         const longlat = countryToLongLat(obj[mappedField]);
                         if (longlat.length != 0)
@@ -50,14 +54,27 @@ class DataReader {
                             newObj['longitude'] = longlat[0];
                             newObj['latitude'] = longlat[1];
                         }
+                        else
+                        {
+                            isComplete = false;
+                            break;
+                        }
                     }
-                    else if (key !== 'title') {
+                    else if (key !== 'title')
+                    {
                         const mappedField = mappings[key];
                         newObj[key] = obj[mappedField];
+                        if (!newObj[key])
+                        {
+                            isComplete = false;
+                            break;
+                        }
                     }
-                })
-                if (newObj.hasOwnProperty('latitude'))
+                }
+                if (isComplete)
+                {
                     newObjArray.push(newObj);
+                }
             })
             return newObjArray;
         }
