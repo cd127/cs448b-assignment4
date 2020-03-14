@@ -52,3 +52,31 @@ html, body {
     -o-animation: fadeOut ease 8s;
     -ms-animation: fadeOut ease 8s;
 }
+
+.mapboxgl-popup-content {
+    font: 12px Arial;
+    /*'Helvetica Neue';*/
+    border-radius: 7px;
+    padding: 5px 5px 5px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-style: outset;
+    border-width: thin;
+    offset-distance: 10px;
+    background: #ffffffc7;
+    text-shadow: 0px 0px white;
+}
+
+.mapboxgl-popup-content-red .mapboxgl-popup-content {
+    border-color: red;
+}
+
+.mapboxgl-popup-content-green .mapboxgl-popup-content {
+    border-color: green;
+}
+
+.popupText {
+    margin: 0;
+    text-shadow: 0px 0px white;
+}

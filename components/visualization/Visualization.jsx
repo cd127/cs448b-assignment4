@@ -256,10 +256,6 @@ class Visualization extends React.Component {
 
     let n = datasets.length;
     while (n) {
-      // map.getSource(this.getDatasourceId(n - 1)).setData({
-      //   type: "FeatureCollection",
-      //   features: []
-      // });
       map.removeLayer(this.getMapLayerId(n - 1));
       map.removeSource(this.getDatasourceId(n - 1));
       this.setState({
