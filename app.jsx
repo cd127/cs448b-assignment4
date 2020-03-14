@@ -46,11 +46,17 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      // State
+      isPlayClicked: false,
       timeCurrent: 0,
       timeStart: 0,
       timeEnd: 86400000,
       timeMin: 0,
       timeMax: 86400000,
+      refreshIntervalInMs: 0, // how many times the app should render - init in Visualization
+      timeIntervalMs: 0, // each step is incremented by this - init in Visualization
+
+      // Setup
       datasets: [
         this.formatChicagoDataset(dataset1),
         this.formatChicagoDataset(dataset2)
@@ -58,15 +64,13 @@ class App extends React.Component {
       speed: 1,
       targetRuntimInMs: 3 * 60 * 1000, // 3 minutes
       numSteps: 1000,
-      refreshIntervalInMs: 0, // how many times the app should render - init in Visualization
-      timeIntervalMs: 0, // each step is incremented by this - init in Visualization
       maxPlotsPerDataset: 5,
       plotColors: [
         [100, 0, 0],
         [0, 100, 0],
         [0, 0, 100]
       ],
-      isPlayClicked: false
+      maxNumHoverPopups: 5
     };
 
     this.controls = React.createRef();

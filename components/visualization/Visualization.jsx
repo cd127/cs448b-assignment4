@@ -51,7 +51,9 @@ class Visualization extends React.Component {
       step: 0,
       originalFeatureSets: [],
       featureSets: [],
-      indices: [0, 0, 0] // Lastly rendered feature index for each dataset.
+      indices: [0, 0, 0], // Lastly rendered feature index for each dataset.
+      plotPopups: [],
+      hoverPopups: []
     };
   }
 
@@ -266,7 +268,13 @@ class Visualization extends React.Component {
   };
 
   componentDidMount() {
-    const { setAppState, targetRuntimInMs, numSteps, datasets } = this.props;
+    const {
+      setAppState,
+      targetRuntimInMs,
+      numSteps,
+      datasets,
+      maxNumHoverPopups
+    } = this.props;
 
     let createFeature = (row, rgb) => {
       return {
@@ -312,12 +320,6 @@ class Visualization extends React.Component {
       });
     });
 
-    // Create a popup, but don't add it to the map yet.
-    var popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-    });
-
     // Setup popup display on hover.
     let n = datasets.length;
     while (n) {
@@ -335,11 +337,38 @@ class Visualization extends React.Component {
           coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
 
+        // Create a popup, but don't add it to the map yet.
+        let popups = this.state.hoverPopups;
+        let popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false
+        });
+        popups.push(popup);
+
+        // Remove old popups.
+        let numPopupsRemove = popups.length - maxNumHoverPopups;
+        if (numPopupsRemove > 0) {
+          for (let i = 0; i < numPopupsRemove; i++) {
+            popups[i].remove()
+          }
+          popups.splice(0, numPopupsRemove);
+        }
+
+        this.setState({
+          hoverPopups: popups
+        });
+
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup
           .setLngLat(coordinates)
-          .setHTML(description)
+          .setHTML(
+            `<div class="popup-content" style="opacity: 0;
+              -webkit-animation: fadeInOut 4s;
+              animation: fadeInOut 4s;">
+              ${description}
+              </div>`
+          )
           .addTo(map);
       });
       n--;
@@ -395,6 +424,7 @@ Visualization.propTypes = {
   timeCurrent: PropTypes.number,
   timeStart: PropTypes.number,
   timeEnd: PropTypes.number,
+  maxNumHoverPopups: PropTypes.number,
   targetRuntimInMs: PropTypes.number,
   timeIntervalMs: PropTypes.number,
   numSteps: PropTypes.number,
