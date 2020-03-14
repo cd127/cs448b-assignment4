@@ -343,12 +343,16 @@
                         return date.getTime();
                     };
                     visualizer.startAnimation(jsonDataArray.map((data, idx) => {
+                        // Sort data by start date
+                        data.sort((a,b) =>
+                            (a.dateStart === b.dateStart) ? 0 :
+                            (new Date(a.dateStart) < new Date(b.dateStart)) ? -1 : 1);
                         return {
                             title: datasetNames[idx],
                             numPoints: data.length,
                             dateRangeMs: [
                                 strToMs(data[0].dateStart),
-                                data[0].hasOwnProperty('dateEnd')? 
+                                data[0].hasOwnProperty('dateEnd')?
                                     strToMs(Math.max(...data.map(d => new Date(d.dateEnd).getTime()))) :
                                     strToMs(data[data.length - 1].dateStart)
                             ],
