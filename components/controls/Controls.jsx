@@ -48,10 +48,6 @@ class Controls extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // timeStep: 1
-      timeStart: null,
-      timeCurrent: null,
-      timeEnd: null,
       activePlayback: null // "play", "pause"
     };
   }
@@ -69,6 +65,10 @@ class Controls extends React.Component {
 
   handleChangeTrack = (event, value) => {
     this.props.setTime(value);
+    
+    if (value[1] < this.props.timeCurrent)
+      this.props.handleTrackBackwardSet();
+
   };
 
   // eslint-disable-next-line
@@ -192,6 +192,7 @@ Controls.propTypes = {
   timeMax: PropTypes.number,
   timeStep: PropTypes.number,
   setTime: PropTypes.func,
+  handleTrackBackwardSet: PropTypes.func,
   handleFastForward: PropTypes.func,
   handleFastRewind: PropTypes.func,
   handlePlay: PropTypes.func,

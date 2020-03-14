@@ -35,7 +35,11 @@ const styles = theme => ({
   }
 });
 
+/**
+ * GLOBALS
+ */
 var speed = 1; // Hacky-way of managing speed.
+var timer; // Animation playback.
 
 class App extends React.Component {
   constructor(props) {
@@ -86,6 +90,28 @@ class App extends React.Component {
     });
   };
 
+  endPlayback = () => {
+    window.clearInterval(timer);
+    this.controls.current.setPlayback("pause");
+    this.setState({
+      activePlayback: "pause",
+      isPlayClicked: false
+    });
+  };
+
+  // eslint-disable-next-line
+  handleTrackBackwardSet = newTimeCurrent => {
+    console.log("Current track moved backwards.");
+    this.endPlayback();
+    this.visualization.current.clear();
+  };
+
+  // eslint-disable-next-line
+  handleTrackForwardSet = newTimeCurrent => {
+    console.log("Current track moved forwards.");
+    this.setState({ timeCurrent: newTimeCurrent });
+  };
+
   // eslint-disable-next-line
   handleFastForward = event => {
     console.log("Handling fast forward.");
@@ -113,15 +139,12 @@ class App extends React.Component {
     this.visualization.current.init();
 
     if (!isPlayClicked)
-      var timer = window.setInterval(() => {
+      timer = window.setInterval(() => {
         // End playback.
         if (this.state.timeCurrent >= this.state.timeEnd) {
-          window.clearInterval(timer);
-          this.controls.current.setPlayback("pause");
+          this.endPlayback();
           this.setState({
-            timeCurrent: this.state.timeEnd,
-            activePlayback: "pause",
-            isPlayClicked: false
+            timeCurrent: this.state.timeEnd
           });
           return;
         }
@@ -176,6 +199,7 @@ class App extends React.Component {
             {...this.state}
             handleFastForward={this.handleFastForward}
             handleFastRewind={this.handleFastRewind}
+            handleTrackBackwardSet={this.handleTrackBackwardSet}
             handlePlay={this.handlePlay}
             handlePause={this.handlePause}
           />

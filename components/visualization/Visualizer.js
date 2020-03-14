@@ -189,7 +189,7 @@ class Visualizer {
               break;
             }
           }
-
+          
           self.map.addLayer(
             {
               id: "3d-buildings",

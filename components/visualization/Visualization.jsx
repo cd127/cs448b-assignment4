@@ -49,6 +49,7 @@ class Visualization extends React.Component {
       zoom: 2,
       map: null,
       step: 0,
+      originalFeatureSets: [],
       featureSets: [],
       indices: [0, 0, 0] // Lastly rendered feature index for each dataset.
     };
@@ -128,8 +129,10 @@ class Visualization extends React.Component {
   };
 
   init = () => {
-    const { datasets, timeIntervalMs, timeStart } = this.props;
-    const { featureSets } = this.state;
+    console.log("Initializing visualization.");
+
+    const { datasets, timeIntervalMs, timeCurrent } = this.props;
+    const { originalFeatureSets } = this.state;
 
     // Position the window.
     let fitBounds = datasets => {
@@ -154,13 +157,11 @@ class Visualization extends React.Component {
     };
     fitBounds(datasets);
 
-    let filteredFeatureSets = featureSets.map(featureSet => {
+    let filteredFeatureSets = originalFeatureSets.map(featureSet => {
       return featureSet.filter(feature => {
-        return feature.properties.msStart >= timeStart - timeIntervalMs;
+        return feature.properties.msStart >= timeCurrent - timeIntervalMs;
       });
     });
-
-    console.log(filteredFeatureSets);
 
     this.setState({ featureSets: filteredFeatureSets });
   };
@@ -177,8 +178,12 @@ class Visualization extends React.Component {
 
       while (feature.properties.msStart <= timeCurrent) {
         if (index === 0) {
+          console.log(
+            "Beginning to plot at feature index 0. Drawing empty layer."
+          );
           this.drawLayer([], i);
         }
+
         let geojson = this.getGeojson(i);
 
         // Fade old plots.
@@ -212,7 +217,9 @@ class Visualization extends React.Component {
         // Increment index.
         let newIndices = this.state.indices;
         newIndices[i] = newIndices[i] + 1;
-        this.setState({ indices: newIndices });
+        this.setState({
+          indices: newIndices
+        });
 
         // Get new index and feature.
         index += 1;
@@ -223,9 +230,15 @@ class Visualization extends React.Component {
     });
 
     // Reposition map.
-    this.reposition();
+    try {
+      this.reposition();
+    } catch (err) {
+      console.log(
+        'Failed repositioning. "normal" behavior if the track was moved backwards.'
+      );
+    }
 
-    // Refresh map.
+    // Update and rerender map.
     geojsons.forEach((geojson, index) => {
       map.getSource(this.getDatasourceId(index)).setData(geojson);
     });
@@ -236,8 +249,25 @@ class Visualization extends React.Component {
     });
   };
 
-  // TODO: Start over.
-  clear = () => {};
+  // Start over.
+  clear = () => {
+    const { map } = this.state;
+    const { datasets } = this.props;
+
+    let n = datasets.length;
+    while (n) {
+      // map.getSource(this.getDatasourceId(n - 1)).setData({
+      //   type: "FeatureCollection",
+      //   features: []
+      // });
+      map.removeLayer(this.getMapLayerId(n - 1));
+      map.removeSource(this.getDatasourceId(n - 1));
+      this.setState({
+        indices: [0, 0, 0]
+      });
+      n--;
+    }
+  };
 
   componentDidMount() {
     const { setAppState, targetRuntimInMs, numSteps, datasets } = this.props;
@@ -288,7 +318,7 @@ class Visualization extends React.Component {
 
     // Initialize an array of geojson features
     this.setState({
-      featureSets: datasets.map((dataset, index) => {
+      originalFeatureSets: datasets.map((dataset, index) => {
         return createFeatures(dataset, this.props.plotColors[index]);
       })
     });
