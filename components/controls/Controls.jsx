@@ -10,6 +10,7 @@ import {
   FastForwardRounded as FastForward,
   FastRewindRounded as FastRewind
 } from "@material-ui/icons";
+var Helper = require("../helper");
 
 // eslint-disable-next-line
 const styles = theme => ({
@@ -51,11 +52,6 @@ class Controls extends React.Component {
       activePlayback: null // "play", "pause"
     };
   }
-
-  msToDate = milliseconds => {
-    let date = new Date(milliseconds);
-    return `${date.toDateString()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-  };
 
   setPlayback = playback => {
     this.setState({
@@ -132,8 +128,8 @@ class Controls extends React.Component {
                 min={timeMin}
                 max={timeMax}
                 step={(timeMax - timeMin) / 100}
-                getAriaValueText={this.msToDate}
-                valueLabelFormat={this.msToDate}
+                getAriaValueText={Helper.msToDate}
+                valueLabelFormat={Helper.msToDate}
                 onChange={this.handleChangeTrack}
                 // valueLabelDisplay="on"
                 valueLabelDisplay="auto"

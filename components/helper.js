@@ -1,4 +1,9 @@
 module.exports = {
+  msToDate: milliseconds => {
+    let date = new Date(milliseconds);
+    return `${date.toDateString()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+  },
+
   // Given a datestring, return milliseconds.
   strToMs: dateStr => {
     const date = new Date(dateStr);

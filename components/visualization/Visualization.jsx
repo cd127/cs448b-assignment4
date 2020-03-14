@@ -5,7 +5,7 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjYmxjbSJ9.AWi1_d1Z8YULzs-kaoizQg";
 import { withStyles } from "@material-ui/core/styles";
 
-var Helper = require("./helper");
+var Helper = require("../helper");
 
 // eslint-disable-next-line
 const styles = theme => ({
@@ -52,7 +52,7 @@ class Visualization extends React.Component {
       originalFeatureSets: [],
       featureSets: [],
       indices: [0, 0, 0], // Lastly rendered feature index for each dataset.
-      plotPopups: [],
+      plotPopups: [[], [], []],
       hoverPopups: []
     };
   }
@@ -216,6 +216,42 @@ class Visualization extends React.Component {
         if (numFeaturesRemove !== 0 && numFeaturesRemove > 0)
           geojson.features.splice(0, numFeaturesRemove);
 
+        // Create a popup, but don't add it to the map yet.
+        let plotPopups = this.state.plotPopups;
+        let popups = this.state.plotPopups[i];
+        let popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false
+        });
+        popups.push(popup);
+
+        // Remove old popups.
+        let numPopupsRemove = popups.length - maxPlotsPerDataset;
+        if (numPopupsRemove > 0) {
+          for (let i = 0; i < numPopupsRemove; i++) {
+            popups[i].remove();
+          }
+          popups.splice(0, numPopupsRemove);
+        }
+
+        this.setState({
+          plotPopups: plotPopups
+        });
+
+        // Add popup to map.
+        popup
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+            `<div class="popup-content" style="opacity: 0;
+              -webkit-animation: fadeIn 2s;
+              animation: fadeIn 2s;">
+              ${feature.properties.title} -
+              ${feature.properties.description} -
+              ${Helper.msToDate(feature.properties.msStart)} -
+              </div>`
+          )
+          .addTo(map);
+
         // Increment index.
         let newIndices = this.state.indices;
         newIndices[i] = newIndices[i] + 1;
@@ -349,7 +385,7 @@ class Visualization extends React.Component {
         let numPopupsRemove = popups.length - maxNumHoverPopups;
         if (numPopupsRemove > 0) {
           for (let i = 0; i < numPopupsRemove; i++) {
-            popups[i].remove()
+            popups[i].remove();
           }
           popups.splice(0, numPopupsRemove);
         }
