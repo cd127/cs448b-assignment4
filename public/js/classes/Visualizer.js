@@ -366,7 +366,7 @@ class Visualizer {
         var timer = window.setInterval(() => {
 
             let speed = this.store.get('speed');
-            if (speed === 0) return;
+            if (speed <= 0) return;
 
             // Remove old features
             let allEventsRemoved = true;

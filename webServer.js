@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 var MapboxClient = require('mapbox');
 var client = new MapboxClient(
-    'pk.eyJ1IjoibmF0aGFuc29vbWlubGVlIiwiYSI6ImNrNnkxeW95ZjBvbjczbnFvZW1lODJkM2cifQ.yrQDHliVfqo82qLTgSYiqw' // Nathan's access token
+    'pk.eyJ1IjoibmF0aGFuc29vbWlubGVlIiwiYSI6ImNrNnkxeW95ZjBvbjczbnFvZW1lODJkM2cifQ.yrQDHliVfqo82qLTgSYiqw'
 );
 
 // viewed at http://localhost:8080
@@ -15,12 +15,3 @@ app.listen(process.env.PORT || 8080, function() {
     console.log('SERVER STARTED PORT: 8080');
 });
 
-// Backend API calls
-app.get('/api/test', function(req, res) {
-    (async () => {
-        let geocode = await client.geocodeForward('Chester, NJ');
-        console.log(geocode);
-
-        res.json(geocode);
-    })();
-});

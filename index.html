@@ -137,15 +137,15 @@
                 </div>
 
                 <div class="sidebar-controls-buttons" style="display: flex;">
-                    <button v-on:click="divideSpeed(1.5)">
-                        <i class="fa fa-fast-backward fa-2x" aria-hidden="true"></i>
+                    <button v-on:click="playToggle()" v-if="isPaused">
+                        <i class="fa fa-play fa-2x"></i>
                     </button>
-                    <button v-on:click="setSpeed(1)">
-                        <i class="fa fa-play fa-2x" aria-hidden="true"></i>
+                    <button v-on:click="playToggle()" v-if="!isPaused">
+                        <i class="fa fa-pause fa-2x" ></i>
                     </button>
 
-                    <button v-on:click="setSpeed(0)">
-                        <i class="fa fa-pause fa-2x" aria-hidden="true"></i>
+                    <button v-on:click="multiplySpeed(0.5)">
+                        <i class="fa fa-step-forward fa-2x" aria-hidden="true"></i>
                     </button>
                     <button v-on:click="multiplySpeed(1.5)">
                         <i class="fa fa-fast-forward fa-2x" aria-hidden="true"></i>
@@ -171,18 +171,17 @@
                 </event-display>
             </div>
         </div>
+    <div class="btn-group-vertical map-type-group" aria-label="..." v-if="!isVisualize">
+        <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowLight()">light</button>
+        <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowDark()">dark</button>
+        <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowSatellite()">satellite</button>
+    </div>
     </div>
 
     <!-- Data loading View End -->
 
     <div id="map"></div>
 
-    <div class="btn-group-vertical map-type-group" aria-label="...">
-        <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowLight()">light</button>
-        <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowDark()">dark</button>
-        <button type="button map-type" class="btn btn-secondary"
-            onclick="visualizer.mapShowSatellite()">satellite</button>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -231,6 +230,7 @@
             headerMappingsOpt: [{}, {}, {}],    // Optional header mappings
             mappingsComplete: false,
             isVisualize: false,
+            isPaused: false,
             isDebug: true,
             store: store,
             sharedState: store.state
@@ -317,8 +317,10 @@
                     this.mappingsComplete = false;
                 }
             },
-            setSpeed: function (multiplier) {
-                this.store.set('speed', multiplier);
+            playToggle()
+            {
+                this.store.set('speed', -1 * this.store.get('speed'));
+                this.isPaused = !this.isPaused;
             },
             multiplySpeed: function (multiplier = 1.25) {
                 let speed = this.store.get('speed');
@@ -327,10 +329,6 @@
                     return;
                 }
                 this.store.set('speed', speed * multiplier);
-            },
-            divideSpeed: function (multiplier = 1.25) {
-                let speed = this.store.get('speed');
-                this.store.set('speed', speed / multiplier);
             },
             handleVisualize: function (event) {
                 this.isVisualize = true;
