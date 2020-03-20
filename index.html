@@ -39,9 +39,10 @@
 
 <body>
 
-    <!-- Data loading View Start -->
-    <!-- <div class="data-container-wrapper" v-if="!isVisualize"> -->
+    <!-- Side Pane -->
     <div class="sidebar" id='app'>
+        
+        <!-- Data loading View Start -->
         <div class="sidebar-content" v-if="!isVisualize">
             <div v-for="(num, index) in numDataFields" class="form-group data-container">
                 <div style="display: flex; flex-direction: row; justify-content: center;" v-if="headers[index].length == 0">
@@ -49,6 +50,7 @@
                     <button type="button" class="btn btn-outline-secondary"
                         v-on:click="loadData" :name="'input-'+index">Load Data</button>
                 </div>
+                
                 <div style="display: flex; flex-direction: row;">
                     <div class="headers headers-required" style="display: flex; flex-direction: column;">
                         <div>
@@ -105,11 +107,10 @@
                             </select>
                         </div>
                     </div>
-
-
-
+                    
                 </div>
             </div>
+
             <div class="data-container-control" style="position:absolute; bottom:10px;">
                 <div class="headers-row">
                     <label class="headers-label" style="width:150px;">Duration (minutes):</label>
@@ -125,27 +126,27 @@
                 <button v-on:click="handleVisualize" v-if=" isDebug || mappingsComplete" type="button"
                     class="btn btn-outline-secondary data-control-button">Visualize!</button>
             </div>
+
+            <div class="btn-group-vertical map-type-group" aria-label="..." v-if="!isVisualize">
+                <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowLight()">light</button>
+                <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowDark()">dark</button>
+                <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowSatellite()">satellite</button>
+            </div>
         </div>
-        <div class="btn-group-vertical map-type-group" aria-label="..." v-if="!isVisualize">
-            <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowLight()">light</button>
-            <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowDark()">dark</button>
-            <button type="button map-type" class="btn btn-secondary" onclick="visualizer.mapShowSatellite()">satellite</button>
-        </div>
+        <!-- Data loading View End -->
+        
+        <!-- Runtime information -->
         <div class="sidebar-content" v-if="isVisualize">
+            <!-- Time -->
             <div class="sidebar-controls-container">
                 <div class="progress" style="height:20px; width: 100%;">
                     <div id="progress" class="progress-bar bg-secondary" style="height:20px; width:0%;"
-                        v-bind:style="{ 'width': sharedState.progress }"></div>
+                        v-bind:style="{ 'width': sharedState.progress }">
+                    </div>
                 </div>
-                <div>
-                    {{'Start time : ' + getStartDate()}}
-                </div>
-                <div>
-                    {{'Current time : ' + getCurrentDate()}}
-                </div>
-                <div>
-                    {{'End time : ' + getEndDate()}}
-                </div>
+                <div>{{'Start time : ' + getStartDate()}}</div>
+                <div>{{'Current time : ' + getCurrentDate()}}</div>
+                <div>{{'End time : ' + getEndDate()}}</div>
 
                 <div class="sidebar-controls-buttons" style="display: flex;">
                     <button v-on:click="playToggle()" v-if="isPaused">
@@ -163,6 +164,8 @@
                     </button>
                 </div>
             </div>
+            
+            <!-- Event cards -->
             <div class="event-display-container">
                 <event-display v-for="(event, index) in sharedState.displayedEvent0" v-bind:key="event.startDate"
                     v-bind:event="event" v-bind:secondaryclass="'event-display-1'"
