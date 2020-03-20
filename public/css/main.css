@@ -76,12 +76,29 @@ p.popupText {
     height: 100%;
 }
 
+.dataLoadSection {
+    margin-bottom: 150px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 65%;
+}
+
 .data-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: fit-content;
     width: 65%;
+    margin-bottom: 0;
+    /* height: 200px; */
+}
+
+.toggleIcon {
+    width: 60px;
+    height: 60px;
 }
 
 .form-control-file {

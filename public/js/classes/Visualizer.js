@@ -3,7 +3,7 @@
 // eslint-disable-next-line
 class Visualizer {
     constructor(store) {
-        this.removeOldEvents = true;   // Set to false to see all events stack up over time
+        // this.removeOldEvents = true;   // Set to false to see all events stack up over time
         this.panningSpeed = 0.7;
         this.allData = [];
         this.store = store;
@@ -249,16 +249,6 @@ class Visualizer {
         this._switchMapLayer("dark-v10");
     }
 
-    // Toggle clear/stack behaviour for additional features
-    // {
-    //     let clearEventsToggle = document.getElementById('clearToggle');
-    //     let inputs = clearEventsToggle.getElementsByTagName('input');
-    //     for (let i = 0; i < inputs.length; i++) {
-    //         inputs[i].onclick =
-    //             (d => this.removeOldEvents = inputs[i].attributes.value.value);
-    //     }
-    // }
-
     _concat(array) {
         let allValues = [];
         array.forEach(function (d) {
@@ -378,22 +368,31 @@ class Visualizer {
 
                 const dataset = allData[dataSetIdx].data;
 
-                if (this.removeOldEvents == true)
+                // Remove event markers
+                if (this.store.get('clearPoints'))
                 {
                     for (let i = currentEventIndices.length - 1; i >= 0; --i)
                     {
                         const eventIdx = currentEventIndices[i];
-                        if (this._strToMs(dataset[eventIdx].dateStart) + dataset[eventIdx].duration <= virtualTime)
+                        if (dataset[eventIdx].timestampEnd <= virtualTime)
                         {
                             geojsonData.features[0].geometry.coordinates.splice(i, 1);
                             currentEventIndices.splice(i, 1);
-                            (displayedPopups[i].length !== 0) && displayedPopups[i].remove();
-                            displayedPopups.splice(i, 1);
                         }
                         else
                         {
                             allEventsRemoved = false;
                         }
+                    }
+                }
+
+                // Remove popups
+                for (let i = displayedPopups.length - 1; i >= 0; --i)
+                {
+                    if (displayedPopups[i].timestampEnd <= virtualTime)
+                    {
+                        displayedPopups[i].remove();
+                        displayedPopups.splice(i, 1);
                     }
                 }
 
@@ -430,7 +429,30 @@ class Visualizer {
                         geojsonData.features[0].geometry.coordinates.push(coords);
                         displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
 
-                        // Add popups
+                        // Make sure there is a duration or an end date
+                        if (typeof dataset[i].dateEnd === 'undefined')
+                        {
+                            if (typeof dataset[i].duration === 'undefined')
+                            {
+                                // [duration, dateEnd] = [0, 0]
+                                dataset[i].duration = defaultDurationMs * speed;
+                            }
+                            else
+                            {
+                                // [duration, dateEnd] = [0, 1]
+                                dataset[i].duration = Math.max(defaultDurationMs * speed, dataset[i].duration);
+                            }
+                        }
+                        else    // Check that the minimum duration is long enough
+                        {
+                            // [duration, dateEnd] = [1, 0]
+                            // [duration, dateEnd] = [1, 1]
+                            dataset[i].duration = Math.max(defaultDurationMs * speed,
+                                                           new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart));
+                        }
+                        dataset[i].timestampEnd = this._strToMs(dataset[i].dateStart) + dataset[i].duration;
+
+                        // Add popup
                         if (this.store.get('displayPopups') &&
                             (dataset[i].event !== undefined && dataset[i].event !== ""))
                         {
@@ -446,23 +468,7 @@ class Visualizer {
                                     .setHTML('<p class="popupText">' + textToShow + '</p>')
                                     .addTo(this.map)
                             );
-                        }
-                        else
-                        {
-                            displayedPopups.push([]);
-                        }
-
-                        // Make sure there is a duration. If not, assign default
-                        if (typeof dataset[i].duration === 'undefined') {
-                            if (typeof dataset[i].dateEnd === 'undefined')
-                            {
-                                dataset[i].duration = defaultDurationMs * speed;
-                            }
-                            else
-                            {
-                                dataset[i].duration = Math.max(defaultDurationMs * speed,
-                                                               new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart));
-                            }
+                            displayedPopups[displayedPopups.length-1].timestampEnd = dataset[i].timestampEnd;
                         }
                     }
                     activeCoordinates.push(...geojsonData.features[0].geometry.coordinates);

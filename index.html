@@ -40,16 +40,17 @@
 
     <!-- Side Pane -->
     <div class="sidebar" id='app'>
-        
-        <!-- Data loading View Start -->
+
+        <!-- Data Loading View Start -->
         <div class="sidebar-content" v-if="!isVisualize">
+            <div class="form-group dataLoadSection">
             <div v-for="(num, index) in numDataFields" class="form-group data-container">
                 <div style="display: flex; flex-direction: row; justify-content: center;" v-if="headers[index].length == 0">
-                    <input class="form-control-file csv-file-input" type="file" :id="'input-'+index">
+                    <input class="form-control-file csv-file-input" type="file" v-on:change='loadData' style="display: none;" :id="'input-'+index">
                     <button type="button" class="btn btn-outline-secondary"
-                        v-on:click="loadData" :name="'input-'+index">Load Data</button>
+                    v-on:click="showFileLoadDialog" :name="'input-'+index">Load Data</button>
                 </div>
-                
+
                 <div style="display: flex; flex-direction: row;">
                     <div class="headers headers-required" style="display: flex; flex-direction: column;">
                         <div>
@@ -106,10 +107,12 @@
                             </select>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
+            </div>
 
+            <!-- Buttons -->
             <div class="data-container-control" style="position:absolute; bottom:10px;">
                 <div class="headers-row">
                     <label class="headers-label" style="width:150px;">Duration (minutes):</label>
@@ -133,7 +136,7 @@
             </div>
         </div>
         <!-- Data loading View End -->
-        
+
         <!-- Runtime information -->
         <div class="sidebar-content" v-if="isVisualize">
             <!-- Time -->
@@ -163,11 +166,14 @@
                     </button>
                 </div>
             </div>
-            
+
             <!-- Options -->
             <div>
-                <button>
+                <button title='Show/Hide Popups' class='toggleIcon'>
                     <i v-on:click="popupToggle()" onclick="popupIconToggle(this)" class="fa fa-comment-slash fa-2x"></i>
+                </button>
+                <button title='Stack/Remove Events' class='toggleIcon'>
+                    <i v-on:click="stackToggle()" onclick="stackIconToggle(this)" class="fa fa-circle"></i>
                 </button>
             </div>
 
@@ -217,6 +223,14 @@
       x.classList.toggle("fa-comment-slash");
       x.classList.toggle("fa-comment");
     }
+    function stackIconToggle(x) {
+      x.classList.toggle("fa-braille");
+      x.classList.toggle("fa-circle");
+      x.classList.toggle("fa-2x");
+    }
+    function foo() {
+      console.log('done');
+    }
 
 
     var store = {
@@ -227,7 +241,8 @@
             displayedEvent1: [],
             displayedEvent2: [],
             speed: 1,
-            displayPopups: true
+            displayPopups: true,
+            clearPoints: true
         },
         set(newKey, newValue) {
             this.state[newKey] = newValue
@@ -284,9 +299,12 @@
             getFilteredHeaders: function (index) {
                 return this.headers[index];
             },
+            showFileLoadDialog: function (event) {
+                document.getElementById(event.target.name).click();
+            },
             loadData: function (event) {
-                let id = event.target.name;
-                let index = parseInt(event.target.name.match(/-(.*)/g)[0].slice(1));
+                let id = event.target.id;
+                let index = parseInt(event.target.id.match(/-(.*)/g)[0].slice(1));
 
                 dataReader.readFileAsString(id).then(
                     fileContent => {
@@ -355,6 +373,10 @@
             popupToggle: function () {
                 const display = this.store.get('displayPopups');
                 this.store.set('displayPopups', !display);
+            },
+            stackToggle: function () {
+                const display = this.store.get('clearPoints');
+                this.store.set('clearPoints', !display);
             },
             handleVisualize: function (event) {
                 this.isVisualize = true;
