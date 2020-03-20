@@ -339,8 +339,8 @@ class Visualizer {
         const latestDateMs = Math.max(...allData.map(d => d.dateRangeMs[1]));
         const dateRangeMs = latestDateMs - earliestDateMs;
 
-        const totalNumberSteps = 1000;
-        const refreshIntervalMs = Math.ceil(totalDesiredRuntimeMs / totalNumberSteps)
+        const refreshIntervalMs = 100;
+        const totalNumberSteps = Math.ceil(totalDesiredRuntimeMs / refreshIntervalMs);
         var timeIntervalMs = Math.ceil(dateRangeMs / totalNumberSteps)
         var defaultDurationMs = (2000 / refreshIntervalMs) * timeIntervalMs;  // 2 sec converted to how long that is in virtual time
 
@@ -354,7 +354,7 @@ class Visualizer {
             this.store.set('startTime', earliestDateMs);
             this.store.set('endTime', latestDateMs);
             this.store.set('virualTime', virtualTime);
-            this.store.set('progress', `0%`);
+            this.store.set('progress', '0%');
             this.store.set('isYearOnly', isYear);
         }
 
@@ -377,9 +377,6 @@ class Visualizer {
                 const currentEventIndices = displayedEventIndices[dataSetIdx];
 
                 const dataset = allData[dataSetIdx].data;
-                this.store.set(`displayedEvent${dataSetIdx}`, currentEventIndices.map((index) => {
-                    return (allData[dataSetIdx].data)[index];
-                }));
 
                 if (this.removeOldEvents == true)
                 {
@@ -433,8 +430,8 @@ class Visualizer {
                         geojsonData.features[0].geometry.coordinates.push(coords);
                         displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
 
-                        if (dataset[i].description !== undefined && dataset[i].description !== "") {
-                            const textToShow = dataset[i].description;
+                        if (dataset[i].event !== undefined && dataset[i].event !== "") {
+                            const textToShow = dataset[i].event;
                             // Keep track of the popups
                             displayedPopups.push(
                                 new mapboxgl.Popup({
@@ -465,6 +462,13 @@ class Visualizer {
 
                     // Move the pointer forward for this dataset
                     eventIndices[dataSetIdx] = i;
+
+                    if (i > 0)
+                    {
+                        let eventForCard = dataset[i-1];
+                        eventForCard.datasetName = allData[dataSetIdx].title;
+                        this.store.set(`displayedEvent${dataSetIdx}`, [eventForCard]);
+                    }
 
                     // Refresh set of points on map for this dataset
                     this.map.getSource(layerName).setData(geojsonData);

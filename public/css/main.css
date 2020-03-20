@@ -81,7 +81,7 @@ p.popupText {
     flex-direction: column;
     justify-content: center;
     height: fit-content;
-    width: 100%;
+    width: 65%;
 }
 
 .form-control-file {
@@ -103,7 +103,7 @@ p.popupText {
 }
 
 .headers-label {
-    width: 100px;
+    width: 90px;
 }
 
 .headers-select {
@@ -174,6 +174,36 @@ p.popupText {
     margin: 5px 0;
 }
 
+.event-time {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: small;
+    font-style: oblique;
+    font-family: monospace;
+}
+
+.event-title {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.event-datasetName {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 150px;
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+.event-description {
+    position: absolute;
+    height: 64px;
+    bottom: 7px;
+    line-height: 1.4;
+}
+
 .event-display-1 {
     border-color: #ff6464;
 }
@@ -186,7 +216,8 @@ p.popupText {
     border-color: #6464ff;
 }
 
-.event-display>p {
+.event-display {
+    position: relative;
     margin-bottom: 5px;
 }
 
