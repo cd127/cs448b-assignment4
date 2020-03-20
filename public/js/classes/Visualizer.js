@@ -387,7 +387,7 @@ class Visualizer {
                         {
                             geojsonData.features[0].geometry.coordinates.splice(i, 1);
                             currentEventIndices.splice(i, 1);
-                            displayedPopups[i].remove();
+                            (displayedPopups[i].length !== 0) && displayedPopups[i].remove();
                             displayedPopups.splice(i, 1);
                         }
                         else
@@ -430,7 +430,10 @@ class Visualizer {
                         geojsonData.features[0].geometry.coordinates.push(coords);
                         displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
 
-                        if (dataset[i].event !== undefined && dataset[i].event !== "") {
+                        // Add popups
+                        if (this.store.get('displayPopups') &&
+                            (dataset[i].event !== undefined && dataset[i].event !== ""))
+                        {
                             const textToShow = dataset[i].event;
                             // Keep track of the popups
                             displayedPopups.push(
@@ -443,6 +446,10 @@ class Visualizer {
                                     .setHTML('<p class="popupText">' + textToShow + '</p>')
                                     .addTo(this.map)
                             );
+                        }
+                        else
+                        {
+                            displayedPopups.push([]);
                         }
 
                         // Make sure there is a duration. If not, assign default

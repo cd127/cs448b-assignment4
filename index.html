@@ -24,8 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <!-- Font Awesome -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 
     <!-- Imports -->
     <script src="public/js/classes/DataReader.js"></script>
@@ -157,14 +156,21 @@
                     </button>
 
                     <button v-on:click="multiplySpeed(0.5)">
-                        <i class="fa fa-step-forward fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-step-forward fa-2x"></i>
                     </button>
                     <button v-on:click="multiplySpeed(1.5)">
-                        <i class="fa fa-fast-forward fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-fast-forward fa-2x"></i>
                     </button>
                 </div>
             </div>
             
+            <!-- Options -->
+            <div>
+                <button>
+                    <i v-on:click="popupToggle()" onclick="popupIconToggle(this)" class="fa fa-comment-slash fa-2x"></i>
+                </button>
+            </div>
+
             <!-- Event cards -->
             <div class="event-display-container">
                 <event-display v-for="(event, index) in sharedState.displayedEvent0" v-bind:key="event.startDate"
@@ -206,6 +212,13 @@
 
 <script>
 
+    <!-- Icon control -->
+    function popupIconToggle(x) {
+      x.classList.toggle("fa-comment-slash");
+      x.classList.toggle("fa-comment");
+    }
+
+
     var store = {
         debug: true,
         state: {
@@ -213,7 +226,8 @@
             displayedEvent0: [],
             displayedEvent1: [],
             displayedEvent2: [],
-            speed: 1
+            speed: 1,
+            displayPopups: true
         },
         set(newKey, newValue) {
             this.state[newKey] = newValue
@@ -326,8 +340,7 @@
                     this.mappingsComplete = false;
                 }
             },
-            playToggle()
-            {
+            playToggle: function () {
                 this.store.set('speed', -1 * this.store.get('speed'));
                 this.isPaused = !this.isPaused;
             },
@@ -338,6 +351,10 @@
                     return;
                 }
                 this.store.set('speed', speed * multiplier);
+            },
+            popupToggle: function () {
+                const display = this.store.get('displayPopups');
+                this.store.set('displayPopups', !display);
             },
             handleVisualize: function (event) {
                 this.isVisualize = true;
