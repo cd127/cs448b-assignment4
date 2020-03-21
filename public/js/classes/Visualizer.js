@@ -435,22 +435,22 @@ class Visualizer {
                             if (typeof dataset[i].duration === 'undefined')
                             {
                                 // [duration, dateEnd] = [0, 0]
-                                dataset[i].duration = defaultDurationMs * speed;
+                                dataset[i].durationMs = defaultDurationMs * speed;
                             }
                             else
                             {
-                                // [duration, dateEnd] = [0, 1]
-                                dataset[i].duration = Math.max(defaultDurationMs * speed, dataset[i].duration);
+                                // [duration, dateEnd] = [1, 0]
+                                dataset[i].durationMs = Math.max(defaultDurationMs * speed, dataset[i].duration);
                             }
                         }
                         else    // Check that the minimum duration is long enough
                         {
-                            // [duration, dateEnd] = [1, 0]
+                            // [duration, dateEnd] = [0, 1]
                             // [duration, dateEnd] = [1, 1]
-                            dataset[i].duration = Math.max(defaultDurationMs * speed,
-                                                           new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart));
+                            dataset[i].durationMs = Math.max(defaultDurationMs * speed,
+                                                             new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart));
                         }
-                        dataset[i].timestampEnd = this._strToMs(dataset[i].dateStart) + dataset[i].duration;
+                        dataset[i].timestampEnd = this._strToMs(dataset[i].dateStart) + dataset[i].durationMs;
 
                         // Add popup
                         if (this.store.get('displayPopups') &&
@@ -497,9 +497,25 @@ class Visualizer {
             this.store.set('progress', `${(virtualTime - earliestDateMs) / dateRangeMs * 100}%`);
 
             if (allDataProcessed && allEventsRemoved) {
-                window.clearInterval(timer);
-                virtualTime = latestDateMs;
+                // Loop back to start date
+                virtualTime = earliestDateMs;
                 this.store.set('virtualTime', virtualTime);
+
+                // Force pause
+                this.store.set('speed', -1 * this.store.get('speed'));
+                let x = document.getElementById('playButton');
+                x.classList.remove("fa-pause");
+                x.classList.add("fa-play");
+
+                // Set dataset to clear everything at next iteration
+                for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
+                    const dataset = allData[dataSetIdx].data;
+                    for (let i = 0; i < dataset.length; ++i) {
+                        dataset[i].timestampEnd = 0;
+                        dataset[i].durationMs = 0;
+                    }
+                    eventIndices[dataSetIdx] = 0;
+                }
             }
         }, refreshIntervalMs);
     }

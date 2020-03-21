@@ -151,17 +151,14 @@
                 <div>{{'End time : ' + getEndDate()}}</div>
 
                 <div class="sidebar-controls-buttons" style="display: flex;">
-                    <button v-on:click="playToggle()" v-if="isPaused">
-                        <i class="fa fa-play fa-2x"></i>
-                    </button>
-                    <button v-on:click="playToggle()" v-if="!isPaused">
-                        <i class="fa fa-pause fa-2x" ></i>
+                    <button>
+                        <i v-on:click="playToggle()" onclick="playIconToggle(this)" class="fa fa-pause fa-2x" id='playButton'></i>
                     </button>
 
-                    <button v-on:click="multiplySpeed(0.5)">
+                    <button title= 'Slower' v-on:click="multiplySpeed(0.5)">
                         <i class="fa fa-step-forward fa-2x"></i>
                     </button>
-                    <button v-on:click="multiplySpeed(1.5)">
+                    <button title= 'Faster' v-on:click="multiplySpeed(1.5)">
                         <i class="fa fa-fast-forward fa-2x"></i>
                     </button>
                 </div>
@@ -170,7 +167,7 @@
             <!-- Options -->
             <div>
                 <button title='Show/Hide Popups' class='toggleIcon'>
-                    <i v-on:click="popupToggle()" onclick="popupIconToggle(this)" class="fa fa-comment-slash fa-2x"></i>
+                    <i v-on:click="popupToggle()" onclick="popupIconToggle(this)" class="fa fa-comment fa-2x"></i>
                 </button>
                 <button title='Stack/Remove Events' class='toggleIcon'>
                     <i v-on:click="stackToggle()" onclick="stackIconToggle(this)" class="fa fa-circle"></i>
@@ -219,6 +216,10 @@
 <script>
 
     <!-- Icon control -->
+    function playIconToggle(x) {
+      x.classList.toggle("fa-pause");
+      x.classList.toggle("fa-play");
+    }
     function popupIconToggle(x) {
       x.classList.toggle("fa-comment-slash");
       x.classList.toggle("fa-comment");
@@ -227,9 +228,6 @@
       x.classList.toggle("fa-braille");
       x.classList.toggle("fa-circle");
       x.classList.toggle("fa-2x");
-    }
-    function foo() {
-      console.log('done');
     }
 
 
@@ -268,7 +266,6 @@
             headerMappingsOpt: [{}, {}, {}],    // Optional header mappings
             mappingsComplete: false,
             isVisualize: false,
-            isPaused: false,
             isDebug: true,
             store: store,
             sharedState: store.state
@@ -360,7 +357,6 @@
             },
             playToggle: function () {
                 this.store.set('speed', -1 * this.store.get('speed'));
-                this.isPaused = !this.isPaused;
             },
             multiplySpeed: function (multiplier = 1.25) {
                 let speed = this.store.get('speed');
