@@ -161,9 +161,9 @@ class Visualizer {
                 mapboxgl.accessToken = 'pk.eyJ1IjoiY2QxMjciLCJhIjoiY2s2eTF6cGphMGY5ejNncGJ0bXJjYmxjbSJ9.AWi1_d1Z8YULzs-kaoizQg';
                 this.map = new mapboxgl.Map({
                     container: container,
-                    style: 'mapbox://styles/mapbox/light-v10',
+                    style: 'mapbox://styles/mapbox/satellite-v9',
                     center: [0, 30],            // starting position
-                    zoom: 1                   // starting zoom
+                    zoom: 1                     // starting zoom
                 });
 
                 let self = this;
@@ -179,43 +179,6 @@ class Visualizer {
                             break;
                         }
                     }
-
-                    self.map.addLayer(
-                        {
-                            'id': '3d-buildings',
-                            'source': 'composite',
-                            'source-layer': 'building',
-                            'filter': ['==', 'extrude', 'true'],
-                            'type': 'fill-extrusion',
-                            'minzoom': 13,
-                            'paint': {
-                                'fill-extrusion-color': '#aaa',
-
-                                // use an 'interpolate' expression to add a smooth transition effect to the
-                                // buildings as the user zooms in
-                                'fill-extrusion-height': [
-                                    'interpolate',
-                                    ['linear'],
-                                    ['zoom'],
-                                    13,
-                                    0,
-                                    15.05,
-                                    ['get', 'height']
-                                ],
-                                'fill-extrusion-base': [
-                                    'interpolate',
-                                    ['linear'],
-                                    ['zoom'],
-                                    13,
-                                    0,
-                                    15.05,
-                                    ['get', 'min_height']
-                                ],
-                                'fill-extrusion-opacity': 0.6
-                            }
-                        },
-                        labelLayerId
-                    );
 
                     // Add zoom and rotation controls to the map.
                     self.map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
@@ -515,6 +478,13 @@ class Visualizer {
                         dataset[i].durationMs = 0;
                     }
                     eventIndices[dataSetIdx] = 0;
+
+                    // Remove all popups
+                    for (let i = displayedPopups.length - 1; i >= 0; --i)
+                    {
+                        displayedPopups[i].remove();
+                        displayedPopups.splice(i, 1);
+                    }
                 }
             }
         }, refreshIntervalMs);
