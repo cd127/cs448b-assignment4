@@ -76,13 +76,6 @@ class Visualizer {
                     this.height
                 ).data;
 
-                // update debug text
-                let debugPane = document.getElementById('debugPane');
-                if (debugPane)
-                    debugPane.textContent = 'Debug info: ' +
-                        '\nzoom = ' + self.map.getZoom().toFixed(2) +
-                        ';\ncentre = ' + self.map.getCenter().toString()
-
                 // continuously repaint the map, resulting in the smooth animation of the dot
                 self.map.triggerRepaint();
 
@@ -133,7 +126,7 @@ class Visualizer {
 
         // Determine most zoomed-in level
         const zoom =
-            (dataset.length === 1) ?
+            (dataset.length <= 2) ?
             5 :
             _areBoundsTooWide(this.map, minLon, maxLon, minLat, maxLat) ?
             100 :

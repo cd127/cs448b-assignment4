@@ -45,14 +45,14 @@
         <div class="sidebar-content" v-if="!isVisualize">
             <div class="form-group dataLoadSection">
             <div v-for="(num, index) in numDataFields" class="form-group data-container">
-                <div style="display: flex; flex-direction: row; justify-content: center;" v-if="headers[index].length == 0">
+                <div style='margin-top: 20px;' v-if="headers[index].length == 0">
                     <input class="form-control-file csv-file-input" type="file" v-on:change='loadData' style="display: none;" :id="'input-'+index">
                     <button type="button" class="btn btn-outline-secondary"
                     v-on:click="showFileLoadDialog" :name="'input-'+index">Load Data</button>
                 </div>
 
-                <div style="display: flex; flex-direction: row;">
-                    <div class="headers headers-required" style="display: flex; flex-direction: column;">
+                <div :id="'loader-'+index">
+                    <div class="headers headers-required">
                         <div>
                             <label for="required-headers"
                                 v-if="headers[index] && headers[index].length > 0">Required</label>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
 
-                    <div class="headers headers-required" style="display: flex; flex-direction: column; height: 196px;">
+                    <div class="headers headers-required">
                         <div>
                             <label for="optional-headers"
                                 v-if="headers[index] && headers[index].length > 0">Optional</label>
@@ -142,7 +142,7 @@
             <!-- Time -->
             <div class="sidebar-controls-container">
                 <div class="progress" style="height:20px; width: 100%;">
-                    <div id="progress" class="progress-bar bg-secondary" style="height:20px; width:0%;"
+                    <div id="progress" class="progress-bar bg-secondary" style="border-style: none; height:20px; width:0%;"
                         v-bind:style="{ 'width': sharedState.progress }">
                     </div>
                 </div>
@@ -329,6 +329,14 @@
                         console.log(err);
                     }
                 );
+
+                // Set div border color
+                const colours = ['red', 'green', 'blue'];
+                const divId = 'loader-' + index;
+                let divStyle = document.getElementById(divId).style;
+                divStyle.borderWidth = '2px';
+                divStyle.borderStyle = 'dotted';
+                divStyle.borderColor = colours[index];
             },
             handleAddDataSet: function () {
                 this.numDataFields++;

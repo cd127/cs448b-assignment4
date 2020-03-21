@@ -93,7 +93,6 @@ p.popupText {
     height: fit-content;
     width: 65%;
     margin-bottom: 0;
-    /* height: 200px; */
 }
 
 .toggleIcon {
@@ -135,6 +134,13 @@ p.popupText {
 
 .headers-row {
     margin: 2px 0;
+}
+
+.headers-required {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .map-type-group {
