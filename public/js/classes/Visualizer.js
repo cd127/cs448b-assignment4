@@ -13,11 +13,12 @@ class Visualizer {
 
     // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
     // see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
-    _pulsingDot(col = [255, 100, 100]) {
+    _pulsingDot(col = [255, 100, 100, true]) {
         const dotSize = 20;
         let self = this;
         return {
-            color: col,
+            pulse: col[3],
+            color: col.splice(0,3),
             width: dotSize,
             height: dotSize,
             data: new Uint8Array(dotSize * dotSize * 4),
@@ -33,7 +34,7 @@ class Visualizer {
             // called once before every frame where the icon will be used
             render: function () {
                 let duration = 1500;
-                let t = (performance.now() % duration) / duration;
+                let t = this.pulse ? ((performance.now() % duration) / duration) : 1;
 
                 let radius = (dotSize / 2) * 0.5;
                 let outerRadius = ((dotSize / 2) - radius) * t + radius;
@@ -62,7 +63,7 @@ class Visualizer {
                     0,
                     Math.PI * 2
                 );
-                context.fillStyle = 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 1)';
+                context.fillStyle = 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', ' + (this.pulse? 1 : 0.5)  + ')';
                 context.strokeStyle = 'white';
                 context.lineWidth = 2 + 4 * Math.max(0, 1 - 5 * t);
                 context.fill();
@@ -234,12 +235,6 @@ class Visualizer {
             }
         );
 
-        const datasetColours = [
-            [255, 100, 100],
-            [100, 155, 100],
-            [100, 100, 255]
-        ]
-
         var displayedPopups = [];
         const popupClasses = [
             'mapboxgl-popup-content-red',
@@ -247,68 +242,89 @@ class Visualizer {
             'mapboxgl-popup-content-blue'
         ]
 
-        // Create a new image and layer for each dataset
-        for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+        // Create a new image and two layers for each dataset (new and old)
+        new Set(['old_points_', 'points_']).forEach(d =>
         {
-            const name = 'points_' + dataSetIdx;
+            const points_datasetColours = [
+                [255, 100, 100, true],
+                [100, 155, 100, true],
+                [100, 100, 255, true]
+            ];
 
-            this.map.addImage(name, this._pulsingDot(datasetColours[dataSetIdx]));
+            const old_points_datasetColours = [
+                [250, 220, 220, false],
+                [220, 250, 220, false],
+                [220, 220, 250, false]
+            ];
 
-            this.map.addSource(name, {
-                type: 'geojson',
-                cluster: false,
-                data: {
-                    type: 'FeatureCollection',
-                    features: []
-                }
-            });
+            for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+            {
+                const name = d + dataSetIdx;
 
-            this.map.addLayer({
-                'id': name,
-                'type': 'symbol',
-                'source': name,
-                'layout': {
-                    'icon-image': name,
-                    'icon-allow-overlap': true
-                }
-            });
+                this.map.addImage(name, this._pulsingDot(eval(`${d}datasetColours[dataSetIdx]`)));
+
+                this.map.addSource(name, {
+                    type: 'geojson',
+                    cluster: false,
+                    data: {
+                        type: 'FeatureCollection',
+                        features: []
+                    }
+                });
+
+                this.map.addLayer({
+                    'id': name,
+                    'type': 'symbol',
+                    'source': name,
+                    'layout': {
+                        'icon-image': name,
+                        'icon-allow-overlap': true
+                    }
+                });
 
 
-            // Change the cursor to a pointer when the mouse is over the places layer.
-            this.map.on('mouseenter', name, e =>
-                this.map.getCanvas().style.cursor = 'pointer');
+                // Change the cursor to a pointer when the mouse is over the places layer.
+                this.map.on('mouseenter', name, e =>
+                    this.map.getCanvas().style.cursor = 'pointer');
 
-            // Change it back to a pointer when it leaves.
-            this.map.on('mouseleave', name, e =>
-                this.map.getCanvas().style.cursor = '');
+                // Change it back to a pointer when it leaves.
+                this.map.on('mouseleave', name, e =>
+                    this.map.getCanvas().style.cursor = '');
 
-            // Create a popup on click
-            this.map.on("click", name, e => {
-                // TODO: link to event card
+                // Create a popup on click
+                this.map.on("click", name, e => {
+                    // TODO: link to event card
 
-                var coords = e.features[0].geometry.coordinates.slice();
+                    var coords = e.features[0].geometry.coordinates.slice();
 
-                // Ensure that if the map is zoomed out such that multiple
-                // copies of the feature are visible, the popup appears
-                // over the copy being pointed to.
-                while (Math.abs(e.lngLat.lng - coords[0]) > 180) {
-                    coords[0] += (e.lngLat.lng > coords[0]) ? 360 : -360;
-                }
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coords[0]) > 180) {
+                        coords[0] += (e.lngLat.lng > coords[0]) ? 360 : -360;
+                    }
 
-                const textToShow = e.features[0].properties.event;
-                displayedPopups.push(
-                    new mapboxgl.Popup({
-                            className: popupClasses[dataSetIdx],
-                            closeOnClick: false,
-                            closeButton: false,
-                            offset: [0, -4] })
-                        .setLngLat(coords)
-                        .setHTML('<p class="popupText">' + textToShow + '</p>')
-                        .addTo(this.map)
-                );
-                displayedPopups[displayedPopups.length-1].timestampEnd = 0; // remove at next refresh (when play resumes)
-            });
-        }
+                    const textToShow = e.features[0].properties.event;
+                    displayedPopups.push(
+                        new mapboxgl.Popup({
+                                className: popupClasses[dataSetIdx],
+                                closeOnClick: false,
+                                closeButton: false,
+                                offset: [0, -4] })
+                            .setLngLat(coords)
+                            .setHTML('<p class="popupText">' + textToShow + '</p>')
+                            .addTo(this.map)
+                    );
+                    displayedPopups[displayedPopups.length-1].timestampEnd = 0; // remove at next refresh (when play resumes)
+                });
+            }
+        });
+
+        const points_datasetColours = [
+            [255, 100, 100],
+            [100, 155, 100],
+            [100, 100, 255]
+        ];
 
         // Create all features as they will be displayed
         // to avoid doing it during the animation
@@ -334,9 +350,9 @@ class Visualizer {
                                 dateEnd: new Date(d.dateEnd),
                                 duration: d.duration,
                                 description: d.description,
-                                r: datasetColours[dataSetIdx][0],
-                                g: datasetColours[dataSetIdx][1],
-                                b: datasetColours[dataSetIdx][2]
+                                r: points_datasetColours[dataSetIdx][0],
+                                g: points_datasetColours[dataSetIdx][1],
+                                b: points_datasetColours[dataSetIdx][2]
                             }
                         }
                     )
@@ -381,19 +397,25 @@ class Visualizer {
 
             // Remove old features
             let allEventsRemoved = true;
-            for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
+            for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+            {
                 const layerName = 'points_' + dataSetIdx;
                 let geojsonData = this.map.getSource(layerName)._data;
+
+                const oldLayerName = 'old_points_' + dataSetIdx;
+                let oldGeojsonData = this.map.getSource(oldLayerName)._data;
 
                 const features = geojsonData.features;
 
                 // Remove event markers
-                if (this.store.get('clearPoints'))
-                {
                     for (let i = features.length - 1; i >= 0; --i)
                     {
                         if (features[i].properties.timestampEnd <= virtualTime)
                         {
+                            if (this.store.get('clearPoints'))  // Move to old layer
+                            {
+                                oldGeojsonData.features.push(features[i]);
+                            }
                             features.splice(i, 1);
                         }
                         else
@@ -401,7 +423,6 @@ class Visualizer {
                             allEventsRemoved = false;
                         }
                     }
-                }
 
                 // Remove popups
                 for (let i = displayedPopups.length - 1; i >= 0; --i)
@@ -419,6 +440,7 @@ class Visualizer {
 
                 // Refresh set of points on map for this dataset
                 this.map.getSource(layerName).setData(geojsonData);
+                this.map.getSource(oldLayerName).setData(oldGeojsonData);
             }
 
             let activeCoordinates = [];
