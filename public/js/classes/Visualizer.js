@@ -109,7 +109,7 @@ class Visualizer {
         return [minLon, maxLon, minLat, maxLat];
     }
 
-    _moveTo(dataset) {
+    _moveTo(features) {
         function _areBoundsTooWide(map, minLon, maxLon, minLat, maxLat) {
             const lonDiff = maxLon - minLon;
             const latDiff = maxLat - minLat;
@@ -119,14 +119,14 @@ class Visualizer {
             return (latDiff < curLatDiff/2) && (lonDiff < curLonDiff/2);
         }
 
-        if (dataset.length === 0) return;
+        if (features.length === 0) return;
 
         let minLon, maxLon, minLat, maxLat;
-        [minLon, maxLon, minLat, maxLat] = this._minMaxCoord(dataset);
+        [minLon, maxLon, minLat, maxLat] = this._minMaxCoord(features);
 
         // Determine most zoomed-in level
         const zoom =
-            (dataset.length <= 2) ?
+            (features.length <= 2) ?
             5 :
             _areBoundsTooWide(this.map, minLon, maxLon, minLat, maxLat) ?
             100 :
@@ -182,11 +182,6 @@ class Visualizer {
                 reject(err);
             }
         });
-    }
-
-    _strToMs(dateStr) {
-        const date = new Date(dateStr);
-        return date.getTime();    // FIXME: would fail if < 1970
     }
 
     _switchMapLayer(layerId = 'dark-v10') {
@@ -253,7 +248,8 @@ class Visualizer {
         ]
 
         // Create a new image and layer for each dataset
-        for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
+        for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+        {
             const name = 'points_' + dataSetIdx;
 
             this.map.addImage(name, this._pulsingDot(datasetColours[dataSetIdx]));
@@ -288,9 +284,9 @@ class Visualizer {
 
             // Create a popup on click
             this.map.on("click", name, e => {
+                // TODO: link to event card
 
                 var coords = e.features[0].geometry.coordinates.slice();
-                // var description = e.features[0].properties.description;
 
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
@@ -299,9 +295,7 @@ class Visualizer {
                     coords[0] += (e.lngLat.lng > coords[0]) ? 360 : -360;
                 }
 
-                // const index = e.features[0].properties.index;
-                // const textToShow = dataset[index].event;
-                const textToShow = "It works!";
+                const textToShow = e.features[0].properties.event;
                 displayedPopups.push(
                     new mapboxgl.Popup({
                             className: popupClasses[dataSetIdx],
@@ -314,6 +308,42 @@ class Visualizer {
                 );
                 displayedPopups[displayedPopups.length-1].timestampEnd = 0; // remove at next refresh (when play resumes)
             });
+        }
+
+        // Create all features as they will be displayed
+        // to avoid doing it during the animation
+        for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+        {
+            allData[dataSetIdx].features = [];
+            allData[dataSetIdx].data.forEach( d =>
+                {
+                    allData[dataSetIdx].features.push(
+                        {
+                            type: 'Feature',
+                            geometry:
+                            {
+                                type: 'Point',
+                                coordinates: [d.longitude, d.latitude]
+                            },
+                            properties:
+                            {
+                                event: d.event,
+                                dateStartStr: d.dateStart,
+                                dateStart: new Date(d.dateStart),
+                                dateEndStr: d.dateEnd,
+                                dateEnd: new Date(d.dateEnd),
+                                duration: d.duration,
+                                description: d.description,
+                                r: datasetColours[dataSetIdx][0],
+                                g: datasetColours[dataSetIdx][1],
+                                b: datasetColours[dataSetIdx][2]
+                            }
+                        }
+                    )
+                }
+            );
+
+            delete allData[dataSetIdx].data;
         }
 
 
@@ -358,7 +388,7 @@ class Visualizer {
                 if (typeof displayedEventIndices[dataSetIdx] === 'undefined') displayedEventIndices.push(new Array);
                 const currentEventIndices = displayedEventIndices[dataSetIdx];
 
-                const dataset = allData[dataSetIdx].data;
+                const features = allData[dataSetIdx].features;
 
                 // Remove event markers
                 if (this.store.get('clearPoints'))
@@ -366,7 +396,7 @@ class Visualizer {
                     for (let i = currentEventIndices.length - 1; i >= 0; --i)
                     {
                         const eventIdx = currentEventIndices[i];
-                        if (dataset[eventIdx].timestampEnd <= virtualTime)
+                        if (features[eventIdx].properties.timestampEnd <= virtualTime)
                         {
                             geojsonData.features.splice(i, 1);
                             currentEventIndices.splice(i, 1);
@@ -397,10 +427,10 @@ class Visualizer {
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
                 if (typeof eventIndices[dataSetIdx] === 'undefined') eventIndices.push(0);
 
-                const dataset = allData[dataSetIdx].data;
+                const features = allData[dataSetIdx].features;
                 let i = eventIndices[dataSetIdx];
 
-                if (i < dataset.length) {
+                if (i < features.length) {
                     allDataProcessed = false;
 
                     const layerName = 'points_' + dataSetIdx;
@@ -408,59 +438,41 @@ class Visualizer {
 
                     // Since the date array is sorted, we only need to check
                     // the elements at and after 'i' in each array
-                    for (; (i < dataset.length) && (this._strToMs(dataset[i].dateStart) <= virtualTime); ++i) {
+                    for (; (i < features.length) && (features[i].properties.dateStart.getTime() <= virtualTime); ++i) {
 
-                        const coords = [dataset[i].longitude, dataset[i].latitude];
-
-                        geojsonData.features.push(
-                            {
-                                type: 'Feature',
-                                geometry:
-                                {
-                                    type: 'Point',
-                                    coordinates: coords
-                                },
-                                properties:
-                                {
-                                    // title: row.title,
-                                    // description: row.description,
-                                    // msStart: row.msStart,
-                                    r: 1,
-                                    g: 0,
-                                    b: 0
-                                }
-                            }
-                        );
+                        geojsonData.features.push(features[i]);
                         displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
 
                         // Make sure there is a duration or an end date
-                        if (typeof dataset[i].dateEnd === 'undefined')
+                        const feature = features[i].properties;
+                        if (typeof feature.dateEndStr === 'undefined')
                         {
-                            if (typeof dataset[i].duration === 'undefined')
+                            if (typeof feature.duration === 'undefined')
                             {
                                 // [duration, dateEnd] = [0, 0]
-                                dataset[i].durationMs = defaultDurationMs * speed;
+                                feature.durationMs = defaultDurationMs * speed;
                             }
                             else
                             {
                                 // [duration, dateEnd] = [1, 0]
-                                dataset[i].durationMs = Math.max(defaultDurationMs * speed, dataset[i].duration);
+                                feature.durationMs = Math.max(defaultDurationMs * speed, feature.duration);
                             }
                         }
                         else    // Check that the minimum duration is long enough
                         {
                             // [duration, dateEnd] = [0, 1]
                             // [duration, dateEnd] = [1, 1]
-                            dataset[i].durationMs = Math.max(defaultDurationMs * speed,
-                                                             new Date(dataset[i].dateEnd) - new Date(dataset[i].dateStart));
+                            feature.durationMs = Math.max(defaultDurationMs * speed,
+                                                             feature.dateEnd - feature.dateStart);
                         }
-                        dataset[i].timestampEnd = this._strToMs(dataset[i].dateStart) + dataset[i].durationMs;
+                        feature.timestampEnd = feature.dateStart.getTime() + feature.durationMs;
 
                         // Add popup
                         if (this.store.get('displayPopups') &&
-                            (dataset[i].event !== undefined && dataset[i].event !== ""))
+                            ( /*feature.event !== undefined &&*/ feature.event !== ""))
                         {
-                            const textToShow = dataset[i].event;
+                            const coords = features[i].geometry.coordinates;
+                            const textToShow = feature.event;
                             // Keep track of the popups
                             displayedPopups.push(
                                 new mapboxgl.Popup({
@@ -472,7 +484,7 @@ class Visualizer {
                                     .setHTML('<p class="popupText">' + textToShow + '</p>')
                                     .addTo(this.map)
                             );
-                            displayedPopups[displayedPopups.length-1].timestampEnd = dataset[i].timestampEnd;
+                            displayedPopups[displayedPopups.length-1].timestampEnd = feature.timestampEnd;
                         }
                     }
                     activeCoordinates.push(...geojsonData.features.map(d => d.geometry.coordinates));
@@ -482,7 +494,7 @@ class Visualizer {
 
                     if (i > 0)
                     {
-                        let eventForCard = dataset[i-1];
+                        let eventForCard = features[i-1].properties;
                         eventForCard.datasetName = allData[dataSetIdx].title;
                         this.store.set(`displayedEvent${dataSetIdx}`, [eventForCard]);
                     }
@@ -512,10 +524,11 @@ class Visualizer {
 
                 // Set dataset to clear everything at next iteration
                 for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
-                    const dataset = allData[dataSetIdx].data;
-                    for (let i = 0; i < dataset.length; ++i) {
-                        dataset[i].timestampEnd = 0;
-                        dataset[i].durationMs = 0;
+                    const features = allData[dataSetIdx].features;
+                    for (let i = 0; i < features.length; ++i) {
+                        const feature = features[i].properties;
+                        feature.timestampEnd = 0;
+                        feature.durationMs = 0;
                     }
                     eventIndices[dataSetIdx] = 0;
 

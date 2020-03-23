@@ -454,8 +454,8 @@
             <p class="event-title">{{event.event}}</p>
             <p class="event-datasetName">{{event.datasetName}}</p>
 
-            <p class="event-time">{{event.dateStart}}</p>
-            <p class="event-time" style="top: 15px;" v-if='event.dateEnd'>-{{event.dateEnd}}</p>
+            <p class="event-time">{{event.dateStartStr}}</p>
+            <p class="event-time" style="top: 15px;" v-if='typeof event.dateEndStr != "undefined"'>-{{event.dateEndStr}}</p>
 
             <p class="event-description" v-if='event.description'>{{event.description}}</p>
         </div>`
