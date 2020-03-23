@@ -455,7 +455,6 @@ class Visualizer {
             if (allDataProcessed && allEventsRemoved) {
                 // Loop back to start date
                 virtualTime = earliestDateMs;
-                this.store.set('virtualTime', virtualTime);
 
                 // Force pause
                 this.store.set('speed', -1 * this.store.get('speed'));
