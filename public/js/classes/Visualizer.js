@@ -245,6 +245,13 @@ class Visualizer {
             [100, 100, 255]
         ]
 
+        var displayedPopups = [];
+        const popupClasses = [
+            'mapboxgl-popup-content-red',
+            'mapboxgl-popup-content-green',
+            'mapboxgl-popup-content-blue'
+        ]
+
         // Create a new image and layer for each dataset
         for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
             const name = 'points_' + dataSetIdx;
@@ -255,16 +262,8 @@ class Visualizer {
                 type: 'geojson',
                 cluster: false,
                 data: {
-                    'type': 'FeatureCollection',
-                    'features': [
-                        {
-                            'type': 'Feature',
-                            'geometry': {
-                                'type': 'MultiPoint',
-                                'coordinates': []
-                            }
-                        }
-                    ]
+                    type: 'FeatureCollection',
+                    features: []
                 }
             });
 
@@ -276,6 +275,44 @@ class Visualizer {
                     'icon-image': name,
                     'icon-allow-overlap': true
                 }
+            });
+
+
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            this.map.on('mouseenter', name, e =>
+                this.map.getCanvas().style.cursor = 'pointer');
+
+            // Change it back to a pointer when it leaves.
+            this.map.on('mouseleave', name, e =>
+                this.map.getCanvas().style.cursor = '');
+
+            // Create a popup on click
+            this.map.on("click", name, e => {
+
+                var coords = e.features[0].geometry.coordinates.slice();
+                // var description = e.features[0].properties.description;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coords[0]) > 180) {
+                    coords[0] += (e.lngLat.lng > coords[0]) ? 360 : -360;
+                }
+
+                // const index = e.features[0].properties.index;
+                // const textToShow = dataset[index].event;
+                const textToShow = "It works!";
+                displayedPopups.push(
+                    new mapboxgl.Popup({
+                            className: popupClasses[dataSetIdx],
+                            closeOnClick: false,
+                            closeButton: false,
+                            offset: [0, -4] })
+                        .setLngLat(coords)
+                        .setHTML('<p class="popupText">' + textToShow + '</p>')
+                        .addTo(this.map)
+                );
+                displayedPopups[displayedPopups.length-1].timestampEnd = 0; // remove at next refresh (when play resumes)
             });
         }
 
@@ -306,7 +343,6 @@ class Visualizer {
 
         // on a regular basis, add more coordinates from the saved list and update the map
         var displayedEventIndices = [];
-        var displayedPopups = [];
         var eventIndices = [];
         var virtualTime = earliestDateMs;
         var timer = window.setInterval(() => {
@@ -332,7 +368,7 @@ class Visualizer {
                         const eventIdx = currentEventIndices[i];
                         if (dataset[eventIdx].timestampEnd <= virtualTime)
                         {
-                            geojsonData.features[0].geometry.coordinates.splice(i, 1);
+                            geojsonData.features.splice(i, 1);
                             currentEventIndices.splice(i, 1);
                         }
                         else
@@ -356,12 +392,6 @@ class Visualizer {
                 this.map.getSource(layerName).setData(geojsonData);
             }
 
-            const popupClasses = [
-                'mapboxgl-popup-content-red',
-                'mapboxgl-popup-content-green',
-                'mapboxgl-popup-content-blue'
-            ]
-
             let activeCoordinates = [];
             let allDataProcessed = true;
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
@@ -382,7 +412,25 @@ class Visualizer {
 
                         const coords = [dataset[i].longitude, dataset[i].latitude];
 
-                        geojsonData.features[0].geometry.coordinates.push(coords);
+                        geojsonData.features.push(
+                            {
+                                type: 'Feature',
+                                geometry:
+                                {
+                                    type: 'Point',
+                                    coordinates: coords
+                                },
+                                properties:
+                                {
+                                    // title: row.title,
+                                    // description: row.description,
+                                    // msStart: row.msStart,
+                                    r: 1,
+                                    g: 0,
+                                    b: 0
+                                }
+                            }
+                        );
                         displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
 
                         // Make sure there is a duration or an end date
@@ -427,7 +475,7 @@ class Visualizer {
                             displayedPopups[displayedPopups.length-1].timestampEnd = dataset[i].timestampEnd;
                         }
                     }
-                    activeCoordinates.push(...geojsonData.features[0].geometry.coordinates);
+                    activeCoordinates.push(...geojsonData.features.map(d => d.geometry.coordinates));
 
                     // Move the pointer forward for this dataset
                     eventIndices[dataSetIdx] = i;
