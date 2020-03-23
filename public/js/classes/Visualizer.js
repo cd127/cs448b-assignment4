@@ -372,7 +372,6 @@ class Visualizer {
         }
 
         // on a regular basis, add more coordinates from the saved list and update the map
-        var displayedEventIndices = [];
         var eventIndices = [];
         var virtualTime = earliestDateMs;
         var timer = window.setInterval(() => {
@@ -385,21 +384,17 @@ class Visualizer {
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
                 const layerName = 'points_' + dataSetIdx;
                 let geojsonData = this.map.getSource(layerName)._data;
-                if (typeof displayedEventIndices[dataSetIdx] === 'undefined') displayedEventIndices.push(new Array);
-                const currentEventIndices = displayedEventIndices[dataSetIdx];
 
-                const features = allData[dataSetIdx].features;
+                const features = geojsonData.features;
 
                 // Remove event markers
                 if (this.store.get('clearPoints'))
                 {
-                    for (let i = currentEventIndices.length - 1; i >= 0; --i)
+                    for (let i = features.length - 1; i >= 0; --i)
                     {
-                        const eventIdx = currentEventIndices[i];
-                        if (features[eventIdx].properties.timestampEnd <= virtualTime)
+                        if (features[i].properties.timestampEnd <= virtualTime)
                         {
-                            geojsonData.features.splice(i, 1);
-                            currentEventIndices.splice(i, 1);
+                            features.splice(i, 1);
                         }
                         else
                         {
@@ -441,7 +436,6 @@ class Visualizer {
                     for (; (i < features.length) && (features[i].properties.dateStart.getTime() <= virtualTime); ++i) {
 
                         geojsonData.features.push(features[i]);
-                        displayedEventIndices[dataSetIdx].push(i);  // Keep track of what we are displaying
 
                         // Make sure there is a duration or an end date
                         const feature = features[i].properties;
