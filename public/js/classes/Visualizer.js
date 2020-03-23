@@ -411,6 +411,10 @@ class Visualizer {
                         displayedPopups[i].remove();
                         displayedPopups.splice(i, 1);
                     }
+                    else
+                    {
+                        allEventsRemoved = false;
+                    }
                 }
 
                 // Refresh set of points on map for this dataset
@@ -506,7 +510,7 @@ class Visualizer {
             this.store.set('virtualTime', virtualTime);
             this.store.set('progress', `${(virtualTime - earliestDateMs) / dateRangeMs * 100}%`);
 
-            if (allDataProcessed && allEventsRemoved) {
+            if (allDataProcessed && allEventsRemoved && (virtualTime >= latestDateMs)) {
                 // Loop back to start date
                 virtualTime = earliestDateMs;
 
