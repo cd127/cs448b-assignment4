@@ -293,11 +293,14 @@ class Visualizer {
                 this.map.on('mouseleave', name, e =>
                     this.map.getCanvas().style.cursor = '');
 
-                // Create a popup on click
+                // Create a popup on click and show on event card
                 this.map.on("click", name, e => {
-                    // TODO: link to event card
+                    // Link to event card
+                    let eventForCard = e.features[0].properties;
+                    eventForCard.datasetName = allData[dataSetIdx].title;
+                    this.store.set(`displayedEvent${dataSetIdx}`, [eventForCard]);
 
-                    var coords = e.features[0].geometry.coordinates.slice();
+                    let coords = e.features[0].geometry.coordinates.slice();
 
                     // Ensure that if the map is zoomed out such that multiple
                     // copies of the feature are visible, the popup appears
