@@ -1,71 +1,71 @@
 location,colonizer,col,dateStart,dateEnd
-United States,britain,1,1607,1783
-St. Kitts & Nevis,britain,1,1623,1983
-Barbados,britain,1,1627,1966
-Antigua & Barbuda,britain,1,1632,1981
-Jamaica,britain,1,1655,1962
-Senegal,britain,1,1693,1817
-Grenada,britain,1,1762,1974
-St. Vincent & Grenadines,britain,1,1762,1979
-Canada,britain,1,1763,1919
-Bahamas,britain,1,1783,1973
-Trinidad & Tobago,britain,1,1797,1962
-Belize,britain,1,1798,1981
-Sri Lanka,britain,1,1798,1948
-Dominica,britain,1,1805,1978
-Mauritius,britain,1,1810,1968
-Guyana,britain,1,1814,1966
-Seychelles,britain,1,1814,1976
-South Africa,britain,1,1814,1920
-St. Lucia,britain,1,1814,1979
-Singapore,britain,1,1826,1963
-Equatorial Guinea,britain,1,1827,1857
-Australia,britain,1,1829,1919
-New Zealand,britain,1,1840,1920
-Bangladesh,britain,1,1857,1947
-India,britain,1,1857,1947
-Pakistan,britain,1,1857,1947
-Bahrain,britain,1,1861,1971
-Fiji,britain,1,1874,1970
-Ghana,britain,1,1874,1957
-Egypt,britain,1,1882,1935
-Lesotho,britain,1,1884,1966
-Papua New Guinea,britain,1,1884,1920
-Marshall Islands,britain,1,1886,1885
-Myanmar (Burma),britain,1,1886,1948
-Maldives,britain,1,1887,1965
-Brunei,britain,1,1888,1984
-Gambia,britain,1,1888,1965
-Malaysia,britain,1,1888,1963
-Somalia,britain,1,1888,1960
-Malawi,britain,1,1891,1964
-Kiribati,britain,1,1892,1979
-Tuvalu,britain,1,1892,1979
-United Arab Emirates,britain,1,1892,1971
-Solomon Islands,britain,1,1893,1978
-Uganda,britain,1,1894,1962
-Botswana,britain,1,1895,1966
-Kenya,britain,1,1895,1963
-Sierra Leone,britain,1,1896,1961
-Sudan,britain,1,1898,1956
-Nigeria,britain,1,1899,1960
-Tonga,britain,1,1900,1970
-Swaziland,britain,1,1903,1968
-Vanuatu,britain,1,1906,1980
-Bhutan,britain,1,1910,1949
-Cyprus,britain,1,1914,1960
-Kuwait,britain,1,1914,1961
-Nauru,britain,1,1914,1968
-Samoa,britain,1,1914,1920
-Namibia,britain,1,1915,1920
-Qatar,britain,1,1916,1971
-Tanzania,britain,1,1918,1963
-Iraq,britain,1,1920,1932
-Cameroon,britain,1,1922,1961
-Israel,britain,1,1923,1948
-Jordan,britain,1,1923,1946
-Zambia,britain,1,1923,1964
-Zimbabwe,britain,1,1923,1980
-Eritrea,britain,1,1941,1951
-Libya,britain,1,1946,1952
-Yemen,britain,1,1959,1967
+United States,Britain,1,1607,1783
+St. Kitts & Nevis,Britain,1,1623,1983
+Barbados,Britain,1,1627,1966
+Antigua & Barbuda,Britain,1,1632,1981
+Jamaica,Britain,1,1655,1962
+Senegal,Britain,1,1693,1817
+Grenada,Britain,1,1762,1974
+St. Vincent & Grenadines,Britain,1,1762,1979
+Canada,Britain,1,1763,1919
+Bahamas,Britain,1,1783,1973
+Trinidad & Tobago,Britain,1,1797,1962
+Belize,Britain,1,1798,1981
+Sri Lanka,Britain,1,1798,1948
+Dominica,Britain,1,1805,1978
+Mauritius,Britain,1,1810,1968
+Guyana,Britain,1,1814,1966
+Seychelles,Britain,1,1814,1976
+South Africa,Britain,1,1814,1920
+St. Lucia,Britain,1,1814,1979
+Singapore,Britain,1,1826,1963
+Equatorial Guinea,Britain,1,1827,1857
+Australia,Britain,1,1829,1919
+New Zealand,Britain,1,1840,1920
+Bangladesh,Britain,1,1857,1947
+India,Britain,1,1857,1947
+Pakistan,Britain,1,1857,1947
+Bahrain,Britain,1,1861,1971
+Fiji,Britain,1,1874,1970
+Ghana,Britain,1,1874,1957
+Egypt,Britain,1,1882,1935
+Lesotho,Britain,1,1884,1966
+Papua New Guinea,Britain,1,1884,1920
+Marshall Islands,Britain,1,1886,1885
+Myanmar,Britain,1,1886,1948
+Maldives,Britain,1,1887,1965
+Brunei,Britain,1,1888,1984
+Gambia,Britain,1,1888,1965
+Malaysia,Britain,1,1888,1963
+Somalia,Britain,1,1888,1960
+Malawi,Britain,1,1891,1964
+Kiribati,Britain,1,1892,1979
+Tuvalu,Britain,1,1892,1979
+United Arab Emirates,Britain,1,1892,1971
+Solomon Islands,Britain,1,1893,1978
+Uganda,Britain,1,1894,1962
+Botswana,Britain,1,1895,1966
+Kenya,Britain,1,1895,1963
+Sierra Leone,Britain,1,1896,1961
+Sudan,Britain,1,1898,1956
+Nigeria,Britain,1,1899,1960
+Tonga,Britain,1,1900,1970
+Swaziland,Britain,1,1903,1968
+Vanuatu,Britain,1,1906,1980
+Bhutan,Britain,1,1910,1949
+Cyprus,Britain,1,1914,1960
+Kuwait,Britain,1,1914,1961
+Nauru,Britain,1,1914,1968
+Samoa,Britain,1,1914,1920
+Namibia,Britain,1,1915,1920
+Qatar,Britain,1,1916,1971
+Tanzania,Britain,1,1918,1963
+Iraq,Britain,1,1920,1932
+Cameroon,Britain,1,1922,1961
+Israel,Britain,1,1923,1948
+Jordan,Britain,1,1923,1946
+Zambia,Britain,1,1923,1964
+Zimbabwe,Britain,1,1923,1980
+Eritrea,Britain,1,1941,1951
+Libya,Britain,1,1946,1952
+Yemen,Britain,1,1959,1967
