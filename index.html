@@ -105,7 +105,7 @@
                                     </option>
                                 </div>
                             </select>
-                            <input v-else type="text" :value="headerMappingsOpt[index][opt]"
+                            <input v-else type="text" :value="headerMappingsOpt[index][opt]" :id="'descriptionExpression_'+num"
                                 class="headers-select"
                                 style="width: 142px; height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
                         </div>
@@ -324,7 +324,6 @@
                             {
                                 if (header === 'description')
                                 {
-                                    <!-- document.getElementById('descriptionExpression_'+index).value = 'description'; -->
                                     this.headerMappingsOpt[index][header] = 'obj.description';
                                 }
                                 else
@@ -448,6 +447,7 @@
                 let datasetNames = [];
                 for (let i = 0; i < this.numDataFields; i++) {
                     let id = `input-${i}`;
+                    this.headerMappingsOpt[i]['description'] = document.getElementById('descriptionExpression_'+(i+1)).value;
                     promises.push(dataReader.getJSONFromFile(id, {...this.headerMappings[i], ...this.headerMappingsOpt[i]}));
                     let datasetName = this.headerMappings[i]['title'];
                     if (!datasetName)
@@ -458,6 +458,11 @@
                 Promise.all(promises).then(async jsonResults => {
                     // Data has been fully parsed. Do something.
                     //await visualizer.init();
+                    if (Math.max(...jsonResults.map(d => d.length)) === 0)
+                    {
+                        console.log("Error: your dataset is not valid");
+                        return;
+                    }
                     startAnimation(jsonResults, datasetNames);
                 });
             }

@@ -13,6 +13,12 @@ class DataReader {
         // TODO: could be expanded to handle more than just country
         function countryToLongLat(country)
         {
+            if (country === '')
+                return [];
+
+            if ((country.search('/') !== -1) || (country.search('\\?') !== -1))
+                return [];
+
             // Avoid issuing a GET command if we already know it
             if (!countryLocations.has(country))
             {
@@ -21,6 +27,8 @@ class DataReader {
                 geoRequest.open( "GET", theUrl, false ); // false for synchronous request
                 geoRequest.send( null );
                 const geo = JSON.parse(geoRequest.responseText);
+                if (typeof geo.features === 'undefined')
+                    return [];
                 if (geo.features.length === 0 || !geo.features[0].hasOwnProperty('center'))
                 {
                     console.log('Failed on: ');
@@ -60,8 +68,21 @@ class DataReader {
                     else if (key === 'description')
                     {
                         const expression = mappings[key];
-                        newObj[key] = eval(expression);
-                        if (!newObj[key])
+                        if (expression !== "")
+                        {
+                            newObj[key] = eval(expression);
+                            if (!newObj[key])
+                            {
+                                isComplete = false;
+                                break;
+                            }
+                        }
+                    }
+                    else if ((key === 'dateStart') || (key === 'dateEnd'))
+                    {
+                        const mappedField = mappings[key];
+                        newObj[key] = obj[mappedField];
+                        if ((!newObj[key]) || Number.isNaN(new Date(newObj[key]).getTime()))
                         {
                             isComplete = false;
                             break;
