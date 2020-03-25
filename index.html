@@ -175,6 +175,9 @@
                 <button title='Stack/Remove Events' class='toggleIcon' v-on:click="stackToggle()" onclick="stackIconToggle(this)" >
                     <i class="fa fa-circle"></i>
                 </button>
+                <button title='Zoom styles' class='toggleIcon' v-on:click="zoomToggle()" onclick="zoomIconToggle(this)" >
+                    <i class="fa fa-compress fa-2x"></i>
+                </button>
             </div>
 
             <!-- Event cards -->
@@ -232,6 +235,10 @@
       x.children[0].classList.toggle("fa-circle");
       x.children[0].classList.toggle("fa-2x");
     }
+    function zoomIconToggle(x) {
+      x.children[0].classList.toggle("fa-compress");
+      x.children[0].classList.toggle("fa-expand");
+    }
 
 
     var store = {
@@ -243,7 +250,8 @@
             displayedEvent2: [],
             speed: 1,
             displayPopups: true,
-            clearPoints: true
+            clearPoints: true,
+            zoomOutOnly: false
         },
         set(newKey, newValue) {
             this.state[newKey] = newValue
@@ -391,6 +399,10 @@
             stackToggle: function () {
                 const display = this.store.get('clearPoints');
                 this.store.set('clearPoints', !display);
+            },
+            zoomToggle: function () {
+                const display = this.store.get('zoomOutOnly');
+                this.store.set('zoomOutOnly', !display);
             },
             handleVisualize: function (event) {
                 this.isVisualize = true;

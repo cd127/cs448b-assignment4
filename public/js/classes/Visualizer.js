@@ -119,7 +119,11 @@ class Visualizer {
             const currBounds = map.getBounds();
             const curLonDiff = currBounds._ne.lng - currBounds._sw.lng;
             const curLatDiff = currBounds._ne.lat - currBounds._sw.lat;
-            return (latDiff < curLatDiff/2) && (lonDiff < curLonDiff/2);
+            return (latDiff < curLatDiff/4) && (lonDiff < curLonDiff/4);
+        }
+
+        function onlyUnique(value, index, self) { 
+            return self.indexOf(value) === index;
         }
 
         if (features.length === 0) return;
@@ -128,9 +132,11 @@ class Visualizer {
         [minLon, maxLon, minLat, maxLat] = this._minMaxCoord(features);
 
         // Determine most zoomed-in level
-        const zoom =
-            (features.length <= 2) ?
-            5 :
+        const maxZoom =
+            this.store.get('zoomOutOnly') ?
+            this.map.getZoom() :
+            (features.filter(onlyUnique).length <= 2) ?
+            this.map.getZoom() :
             _areBoundsTooWide(this.map, minLon, maxLon, minLat, maxLat) ?
             100 :
             this.map.getZoom();
@@ -142,7 +148,7 @@ class Visualizer {
                 padding: 50,
                 speed: this.panningSpeed,
                 curve: 0.7,
-                maxZoom: zoom,
+                maxZoom: maxZoom,
                 linear: false,
                 easing(t) { return Math.sin(t * Math.PI / 2); },
                 essential: true
