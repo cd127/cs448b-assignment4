@@ -166,11 +166,11 @@
 
             <!-- Options -->
             <div>
-                <button title='Show/Hide Popups' class='toggleIcon'>
-                    <i v-on:click="popupToggle()" onclick="popupIconToggle(this)" class="fa fa-comment fa-2x"></i>
+                <button title='Show/Hide Popups' class='toggleIcon' v-on:click="popupToggle()" onclick="popupIconToggle(this)">
+                    <i class="fa fa-comment fa-2x"></i>
                 </button>
-                <button title='Stack/Remove Events' class='toggleIcon'>
-                    <i v-on:click="stackToggle()" onclick="stackIconToggle(this)" class="fa fa-circle"></i>
+                <button title='Stack/Remove Events' class='toggleIcon' v-on:click="stackToggle()" onclick="stackIconToggle(this)" >
+                    <i class="fa fa-circle"></i>
                 </button>
             </div>
 
@@ -221,13 +221,13 @@
       x.classList.toggle("fa-play");
     }
     function popupIconToggle(x) {
-      x.classList.toggle("fa-comment-slash");
-      x.classList.toggle("fa-comment");
+      x.children[0].classList.toggle("fa-comment-slash");
+      x.children[0].classList.toggle("fa-comment");
     }
     function stackIconToggle(x) {
-      x.classList.toggle("fa-braille");
-      x.classList.toggle("fa-circle");
-      x.classList.toggle("fa-2x");
+      x.children[0].classList.toggle("fa-braille");
+      x.children[0].classList.toggle("fa-circle");
+      x.children[0].classList.toggle("fa-2x");
     }
 
 

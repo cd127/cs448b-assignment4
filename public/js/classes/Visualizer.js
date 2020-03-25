@@ -41,7 +41,7 @@ class Visualizer {
                 let context = this.context;
                 let color = this.color;
 
-                // draw outer circlef
+                // draw outer circle
                 context.clearRect(0, 0, this.width, this.height);
                 context.beginPath();
                 context.arc(
@@ -63,8 +63,10 @@ class Visualizer {
                     0,
                     Math.PI * 2
                 );
-                context.fillStyle = 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', ' + (this.pulse? 1 : 0.5)  + ')';
-                context.strokeStyle = 'white';
+                context.fillStyle = this.pulse?
+                                        'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 1)' :
+                                        'rgba(155, 155, 155, 0.7)';
+                context.strokeStyle = this.pulse? 'white' : 'rgba(' + color[0] + ', ' + color[1] + ', ' + color[2] + ', 0.8)';
                 context.lineWidth = 2 + 4 * Math.max(0, 1 - 5 * t);
                 context.fill();
                 context.stroke();
@@ -252,9 +254,9 @@ class Visualizer {
             ];
 
             const old_points_datasetColours = [
-                [250, 220, 220, false],
-                [220, 250, 220, false],
-                [220, 220, 250, false]
+                [255, 100, 100, false],
+                [100, 155, 100, false],
+                [100, 100, 255, false]
             ];
 
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
@@ -412,7 +414,7 @@ class Visualizer {
                     {
                         if (features[i].properties.timestampEnd <= virtualTime)
                         {
-                            if (this.store.get('clearPoints'))  // Move to old layer
+                            if (!this.store.get('clearPoints'))  // Move to old layer
                             {
                                 oldGeojsonData.features.push(features[i]);
                             }
