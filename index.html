@@ -93,7 +93,7 @@
                             <label class="headers-label">
                                 {{ opt }}
                             </label>
-                            <select @change="handleSelect" :id="'dataDropDown'+num+'-'+opt"
+                            <select v-if="opt !== 'description'" @change="handleSelect" :id="'dataDropDown'+num+'-'+opt"
                                 class="btn dropdown-toggle headers-select" v-model="headerMappingsOpt[index][opt]"
                                 :name="'select-'+index">
                                 <div class="dropdown-menu" :aria-labelledby="'dataDropDown'+num+'-'+opt">
@@ -105,6 +105,9 @@
                                     </option>
                                 </div>
                             </select>
+                            <input v-else type="text" :value="headerMappingsOpt[index][opt]"
+                                class="headers-select"
+                                style="width: 142px; height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
                         </div>
                     </div>
 
@@ -319,7 +322,15 @@
                             }
                             if (this.optionalHeaders.find(d => d === header))
                             {
-                                this.headerMappingsOpt[index][header] = header;
+                                if (header === 'description')
+                                {
+                                    <!-- document.getElementById('descriptionExpression_'+index).value = 'description'; -->
+                                    this.headerMappingsOpt[index][header] = 'obj.description';
+                                }
+                                else
+                                {
+                                    this.headerMappingsOpt[index][header] = header;
+                                }
                             }
                         });
                         this.headerMappings[index]['title'] = document.getElementById(id).files[0].name;

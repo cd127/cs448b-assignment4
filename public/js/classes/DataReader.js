@@ -1,6 +1,5 @@
 'use strict';
 
-// eslint-disable-next-line
 class DataReader {
     constructor() {
         this.fileContents = new Map();
@@ -40,8 +39,6 @@ class DataReader {
             let newObjArray = [];
             objArray.forEach(obj => {
                 let newObj = {};
-                // const keys = Object.keys(mappings);
-                // keys.forEach(key => {
                 let isComplete = true;
                 for (let key in mappings)
                 {
@@ -55,6 +52,16 @@ class DataReader {
                             newObj['latitude'] = longlat[1];
                         }
                         else
+                        {
+                            isComplete = false;
+                            break;
+                        }
+                    }
+                    else if (key === 'description')
+                    {
+                        const expression = mappings[key];
+                        newObj[key] = eval(expression);
+                        if (!newObj[key])
                         {
                             isComplete = false;
                             break;
