@@ -540,7 +540,7 @@ class Visualizer {
 
             // Advance time
             virtualTime += timeIntervalMs * speed;
-            this.store.set('virtualTime', virtualTime);
+            this.store.set('virtualTime', Math.min(latestDateMs, virtualTime));
             this.store.set('progress', `${(virtualTime - earliestDateMs) / dateRangeMs * 100}%`);
 
             if (allDataProcessed && allEventsRemoved && (virtualTime >= latestDateMs)) {
