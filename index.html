@@ -290,7 +290,7 @@
             getCurrentDate: function() {
                 if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
                 if (this.sharedState.isYearOnly) return new Date(this.sharedState.virtualTime).getUTCFullYear();
-                return new Date(this.sharedState.virtualTime).toUTCString();
+                return new Date(this.sharedState.virtualTime).toDateString().substr(4) + ' ' + new Date(this.sharedState.virtualTime).toLocaleTimeString();//new Date(this.sharedState.virtualTime).toUTCString();
             },
             getEndDate: function() {
                 if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
