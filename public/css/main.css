@@ -9,6 +9,29 @@ div {
     display: flex;
 }
 
+#timeDiv {
+    position: fixed;
+    left: 40%;
+    top: 10%;
+    z-index: 1;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 15px;
+    font-size: 150%;
+    opacity: 0.7;
+}
+
+#timeText {
+    position: fixed;
+    left: 40%;
+    top: 10%;
+    z-index: 2;
+    padding: 10px;
+    -webkit-text-stroke: medium;
+    font-size: 150%;
+    opacity: 1;
+}
+
 #map-view {
     flex: 1 1;
     order: 2;
