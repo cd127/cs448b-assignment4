@@ -60,12 +60,12 @@
                         <div class="headers-row" name="required-headers"
                             v-if="headers[index] && headers[index].length > 0" v-for="req in requiredHeaders">
                             <label class="headers-label">
-                                {{ req }}
+                                {{ req.name }}
                             </label>
-                            <select v-if="req !== 'title'" @change="handleSelect" :id="'dataDropDown'+num+'-'+req"
-                                class="btn dropdown-toggle headers-select" v-model="headerMappings[index][req]"
+                            <select v-if="req.field !== 'title'" @change="handleSelect" :id="'dataDropDown'+num+'-'+req.field"
+                                class="btn dropdown-toggle headers-select" v-model="headerMappings[index][req.field]"
                                 :name="'select-'+index">
-                                <div class="dropdown-menu" :aria-labelledby="'dataDropDown'+num+'-'+req">
+                                <div class="dropdown-menu" :aria-labelledby="'dataDropDown'+num+'-'+req.field">
                                     <option class="dropdown-item headers-select-option" disabled value="">
                                         <template>
                                             Please select
@@ -79,7 +79,7 @@
                             </select>
                             <input v-else type="text" v-model="headerMappings[index]['title']" id="" name="lname"
                                 class="headers-select"
-                                style="width: 142px; height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
+                                style="height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
                         </div>
                     </div>
 
@@ -91,12 +91,12 @@
                         <div class="headers-row" name="optional-headers"
                             v-if="headers[index] && headers[index].length > 0" v-for="opt in optionalHeaders">
                             <label class="headers-label">
-                                {{ opt }}
+                                {{ opt.name }}
                             </label>
-                            <select v-if="opt !== 'description'" @change="handleSelect" :id="'dataDropDown'+num+'-'+opt"
-                                class="btn dropdown-toggle headers-select" v-model="headerMappingsOpt[index][opt]"
+                            <select v-if="opt.field !== 'description'" @change="handleSelect" :id="'dataDropDown'+num+'-'+opt.field"
+                                class="btn dropdown-toggle headers-select" v-model="headerMappingsOpt[index][opt.field]"
                                 :name="'select-'+index">
-                                <div class="dropdown-menu" :aria-labelledby="'dataDropDown'+num+'-'+opt">
+                                <div class="dropdown-menu" :aria-labelledby="'dataDropDown'+num+'-'+opt.field">
                                     <option class="dropdown-item headers-select-option" value="">
                                     </option>
                                     <option class="dropdown-item headers-select-option"
@@ -105,9 +105,9 @@
                                     </option>
                                 </div>
                             </select>
-                            <input v-else type="text" :value="headerMappingsOpt[index][opt]" :id="'descriptionExpression_'+num"
+                            <input v-else type="text" :value="headerMappingsOpt[index][opt.field]" :id="'descriptionExpression_'+num"
                                 class="headers-select"
-                                style="width: 142px; height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
+                                style="height: 37px; border: 1px solid grey; border-radius: .25rem; text-align: center;">
                         </div>
                     </div>
 
@@ -278,8 +278,16 @@
     var app = new Vue({
         el: '#app',
         data: {
-            requiredHeaders: ['title', 'event', 'dateStart', 'latitude', 'longitude'],
-            optionalHeaders: ['description', 'location', 'dateEnd'],
+            requiredHeaders: [{name:'Title', field:'title'},
+                              {name:'Event', field:'event'},
+                              {name:'Start date', field:'dateStart'},
+                              {name:'Latitude', field:'latitude'},
+                              {name:'Longitude', field:'longitude'}
+                             ],
+            optionalHeaders: [{name:'Description', field:'description'},
+                              {name:'Location', field:'location'},
+                              {name:'End date', field:'dateEnd'}
+                             ],
             numDataFields: 1,
             headers: [[], [], []],
             headerMappings: [{}, {}, {}],
@@ -333,11 +341,11 @@
                             console.log('pushing ' + header + ' to index ' + index);
 
                             <!-- Automatically match fields which are named as we expect -->
-                            if (this.requiredHeaders.find(d => d === header))
+                            if (this.requiredHeaders.find(d => d.field === header))
                             {
                                 this.headerMappings[index][header] = header;
                             }
-                            if (this.optionalHeaders.find(d => d === header))
+                            if (this.optionalHeaders.find(d => d.field === header))
                             {
                                 if (header === 'description')
                                 {
@@ -376,8 +384,8 @@
                 try {
                     for (let i = 0; i < this.numDataFields; i++) {
                         this.requiredHeaders.forEach(req => {
-                            if (this.headerMappings[i][req] === undefined) {
-                                if (!( ((req === "longitude") || (req === "latitude")) // It's ok if 'location' has been filled out
+                            if (this.headerMappings[i][req.field] === undefined) {
+                                if (!( ((req.field === "longitude") || (req.field === "latitude")) // It's ok if 'location' has been filled out
                                         && (this.headerMappingsOpt[i]['location'] != undefined))) {
                                     throw 'Mappings incomplete.';
                                 }
