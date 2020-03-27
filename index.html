@@ -142,6 +142,10 @@
 
         <!-- Runtime information -->
         <div class="sidebar-content" v-if="isVisualize">
+            <!-- "Back" button -->
+            <button title='Back' class='toggleIcon' onclick="reload()" style="position:fixed; top:10px; left:10px">
+                <i class="fa fa-arrow-left fa-2x"></i>
+            </button>
             <!-- Time -->
             <div class="sidebar-controls-container">
                 <div class="progress" style="height:20px; width: 100%;">
@@ -174,7 +178,7 @@
                 <button title='Show/Hide Popups' class='toggleIcon' v-on:click="popupToggle()" onclick="popupIconToggle(this)">
                     <i class="fa fa-comment fa-2x"></i>
                 </button>
-                <button title='Stack/Remove Events' class='toggleIcon' v-on:click="stackToggle()" onclick="stackIconToggle(this)" >
+                <button title='Keep/Remove Events' class='toggleIcon' v-on:click="stackToggle()" onclick="stackIconToggle(this)" >
                     <i class="fa fa-circle"></i>
                 </button>
                 <button title='Zoom styles' class='toggleIcon' v-on:click="zoomToggle()" onclick="zoomIconToggle(this)" >
@@ -240,6 +244,9 @@
     function zoomIconToggle(x) {
       x.children[0].classList.toggle("fa-compress");
       x.children[0].classList.toggle("fa-expand");
+    }
+    function reload() {
+        location.reload();
     }
 
 
