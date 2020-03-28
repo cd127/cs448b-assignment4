@@ -6,10 +6,10 @@
 #######################
 
 This folder is organized as follows:
- - public contains
+ - 'public/' contains
     - all the code deployed to https://cs448b-w2020-debrito.firebaseapp.com/
     - datasets which can be used as examples to test the visualization
- - doc contains the paper associated with the work
+ - 'doc/' contains the paper associated with the work
 
 To see the visualization, please go to https://cs448b-w2020-debrito.firebaseapp.com/ on a Chrome or Firefox browser.
 To run locally, simply start a local server in the "public" folder. (e.g. run "python3 -m http.server" in a linux terminal)
@@ -19,13 +19,13 @@ Suggested step through to understand the work (what would have been in the demo)
 
  2. Use Chrome to navigate to https://cs448b-w2020-debrito.firebaseapp.com/
  3. Click on the "Load Data" button
- 4. In the File Selection dialog, find this folder in your HD and continue to the folder public/data/colonization_data
+ 4. In the File Selection dialog, find this folder in your hard-drive and continue to the folder public/data/colonization_data
  5. Select file "COLDAT_britain.csv"
  6. Click on the dropdown named "Event" and choose the field "location"
  7. Click on "Visualize!"
  8. Watch the animation and feel the awe of witnessing the extent of the British Empire
-    8a. Pause the animation at any time (space bar) and zoom in to one event
-    8b. Tap Play again and watch the automatic framing taking you back to a full view
+    8a. Zoom into any event at any point in time. This will pause the animation
+    8b. Resume play (space bar) and watch the automatic framing taking you back to a full view
 
  9. Once it reaches the end,
     9a. click the middle toggle button on the left pane to disable clearing of old points
@@ -37,7 +37,7 @@ Suggested step through to understand the work (what would have been in the demo)
  11. Once you are done with this, press the Back button at the top left
  12. Click on the "Load Data" button
  13. Select file "COLDAT_france.csv"
- 14. Click on the "Add another dataset" button in the bottom-left
+ 14. Click on the "Add another dataset" button on the bottom-left
  15. Select file "COLDAT_portugal.csv"
  16. For both files, click on the dropdown named "Event" and choose the field "location"
  17. For both files, copy-paste this exact text (without the ><) into the "Description" textbox:
@@ -45,7 +45,7 @@ Suggested step through to understand the work (what would have been in the demo)
  18. Click on "Visualize!"
  19. Watch Portugal's early start followed by France's aspirations for Africa
     19a. Disable clearing of points if you wish to look into the data at the end
-    19b. Feel free to pause at any time and explore the data by zooming/panning at will
+    19b. Feel free to explore the data by zooming/panning at will
     19c. Pay attention to the descriptive text displayed in the boxes on the left - it is customized!
 
  20. Once you are done with this, press the Back button at the top left
@@ -56,6 +56,7 @@ Suggested step through to understand the work (what would have been in the demo)
     24a. Notice the automatically-adapted date granularity
     24b. Notice the adaptive zooming depending on the data spread
     24c. To change zooming modes and take a more conservative zoom-out-only approach, click the right-most toggle button on the left pane
+ 25. Click on the time bar to travel through time
 
 That's it!
 You should now know enough to explore the tool further.
