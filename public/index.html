@@ -21,7 +21,7 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css" rel="stylesheet" />
 
     <!-- Vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -344,11 +344,9 @@
                 dataReader.readFileAsString(id).then(
                     fileContent => {
                         const headers = dataReader.getHeaders(id);
-                        console.log('Headers : ' + headers);
                         this.headers[index].length = 0;
                         headers.forEach(header => {
                             this.headers[index].push(header);
-                            console.log('pushing ' + header + ' to index ' + index);
 
                             <!-- Automatically match fields which are named as we expect -->
                             if (this.requiredHeaders.find(d => d.field === header))
