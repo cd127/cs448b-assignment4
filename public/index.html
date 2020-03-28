@@ -148,7 +148,8 @@
             </button>
             <!-- Time -->
             <div class="sidebar-controls-container">
-                <div class="progress" style="height:20px; width: 100%;" onclick="trackbarClick(this)" ondragstart="moveToFuture2(this)">
+                <div class="progress" style="height:20px; width: 100%;"
+                        onclick="trackbarClick(this)" onmousemove="showMouseTime(this)" onmouseout="hideMouseTime(this)">
                     <div id="progress" class="progress-bar bg-secondary" style="border-style: none; height:20px; width:0%;"
                         v-bind:style="{ 'width': sharedState.progress }" >
                     </div>
@@ -172,6 +173,9 @@
             </div>
             <div> <p id="timeDiv">{{getCurrentDate()}}</p></div>
             <div> <p id="timeText">{{getCurrentDate()}}</p></div>
+
+            <!-- Time popup when scrubbing -->
+            <div id='mouseTime' style="position:fixed; left:-1000px; transform: translate(-50%, -50%);">{{getMouseDate()}}</div>
 
             <!-- Options -->
             <div>
@@ -235,6 +239,10 @@
             displayedEvent1: [],
             displayedEvent2: [],
             speed: 1,
+            startTime: 0,
+            endTime: 0,
+            virtualTime: 0,
+            mouseTime: 0,
             displayPopups: true,
             clearPoints: true,
             zoomOutOnly: false,
@@ -270,14 +278,32 @@
     function reload() {
         location.reload();
     }
-    function trackbarClick(bar) {
+
+    function computeProgress(bar) {
         const barXOffset = bar.offsetLeft;
         const clickX = event.x - barXOffset;
         const barWidth = bar.offsetWidth;
-        const progress = clickX / barWidth;
+        return clickX / barWidth;
+    }
+    function trackbarClick(bar) {
+        const progress = computeProgress(bar);
         store.set("reqProgress", progress);
-        <!-- store.set("progress", (progress * 100) + "%"); -->
-        console.log("move to " + (progress * 100) + "% progress");
+    }
+    function showMouseTime(bar) {
+        const progress = computeProgress(bar);
+        const startTime = store.get("startTime");
+        const endTime = store.get("endTime");
+        const mouseTime = startTime +
+                          ((endTime - startTime) * progress);
+        store.set("mouseTime", mouseTime);
+
+        let barStyle = document.getElementById('mouseTime').style;
+        barStyle.top = (bar.offsetTop - 10) + "px";
+        barStyle.left = event.x + "px";
+    }
+    function hideMouseTime(bar) {
+        let barStyle = document.getElementById('mouseTime').style;
+        barStyle.left = "-1000px";
     }
 
     var dataReader = new DataReader();
@@ -323,6 +349,11 @@
                 if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
                 if (this.sharedState.isYearOnly) return new Date(this.sharedState.endTime).getUTCFullYear();
                 return new Date(this.sharedState.endTime).toUTCString();
+            },
+            getMouseDate: function() {  // Get date the mouse is pointing at on the progress bar
+                if (!this.sharedState.hasOwnProperty('isYearOnly')) return '';
+                if (this.sharedState.isYearOnly) return new Date(this.sharedState.mouseTime).getUTCFullYear();
+                return new Date(this.sharedState.mouseTime).toUTCString();
             },
             clearDataAtLastIndex: function (index) {
                 this.headers[this.numDataFields - 1] = [];
