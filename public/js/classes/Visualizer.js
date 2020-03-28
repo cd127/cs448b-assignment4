@@ -7,7 +7,6 @@ class Visualizer {
         this.panningSpeed = 0.7;
         this.allData = [];
         this.store = store;
-        console.log(this.store);
 
     }
 
@@ -219,7 +218,6 @@ class Visualizer {
 
     // Start the animation
     startAnimation(allData, totalDesiredRuntimeMs = 3 * 60 * 1000 /*3 min*/) {
-        console.log(this.store);
 
         // Start by jumping to the view that fits all the points of all datasets
         let minLon, maxLon, minLat, maxLat;

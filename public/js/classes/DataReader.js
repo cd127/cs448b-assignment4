@@ -164,7 +164,6 @@ class DataReader {
         return new Promise((resolve, reject) => {
             let file = document.getElementById(id).files[0];
             let type = file.type;
-            console.log('File: ' + file + '; type: ' + type);
 
             if ((type === 'text/csv') || (type === 'application/vnd.ms-excel'))
                 type = 'csv';
@@ -176,7 +175,6 @@ class DataReader {
             var reader = new FileReader();
             reader.onload = event => {
                 this.fileContents.set(id, event.target.result);
-                console.log(`File content saved under id ${id}.`);
 
                 resolve(event.target.result);
             };
