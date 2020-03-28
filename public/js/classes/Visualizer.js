@@ -122,7 +122,7 @@ class Visualizer {
             return (latDiff < curLatDiff/4) && (lonDiff < curLonDiff/4);
         }
 
-        function onlyUnique(value, index, self) { 
+        function onlyUnique(value, index, self) {
             return self.indexOf(value) === index;
         }
 
@@ -393,7 +393,7 @@ class Visualizer {
 
             this.store.set('startTime', earliestDateMs);
             this.store.set('endTime', latestDateMs);
-            this.store.set('virualTime', virtualTime);
+            this.store.set('virtualTime', virtualTime);
             this.store.set('progress', '0%');
             this.store.set('isYearOnly', isYear);
         }
@@ -403,58 +403,49 @@ class Visualizer {
         var virtualTime = earliestDateMs;
         var timer = window.setInterval(() => {
 
-            let speed = this.store.get('speed');
-            if (speed <= 0) return;
-
-            // Remove old features
-            let allEventsRemoved = true;
-            for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+            function SetToClear()
             {
-                const layerName = 'points_' + dataSetIdx;
-                let geojsonData = this.map.getSource(layerName)._data;
-
-                const oldLayerName = 'old_points_' + dataSetIdx;
-                let oldGeojsonData = this.map.getSource(oldLayerName)._data;
-
-                const features = geojsonData.features;
-
-                // Remove event markers
-                    for (let i = features.length - 1; i >= 0; --i)
-                    {
-                        if (features[i].properties.timestampEnd <= virtualTime)
-                        {
-                            if (!this.store.get('clearPoints'))  // Move to old layer
-                            {
-                                oldGeojsonData.features.push(features[i]);
-                            }
-                            features.splice(i, 1);
-                        }
-                        else
-                        {
-                            allEventsRemoved = false;
-                        }
+                for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
+                    const features = allData[dataSetIdx].features;
+                    for (let i = 0; i < features.length; ++i) {
+                        const feature = features[i].properties;
+                        feature.timestampEnd = 0;
+                        feature.durationMs = 0;
                     }
+                    eventIndices[dataSetIdx] = 0;
 
-                // Remove popups
-                for (let i = displayedPopups.length - 1; i >= 0; --i)
-                {
-                    if (displayedPopups[i].timestampEnd <= virtualTime)
+                    // Remove all popups
+                    for (let i = displayedPopups.length - 1; i >= 0; --i)
                     {
                         displayedPopups[i].remove();
                         displayedPopups.splice(i, 1);
                     }
-                    else
-                    {
-                        allEventsRemoved = false;
-                    }
                 }
-
-                // Refresh set of points on map for this dataset
-                this.map.getSource(layerName).setData(geojsonData);
-                this.map.getSource(oldLayerName).setData(oldGeojsonData);
             }
 
-            let activeCoordinates = [];
+            let speed = this.store.get('speed');
+
+            // Handle scrub
+            if (this.store.get("reqProgress") !== 0)
+            {
+                const newVirtualTime = earliestDateMs +
+                                       ((latestDateMs - earliestDateMs) * this.store.get("reqProgress"));
+
+                // Reset event indices
+                if (newVirtualTime < virtualTime)
+                {
+                    SetToClear();
+                    eventIndices = [];
+                }
+                virtualTime = newVirtualTime;
+                this.store.set("reqProgress", 0)
+            }
+            else if (speed <= 0) return;
+
+            // Assume speed is positive to calculate display durations
+            speed = Math.abs(speed);
+
+            // Add new features
             let allDataProcessed = true;
             for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
                 if (typeof eventIndices[dataSetIdx] === 'undefined') eventIndices.push(0);
@@ -518,7 +509,6 @@ class Visualizer {
                             displayedPopups[displayedPopups.length-1].timestampEnd = feature.timestampEnd;
                         }
                     }
-                    activeCoordinates.push(...geojsonData.features.map(d => d.geometry.coordinates));
 
                     // Move the pointer forward for this dataset
                     eventIndices[dataSetIdx] = i;
@@ -533,6 +523,58 @@ class Visualizer {
                     // Refresh set of points on map for this dataset
                     this.map.getSource(layerName).setData(geojsonData);
                 }
+            }
+
+            // Remove old features
+            let activeCoordinates = [];
+            let allEventsRemoved = true;
+            for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx)
+            {
+                const layerName = 'points_' + dataSetIdx;
+                let geojsonData = this.map.getSource(layerName)._data;
+
+                const oldLayerName = 'old_points_' + dataSetIdx;
+                let oldGeojsonData = this.map.getSource(oldLayerName)._data;
+
+                const features = geojsonData.features;
+
+                // Remove event markers
+                for (let i = features.length - 1; i >= 0; --i)
+                {
+                    if (features[i].properties.timestampEnd <= virtualTime)
+                    {
+                        if (!this.store.get('clearPoints'))  // Move to old layer
+                        {
+                            oldGeojsonData.features.push(features[i]);
+                        }
+                        features.splice(i, 1);
+                    }
+                    else
+                    {
+                        allEventsRemoved = false;
+                    }
+                }
+
+                // Remove popups
+                for (let i = displayedPopups.length - 1; i >= 0; --i)
+                {
+                    if (displayedPopups[i].timestampEnd <= virtualTime)
+                    {
+                        displayedPopups[i].remove();
+                        displayedPopups.splice(i, 1);
+                    }
+                    else
+                    {
+                        allEventsRemoved = false;
+                    }
+                }
+
+                // Refresh set of points on map for this dataset
+                this.map.getSource(layerName).setData(geojsonData);
+                this.map.getSource(oldLayerName).setData(oldGeojsonData);
+
+                // Update coordinates which need framing
+                activeCoordinates.push(...geojsonData.features.map(d => d.geometry.coordinates));
             }
 
             // Pan-and-zoom to include all points currently displayed
@@ -554,22 +596,7 @@ class Visualizer {
                 x.classList.add("fa-play");
 
                 // Set dataset to clear everything at next iteration
-                for (let dataSetIdx = 0; dataSetIdx < allData.length; ++dataSetIdx) {
-                    const features = allData[dataSetIdx].features;
-                    for (let i = 0; i < features.length; ++i) {
-                        const feature = features[i].properties;
-                        feature.timestampEnd = 0;
-                        feature.durationMs = 0;
-                    }
-                    eventIndices[dataSetIdx] = 0;
-
-                    // Remove all popups
-                    for (let i = displayedPopups.length - 1; i >= 0; --i)
-                    {
-                        displayedPopups[i].remove();
-                        displayedPopups.splice(i, 1);
-                    }
-                }
+                SetToClear();
             }
         }, refreshIntervalMs);
     }

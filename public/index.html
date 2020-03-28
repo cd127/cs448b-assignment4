@@ -148,9 +148,9 @@
             </button>
             <!-- Time -->
             <div class="sidebar-controls-container">
-                <div class="progress" style="height:20px; width: 100%;">
+                <div class="progress" style="height:20px; width: 100%;" onclick="trackbarClick(this)" ondragstart="moveToFuture2(this)">
                     <div id="progress" class="progress-bar bg-secondary" style="border-style: none; height:20px; width:0%;"
-                        v-bind:style="{ 'width': sharedState.progress }">
+                        v-bind:style="{ 'width': sharedState.progress }" >
                     </div>
                 </div>
                 <div>{{'Start time : ' + getStartDate()}}</div>
@@ -162,10 +162,10 @@
                         <i v-on:click="playToggle()" onclick="playIconToggle(this)" class="fa fa-pause fa-2x" id='playButton'></i>
                     </button>
 
-                    <button title= 'Slower' v-on:click="multiplySpeed(0.5)">
+                    <button title= '2x Slower' v-on:click="multiplySpeed(0.5)">
                         <i class="fa fa-step-forward fa-2x"></i>
                     </button>
-                    <button title= 'Faster' v-on:click="multiplySpeed(1.5)">
+                    <button title= '2x Faster' v-on:click="multiplySpeed(1.5)">
                         <i class="fa fa-fast-forward fa-2x"></i>
                     </button>
                 </div>
@@ -227,29 +227,6 @@
 
 <script>
 
-    <!-- Icon control -->
-    function playIconToggle(x) {
-      x.classList.toggle("fa-pause");
-      x.classList.toggle("fa-play");
-    }
-    function popupIconToggle(x) {
-      x.children[0].classList.toggle("fa-comment-slash");
-      x.children[0].classList.toggle("fa-comment");
-    }
-    function stackIconToggle(x) {
-      x.children[0].classList.toggle("fa-braille");
-      x.children[0].classList.toggle("fa-circle");
-      x.children[0].classList.toggle("fa-2x");
-    }
-    function zoomIconToggle(x) {
-      x.children[0].classList.toggle("fa-compress");
-      x.children[0].classList.toggle("fa-expand");
-    }
-    function reload() {
-        location.reload();
-    }
-
-
     var store = {
         debug: true,
         state: {
@@ -260,7 +237,9 @@
             speed: 1,
             displayPopups: true,
             clearPoints: true,
-            zoomOutOnly: false
+            zoomOutOnly: false,
+            reqProgress: 0,
+            progress: "0%"
         },
         set(newKey, newValue) {
             this.state[newKey] = newValue
@@ -268,6 +247,37 @@
         get(key) {
             return this.state[key];
         }
+    }
+
+    <!-- Icon control -->
+    function playIconToggle(x) {
+        x.classList.toggle("fa-pause");
+        x.classList.toggle("fa-play");
+    }
+    function popupIconToggle(x) {
+        x.children[0].classList.toggle("fa-comment-slash");
+        x.children[0].classList.toggle("fa-comment");
+    }
+    function stackIconToggle(x) {
+        x.children[0].classList.toggle("fa-braille");
+        x.children[0].classList.toggle("fa-circle");
+        x.children[0].classList.toggle("fa-2x");
+    }
+    function zoomIconToggle(x) {
+        x.children[0].classList.toggle("fa-compress");
+        x.children[0].classList.toggle("fa-expand");
+    }
+    function reload() {
+        location.reload();
+    }
+    function trackbarClick(bar) {
+        const barXOffset = bar.offsetLeft;
+        const clickX = event.x - barXOffset;
+        const barWidth = bar.offsetWidth;
+        const progress = clickX / barWidth;
+        store.set("reqProgress", progress);
+        <!-- store.set("progress", (progress * 100) + "%"); -->
+        console.log("move to " + (progress * 100) + "% progress");
     }
 
     var dataReader = new DataReader();
@@ -294,7 +304,7 @@
             headerMappingsOpt: [{}, {}, {}],    // Optional header mappings
             mappingsComplete: false,
             isVisualize: false,
-            isDebug: true,
+            isDebug: false,
             store: store,
             sharedState: store.state
         },
